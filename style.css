@@ -28,7 +28,7 @@ p {
     margin: auto;
     color: var(--maintext);
     font-weight: 900;
-    font-size: 40px;
+    font-size: px;
 }
 
 a {
