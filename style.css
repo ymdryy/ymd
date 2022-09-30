@@ -3,7 +3,9 @@
     --subback: #f8f8f8;
     --maintext: #000000;
     --subtext: #424242;
-    
+
+    --clear-btn: rgba(0, 0, 0, 0.2);
+
     --blue1: #dbdcec;
 }
 
@@ -23,12 +25,16 @@ html {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 p {
     text-align: center;
     margin: auto;
     color: var(--maintext);
     font-weight: 900;
-    font-size: px;
+    font-size: 40px;
 }
 
 a {
@@ -65,4 +71,65 @@ a {
     border-left: solid 11.5px var(--maintext);
     background: var(--maintext);
     padding: 3px 11.5px 3px 0px;
+}
+
+/* Instagram */
+.instagrams-anime {
+    background: linear-gradient(45deg, #4c64d3, #cf2e92, #f26939, #ffdd83);
+    background-size: 200% 200%;
+    animation: bggradient 10s ease infinite;
+}
+
+@keyframes bggradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.instagrams {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.instagrams section {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    
+}
+
+.instagrams section .text {
+    padding: calc((100vh - 45px)/2) 0;
+    text-align: center;
+}
+
+.instagrams section a {
+    color: #FFF;
+    background: var(--clear-btn);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 5px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.5s;
+}
+
+.instagrams section a:hover {
+    font-size: 18px;
+    padding: 5px 30px;
+}
+
+.instagrams section a:active {
+    background: #cecece;
 }
