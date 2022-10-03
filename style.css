@@ -7,6 +7,12 @@
     --clear-btn: rgba(0, 0, 0, 0.2);
 
     --blue1: #dbdcec;
+
+    /* スクロールバーカラー */
+    --bar-back: rgba(200, 200, 201, 0.2);
+    --bar-track: rgba(150, 150, 150, 0.2);
+    --bar-hover: rgba(140, 140, 140, 0.3);
+    --bar-active: rgba(130, 130, 130, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +23,48 @@
         --subtext: #d8d8d8;
 
         --blue1: #21277c;
+
+        /* スクロールバーカラー */
+        --bar-back: rgba(0, 0, 0, 0.15);
+        --bar-track: rgba(80, 80, 80, 0.5);
+        --bar-hover: rgba(100, 100, 100, 0.6);
+        --bar-active: rgba(120, 120, 120, 0.7);
+        color-scheme: dark;
     }
 }
 
+/* スクロールバー */
+::-webkit-scrollbar {
+    width: 13px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bar-back);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bar-track);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bar-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--bar-active);
+}
+
+/* 本体 */
+
 html {
     background: var(--mainback);
+    color: var(--maintext);
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -29,16 +72,12 @@ body {
     margin: 0;
 }
 
-p {
-    text-align: center;
-    margin: auto;
-    color: var(--maintext);
-    font-weight: 900;
-    font-size: 40px;
-}
-
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
 
 .wrapper {
@@ -67,10 +106,62 @@ a {
 
 #header .back ul li:hover {
     color: var(--mainback);
-    font-weight: 700;
     border-left: solid 11.5px var(--maintext);
     background: var(--maintext);
     padding: 3px 11.5px 3px 0px;
+}
+
+/* 主な予定 */
+.schedule {
+    width: 100%;
+}
+
+.schedule h2 {
+    text-align: left;
+    font-size: 24px;
+    color: var(--maintext);
+    padding: 0 35px;
+    margin: 0;
+}
+
+.schedule .boxes {
+    overflow-x: auto;
+    max-width: 100%;
+    display: flex;
+    padding: 0 30px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 30px;
+}
+
+.schedule article {
+    min-width: 300px;
+    min-height: 150px;
+    background: var(--subback);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px 5px;
+    scroll-snap-align: start;
+}
+
+.schedule article .category {
+    margin: 0;
+    font-size: 12px;
+    color: var(--subtext);
+}
+
+.schedule article h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.schedule article .date {
+    font-size: 14px;
+    color: var(--subtext);
+    margin: 0;
+}
+
+.schedule article .plus {
+    margin-top: 20px;
 }
 
 /* Instagram */
@@ -103,7 +194,7 @@ a {
     max-width: 100%;
     max-height: 100%;
     display: block;
-    
+
 }
 
 .instagrams section .text {
