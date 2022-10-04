@@ -17,8 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>ymdryy</title>
 </head>
 
@@ -36,6 +37,516 @@
         </div>
     </header>
     <main>
+        <section>
+            <div class="countdown" id="countdownArea">
+                <span>中間テストまで</span>
+                <span id="countdown-day"></span>日
+                <span id="countdown-hour"></span>時間
+                <span id="countdown-min"></span>分
+                <span id="countdown-sec"></span>秒
+                <script>
+                    let countdown = setInterval(function () {
+                        const now = new Date()  //今の日時
+                        const target = new Date("2022/10/17 8:45:00") //ターゲット日時を取得
+                        const remainTime = target - now
+
+                        //指定の日時を過ぎていたら処理をしない
+                        if (remainTime < 0) return false
+
+                        //差分の日・時・分・秒を取得
+                        const difDay = Math.floor(remainTime / 1000 / 60 / 60 / 24)
+                        const difHour = Math.floor(remainTime / 1000 / 60 / 60) % 24
+                        const difMin = Math.floor(remainTime / 1000 / 60) % 60
+                        const difSec = Math.floor(remainTime / 1000) % 60
+
+                        //残りの日時を上書き
+                        document.getElementById("countdown-day").textContent = difDay
+                        document.getElementById("countdown-hour").textContent = difHour
+                        document.getElementById("countdown-min").textContent = difMin
+                        document.getElementById("countdown-sec").textContent = difSec
+
+                        //指定の日時になればカウントを止める
+                        if (remainTime < 0) clearInterval(countdown)
+
+                    }, 1000)    //1秒間に1度処理
+                </script>
+            </div>
+        </section>
+
+        <section class="time-schedule">
+            <h2>時間割</h2>
+            <div class="boxes">
+                <input type="radio" name="tab-name" id="ts1" checked>
+                <label class="tab" for="ts1">1</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>生物基礎</td>
+                            <td>論理表現</td>
+                            <td>言語文化</td>
+                            <td>数学A</td>
+                            <td>現代国語</td>
+                            <td>現代国語</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>生物基礎</td>
+                            <td>保健体育</td>
+                            <td>歴史総合</td>
+                            <td>物理基礎</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>数学Ⅰ</td>
+                            <td>数学A</td>
+                            <td>音美書</td>
+                            <td>数学Ⅰ</td>
+                            <td>公共</td>
+                            <td>言語文化</td>
+                        </tr>
+                        <tr>
+                            <td>家庭基礎</td>
+                            <td>数学Ⅰ</td>
+                            <td>音美書</td>
+                            <td>公共</td>
+                            <td>数学Ⅰ</td>
+                            <td>化学基礎</td>
+                        </tr>
+                        <tr>
+                            <td>英COM</td>
+                            <td>歴史総合</td>
+                            <td>保健体育</td>
+                            <td>論理表現</td>
+                            <td>化学基礎</td>
+                        </tr>
+                        <tr>
+                            <td>英COMN</td>
+                            <td>LHR</td>
+                            <td>英COM</td>
+                            <td>物理基礎</td>
+                            <td>言語文化</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts2">
+                <label class="tab" for="ts2">2</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>英COMN</td>
+                            <td>論理表現</td>
+                            <td>数学Ⅰ</td>
+                            <td>生物基礎</td>
+                            <td>現代国語</td>
+                            <td>論地表現</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>英COM</td>
+                            <td>保健体育</td>
+                            <td>物理基礎</td>
+                            <td>化学基礎</td>
+                            <td>公共</td>
+                        </tr>
+                        <tr>
+                            <td>数学Ⅰ</td>
+                            <td>歴史総合</td>
+                            <td>音美書</td>
+                            <td>現代国語</td>
+                            <td>生物基礎</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>数学Ⅰ</td>
+                            <td>言語文化</td>
+                            <td>音美書</td>
+                            <td>数学A</td>
+                            <td>物理基礎</td>
+                            <td>数学Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td>家庭基礎</td>
+                            <td>化学基礎</td>
+                            <td>保健体育</td>
+                            <td>歴史総合</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>言語文化</td>
+                            <td>LHR</td>
+                            <td>公共</td>
+                            <td>言語文化</td>
+                            <td>数学A</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts3">
+                <label class="tab" for="ts3">3</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>英COM</td>
+                            <td>言語文化</td>
+                            <td>化学基礎</td>
+                            <td>歴史総合</td>
+                            <td>化学基礎</td>
+                            <td>言語文化</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>数学A</td>
+                            <td>保健</td>
+                            <td>現代国語</td>
+                            <td>現代国語</td>
+                            <td>生物基礎</td>
+                        </tr>
+                        <tr>
+                            <td>数学A</td>
+                            <td>物理基礎</td>
+                            <td>数学Ⅰ</td>
+                            <td>音美書</td>
+                            <td>英COM</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>公共</td>
+                            <td>公共</td>
+                            <td>論理表現</td>
+                            <td>音美書</td>
+                            <td>言語文化</td>
+                            <td>論理表現</td>
+                        </tr>
+                        <tr>
+                            <td>歴史総合</td>
+                            <td>数学Ⅰ</td>
+                            <td>体育</td>
+                            <td>生物基礎</td>
+                            <td>数学Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td>家庭基礎</td>
+                            <td>LHR</td>
+                            <td>物理基礎</td>
+                            <td>数学Ⅰ</td>
+                            <td>英COMN</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts4">
+                <label class="tab" for="ts4">4</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>言語文化</td>
+                            <td>言語文化</td>
+                            <td>公共</td>
+                            <td>数学Ⅰ</td>
+                            <td>論理表現</td>
+                            <td>論理表現</td>
+                        </tr>
+                        <tr>
+                            <td>物理基礎</td>
+                            <td>数学A</td>
+                            <td>数学A</td>
+                            <td>化学基礎</td>
+                            <td>公共</td>
+                            <td>数学Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>家庭基礎</td>
+                            <td>体育</td>
+                            <td>音美書</td>
+                            <td>物理基礎</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>化学基礎</td>
+                            <td>歴史総合</td>
+                            <td>英COM</td>
+                            <td>音美書</td>
+                            <td>生物基礎</td>
+                            <td>現代国語</td>
+                        </tr>
+                        <tr>
+                            <td>英COMN</td>
+                            <td>数学Ⅰ</td>
+                            <td>言語文化</td>
+                            <td>歴史総合</td>
+                            <td>数学Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td>生物基礎</td>
+                            <td>LHR</td>
+                            <td>保健</td>
+                            <td>英COM</td>
+                            <td>現代国語</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts5">
+                <label class="tab" for="ts5">5</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts6">
+                <label class="tab" for="ts6">6</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>数学A</td>
+                            <td>英COMN</td>
+                            <td>数学Ⅰ</td>
+                            <td>現代国語</td>
+                            <td>物理基礎</td>
+                            <td>化学基礎</td>
+                        </tr>
+                        <tr>
+                            <td>生物基礎</td>
+                            <td>公共</td>
+                            <td>英COM</td>
+                            <td>数学A</td>
+                            <td>数学Ⅰ</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>数学Ⅰ</td>
+                            <td>音美書</td>
+                            <td>数学Ⅰ</td>
+                            <td>言語文化</td>
+                            <td>歴史総合</td>
+                        </tr>
+                        <tr>
+                            <td>物理基礎</td>
+                            <td>言語文化</td>
+                            <td>化学基礎</td>
+                            <td>英COM</td>
+                            <td>歴史総合</td>
+                            <td>論理表現</td>
+                        </tr>
+                        <tr>
+                            <td>現代国語</td>
+                            <td>家庭基礎</td>
+                            <td>言語文化</td>
+                            <td>音美書</td>
+                            <td>生物基礎</td>
+                        </tr>
+                        <tr>
+                            <td>論理表現</td>
+                            <td>LHR</td>
+                            <td>保健体育</td>
+                            <td>音美書</td>
+                            <td>公共</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts7">
+                <label class="tab" for="ts7">7</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts8">
+                <label class="tab" for="ts8">8</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>物理基礎</td>
+                            <td>数学A</td>
+                            <td>歴史総合</td>
+                            <td>英COM</td>
+                            <td>論理表現</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>数学Ⅰ</td>
+                            <td>言語文化</td>
+                            <td>言語文化</td>
+                            <td>生物基礎</td>
+                            <td>化学基礎</td>
+                            <td>現代国語</td>
+                        </tr>
+                        <tr>
+                            <td>論理表現</td>
+                            <td>公共</td>
+                            <td>英COM</td>
+                            <td>歴史総合</td>
+                            <td>数学Ⅰ</td>
+                            <td>化学基礎</td>
+                        </tr>
+                        <tr>
+                            <td>体育</td>
+                            <td>数学Ⅰ</td>
+                            <td>家庭基礎</td>
+                            <td>体育</td>
+                            <td>公共</td>
+                            <td>数学Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td>言語文化</td>
+                            <td>英COMN</td>
+                            <td>音美書</td>
+                            <td>物理基礎</td>
+                            <td>現代国語</td>
+                        </tr>
+                        <tr>
+                            <td>保健</td>
+                            <td>LHR</td>
+                            <td>音美書</td>
+                            <td>数学A</td>
+                            <td>生物基礎</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <input type="radio" name="tab-name" id="ts9">
+                <label class="tab" for="ts9">9</label>
+                <article class="content">
+                    <table>
+                        <tr>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                        <tr>
+                            <td>言語文化</td>
+                            <td>英COM</td>
+                            <td>英COM</td>
+                            <td>美術</td>
+                            <td>論理表現</td>
+                            <td>英COM</td>
+                        </tr>
+                        <tr>
+                            <td>数学A</td>
+                            <td>歴史総合</td>
+                            <td>化学基礎</td>
+                            <td>美術</td>
+                            <td>言語文化</td>
+                            <td>言語文化</td>
+                        </tr>
+                        <tr>
+                            <td>数学Ⅰ</td>
+                            <td>数学Ⅰ</td>
+                            <td>公共</td>
+                            <td>現代国語</td>
+                            <td>化学基礎</td>
+                            <td>数学Ⅰ</td>
+                        </tr>
+                        <tr>
+                            <td>保健体育</td>
+                            <td>英COMN</td>
+                            <td>物理基礎</td>
+                            <td>体育</td>
+                            <td>数学Ⅰ</td>
+                            <td>生物基礎</td>
+                        </tr>
+                        <tr>
+                            <td>論理表現</td>
+                            <td>生物基礎</td>
+                            <td>家庭基礎</td>
+                            <td>数学A</td>
+                            <td>物理基礎</td>
+                        </tr>
+                        <tr>
+                            <td>保健体育</td>
+                            <td>LHR</td>
+                            <td>歴史総合</td>
+                            <td>公共</td>
+                            <td>英COM</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+        </section>
+
         <section class="schedule">
             <h2>主な予定</h2>
             <div class="boxes">

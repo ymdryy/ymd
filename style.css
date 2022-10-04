@@ -1,6 +1,8 @@
 :root {
     --mainback: #FFFFFF;
     --subback: #f8f8f8;
+    --thirdback: #f0f0f0;
+    --forthback: #fcfcfc;
     --maintext: #000000;
     --subtext: #424242;
 
@@ -19,6 +21,8 @@
     :root {
         --mainback: #1f1f1f;
         --subback: #000000;
+        --thirdback: #363636;
+        --forthback: #0c0c0c;
         --maintext: #f5f5f5;
         --subtext: #d8d8d8;
 
@@ -111,9 +115,106 @@ p {
     padding: 3px 11.5px 3px 0px;
 }
 
+/* カウントダウン */
+.countdown {
+    text-align: center;
+    background: var(--subback);
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 時間割 */
+.time-schedule {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.time-schedule h2 {
+    margin: 0;
+    margin-left: 30px;
+}
+
+.time-schedule .boxes {
+    max-width: 90%;
+    width: 90%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    display: flex;
+    background: var(--subback);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.time-schedule .tab {
+    width: calc((100% - 36px)/9);
+    margin: 0 2px;
+    height: 40px;
+    background: var(--forthback);
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.1s;
+}
+
+input[name="tab-name"] {
+    display: none;
+}
+
+input:checked + .tab {
+    background-color: var(--thirdback);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.time-schedule .content {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input:checked + .tab + .content {
+    display: block;
+}
+
+.time-schedule article table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.time-schedule article table th {
+    background: var(--forthback);
+    height: 35px;
+}
+
+.time-schedule article table td {
+    background: var(--forthback);
+    text-align: center;
+    height: 30px;
+    width: calc(100%/6);
+}
+
+@media screen and (max-width: 500px) {
+    .time-schedule article table th{
+        font-size: 14px;
+        height: 30px;
+    }
+    .time-schedule article table td{
+        font-size: 13px;
+    }
+}
+
 /* 主な予定 */
 .schedule {
     width: 100%;
+    margin-top: 50px;
 }
 
 .schedule h2 {
