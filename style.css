@@ -71,6 +71,7 @@ html {
     color: var(--maintext);
     font-family: 'Noto Sans JP', sans-serif;
     max-width: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
