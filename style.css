@@ -4,7 +4,7 @@
     --thirdback: #dfdfdf;
     --forthback: #eeeeee;
     --maintext: #000000;
-    --subtext: #424242;
+    --subtext: #414141;
 
     --clear-btn: rgba(0, 0, 0, 0.2);
 
@@ -22,7 +22,7 @@
         --mainback: #1f1f1f;
         --subback: #000000;
         --thirdback: #363636;
-        --forthback: #0c0c0c;
+        --forthback: #0f0f0f;
         --maintext: #f5f5f5;
         --subtext: #d8d8d8;
 
@@ -131,7 +131,7 @@ p {
 
 /* カウントダウン */
 .countdown {
-    margin: 0 30px;
+    margin: 50px 30px;
     padding: 20px;
     background: var(--subback);
     border-radius: 10px;
@@ -160,9 +160,24 @@ p {
     margin-left: 30px;
 }
 
+.time-schedule .back p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--subtext);
+    opacity: 0.7;
+}
+
+.time-schedule .back .first::after {
+    content: "クラスを選択してください";
+}
+
+.time-schedule .back .no-data::after {
+    content: "表示するデータがありません";
+}
+
 .time-schedule .back {
     background: var(--subback);
-    padding: 20px;
+    padding: 15px 20px;
     margin: 10px 30px;
     border-radius: 10px;
 }
@@ -191,6 +206,19 @@ p {
     transition: 0.1s;
 }
 
+.time-schedule .boxes .tab:hover {
+    background: var(--mainback);
+    font-size: 16px;
+}
+
+.time-schedule .boxes .tab:active{
+    background: var(--forthback);
+}
+
+.time-schedule .boxes .tab::after {
+    content: "組";
+}
+
 input[name="tab-name"] {
     display: none;
 }
@@ -199,6 +227,7 @@ input:checked+.tab {
     background-color: var(--thirdback);
     font-weight: bold;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .time-schedule .content {
@@ -219,6 +248,7 @@ input:checked+.tab+.content {
 .time-schedule article table th {
     background: var(--forthback);
     height: 35px;
+    font-size: 15px;
 }
 
 .time-schedule article table td {
@@ -226,7 +256,13 @@ input:checked+.tab+.content {
     text-align: center;
     height: 30px;
     width: calc(100%/6);
-    font-size: 15.5px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.time-schedule article table td:hover,.time-schedule article table th:hover {
+    background: var(--mainback);
+    font-size: 16px;
 }
 
 @media screen and (max-width: 500px) {
@@ -238,6 +274,15 @@ input:checked+.tab+.content {
         margin: 10px 10px;
     }
 
+    .time-schedule .back .first::after {
+        content: "クラスの番号を選択してください";
+    }
+    
+
+    .time-schedule .boxes .tab::after {
+        content: "";
+    }
+
     .time-schedule article table th {
         font-size: 14px;
         height: 30px;
@@ -246,12 +291,17 @@ input:checked+.tab+.content {
     .time-schedule article table td {
         font-size: 13px;
     }
+
+    .time-schedule article table td:hover,.time-schedule article table th:hover {
+        background: var(--mainback);
+        font-size: 13.5px;
+    }
 }
 
 /* 主な予定 */
 .schedule {
     width: 100%;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .schedule h2 {
