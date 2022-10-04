@@ -140,7 +140,6 @@ p {
 .countdown #countdownArea {
     text-align: center;
     max-width: 100%;
-    width: 1280px;
 }
 
 @media screen and (max-width: 500px) {
