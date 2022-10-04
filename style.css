@@ -70,6 +70,7 @@ html {
     background: var(--mainback);
     color: var(--maintext);
     font-family: 'Noto Sans JP', sans-serif;
+    max-width: 100%;
 }
 
 body {
@@ -90,11 +91,16 @@ p {
     margin: 0 auto;
 }
 
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+}
+
 #header .back ul {
     list-style: none;
     display: flex;
     text-align: center;
-    position: sticky;
+    padding-left: 30px;
 }
 
 #header .back ul li {
@@ -106,6 +112,7 @@ p {
     border-left: solid 5px var(--maintext);
     transition: 0.5s;
     transform: skewX(-10deg);
+    
 }
 
 #header .back ul li:hover {
@@ -117,17 +124,22 @@ p {
 
 /* カウントダウン */
 .countdown {
-    text-align: center;
+    margin: 0 30px;
+    padding: 20px;
     background: var(--subback);
     border-radius: 10px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+}
+
+.countdown #countdownArea {
+    text-align: center;
+    max-width: 100%;
+    width: 1280px;
 }
 
 /* 時間割 */
 .time-schedule {
     width: 100%;
+    max-width: 100%;
     margin-top: 50px;
 }
 
@@ -136,15 +148,18 @@ p {
     margin-left: 30px;
 }
 
+.time-schedule .back {
+    background: var(--subback);
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 10px;
+}
+
 .time-schedule .boxes {
-    max-width: 90%;
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
     flex-wrap: wrap;
     display: flex;
-    background: var(--subback);
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .time-schedule .tab {
@@ -168,7 +183,7 @@ input[name="tab-name"] {
     display: none;
 }
 
-input:checked + .tab {
+input:checked+.tab {
     background-color: var(--thirdback);
     font-weight: bold;
     border-radius: 5px;
@@ -180,7 +195,7 @@ input:checked + .tab {
     margin: 0 auto;
 }
 
-input:checked + .tab + .content {
+input:checked+.tab+.content {
     display: block;
 }
 
@@ -199,14 +214,24 @@ input:checked + .tab + .content {
     text-align: center;
     height: 30px;
     width: calc(100%/6);
+    font-size: 15.5px;
 }
 
 @media screen and (max-width: 500px) {
-    .time-schedule article table th{
+    .time-schedule h2 {
+        margin-left: 15px;
+    }
+
+    .time-schedule .back {
+        margin: 10px 10px;
+    }
+
+    .time-schedule article table th {
         font-size: 14px;
         height: 30px;
     }
-    .time-schedule article table td{
+
+    .time-schedule article table td {
         font-size: 13px;
     }
 }
@@ -221,7 +246,7 @@ input:checked + .tab + .content {
     text-align: left;
     font-size: 24px;
     color: var(--maintext);
-    padding: 0 35px;
+    padding: 0 30px;
     margin: 0;
 }
 
@@ -229,9 +254,9 @@ input:checked + .tab + .content {
     overflow-x: auto;
     max-width: 100%;
     display: flex;
-    padding: 0 30px;
+    padding: 0 25px;
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 30px;
+    scroll-padding: 0 25px;
 }
 
 .schedule article {
@@ -263,6 +288,17 @@ input:checked + .tab + .content {
 
 .schedule article .plus {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .schedule h2 {
+        padding: 0 15px;
+    }
+
+    .schedule .boxes {
+        padding: 0 5px;
+        scroll-padding: 0 10px;
+    }
 }
 
 /* Instagram */
