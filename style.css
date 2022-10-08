@@ -148,6 +148,49 @@ p {
     }
 }
 
+/* テスト時間割 */
+.test-time-schedule {
+    padding: 0 30px;
+    margin: 50px 0;
+}
+
+.test-time-schedule h2 {
+    margin: 0;
+}
+
+.test-time-schedule .back {
+    background: var(--subback);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.test-time-schedule table {
+    width: 100%;
+    padding: 20px;
+}
+
+.test-time-schedule td,.test-time-schedule th {
+    width: calc(100% / 4);
+    height: 30px;
+    text-align: center;
+    background: var(--forthback);
+}
+
+.test-time-schedule td:hover,.test-time-schedule th:hover {
+    background: var(--mainback);
+}
+
+.test-time-schedule th::after {
+    content: "日目";
+}
+
+@media screen and (max-width: 500px) {
+    .test-time-schedule {
+        padding: 0 10px;
+    }
+}
+
 /* 時間割 */
 .time-schedule {
     width: 100%;
