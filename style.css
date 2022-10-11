@@ -265,7 +265,7 @@ input:checked +.btn-tr + article {
 
 .test-range article {
     display: none;
-    width: 100%;
+    width: calc(100% - 30px);
     padding: 5px 0 5px 30px;
 }
 
@@ -274,14 +274,13 @@ input:checked +.btn-tr + article {
     font-size: 24px;
 }
 
+.test-range article table {
+    width: 100%;
+}
+
 .test-range article p {
     padding: 10px 4px;
     color: var(--subtext);
-    width: calc(100% - 30px);
-}
-
-.test-range article table {
-    width: calc(100% - 30px);
 }
 
 .test-range article td {
@@ -313,19 +312,15 @@ input:checked +.btn-tr + article {
 
     .test-range article {
         padding: 5px 0 5px 10px;
+        width: calc(100% - 10px);
     }
 
     .test-range article h3 {
         font-size: 20px;
     }
 
-    .test-range article table {
-        width: calc(100% - 10px);
-    }
-
     .test-range article p {
         padding: 10px 0;
-        width: calc(100% - 10px);
         font-size: 14px;
     }
 
