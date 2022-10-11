@@ -191,6 +191,150 @@ p {
     }
 }
 
+/* テスト範囲 */
+.test-range {
+    margin: 50px 30px;
+}
+
+.test-range article .explain {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.test-range article .explain::after {
+    content: "左で教科を選択";
+}
+
+.test-range h2 {
+    margin: 0 0 10px 0;
+}
+
+.test-range .back {
+    display: flex;
+    background: var(--subback);
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 425px;
+}
+
+.test-range .left {
+    width: 130px;
+}
+
+.test-range .back .right {
+    width: calc(100% - 130px);
+    overflow-y: auto;
+}
+
+.test-range .right::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-tr-t {
+    background: var(--forthback);
+    display: block;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-tr-t:hover {
+    background: var(--thirdback);
+}
+
+.btn-tr-t:active {
+    background: var(--subtext);
+    color: var(--mainback);
+}
+
+input:checked + .btn-tr-t {
+    background: #FFF;
+}
+
+input[name="tab-tr"] {
+    display: none;
+}
+
+input:checked +.btn-tr + article {
+    display: block;
+}
+
+.test-range article {
+    display: none;
+    width: 100%;
+    padding: 5px 0 5px 30px;
+}
+
+.test-range article h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.test-range article p {
+    padding: 10px 4px;
+    color: var(--subtext);
+    width: calc(100% - 30px);
+}
+
+.test-range article table {
+    width: calc(100% - 30px);
+}
+
+.test-range article td {
+    background: var(--mainback);
+    padding: 4px 8px;
+}
+
+.test-range article td:first-child {
+    width: 30%;
+}
+
+@media screen and (max-width: 500px) {
+    .test-range {
+        margin: 50px 10px;
+    }
+
+    .test-range .back {
+        padding: 10px;
+        max-height: 425px;
+    }
+
+    .test-range .left {
+        width: 100px;
+    }
+    
+    .test-range .back .right {
+        width: calc(100% - 100px);
+    }
+
+    .test-range article {
+        padding: 5px 0 5px 10px;
+    }
+
+    .test-range article h3 {
+        font-size: 20px;
+    }
+
+    .test-range article table {
+        width: calc(100% - 10px);
+    }
+
+    .test-range article p {
+        padding: 10px 0;
+        width: calc(100% - 10px);
+        font-size: 14px;
+    }
+
+    .btn-tr-t {
+        font-size: 13px;
+    }
+}
+
+
 /* 時間割 */
 .time-schedule {
     width: 100%;

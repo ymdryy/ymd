@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!-- saved from url=(0022)https://cy.ymdryy.com/ -->
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="twitter:card" content="summary_large_image">
@@ -12,17 +14,14 @@
     <meta name="description" content="ymdryy">
     <meta name="twitter:image" content="">
     <meta name="robots" content="noindex">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="https://cy.ymdryy.com/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+    <link href="./index_files/css2(1)" rel="stylesheet">
     <title>ymdryy</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY9E7S82G7"></script>
+    <script async="" src="./index_files/js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -36,10 +35,10 @@
     <header id="header">
         <div class="back">
             <ul>
-                <a href="#time-schedule">
+                <a href="https://cy.ymdryy.com/#time-schedule">
                     <li>時間割</li>
                 </a>
-                <a href="#schedule">
+                <a href="https://cy.ymdryy.com/#schedule">
                     <li>予定</li>
                 </a>
             </ul>
@@ -50,10 +49,10 @@
         <section class="countdown">
             <div id="countdownArea">
                 <span>中間テストまで</span>
-                <span id="countdown-day"></span>日
-                <span id="countdown-hour"></span>時間
-                <span id="countdown-min"></span>分
-                <span id="countdown-sec"></span>秒
+                <span id="countdown-day">8</span>日
+                <span id="countdown-hour">23</span>時間
+                <span id="countdown-min">32</span>分
+                <span id="countdown-sec">53</span>秒
                 <script>
                     let countdown = setInterval(function () {
                         const now = new Date()  //今の日時
@@ -82,17 +81,334 @@
                 </script>
             </div>
         </section>
-        
+
         <section class="test-time-schedule">
             <h2>テスト時間割</h2>
             <div class="back">
                 <table>
-                    <tr><th>1</th><td>数学A</td><td>生物基礎</td></tr>
-                    <tr><th>2</th><td>現代国語</td><td>物理基礎</td><td>公共</td></tr>
-                    <tr><th>3</th><td>歴史総合</td><td>数学Ⅰ</td></tr>
-                    <tr><th>4</th><td>英コミュ</td><td>言語文化</td></tr>
-                    <tr><th>5</th><td>化学基礎</td><td>論理表現</td></tr>
+                    <tr>
+                        <th>1</th>
+                        <td>数学A</td>
+                        <td>生物基礎</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>現代国語</td>
+                        <td>物理基礎</td>
+                        <td>公共</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>歴史総合</td>
+                        <td>数学Ⅰ</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>英コミュ</td>
+                        <td>言語文化</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>化学基礎</td>
+                        <td>論理表現</td>
+                    </tr>
                 </table>
+            </div>
+        </section>
+
+        <section class="test-range">
+            <h2>試験範囲</h2>
+            <div class="back">
+                <div class="left">
+                    <label class="btn-tr-t" for="ma1">数学Ⅰ</label>
+                    <label class="btn-tr-t" for="ma2">数学A</label>
+                    <label class="btn-tr-t" for="ja1">現代の国語</label>
+                    <label class="btn-tr-t" for="ja2">言語文化</label>
+                    <label class="btn-tr-t" for="en1">論理表現</label>
+                    <label class="btn-tr-t" for="en2">英コミュ</label>
+                    <label class="btn-tr-t" for="sc1">物理</label>
+                    <label class="btn-tr-t" for="sc2">化学</label>
+                    <label class="btn-tr-t" for="sc3">生物</label>
+                    <label class="btn-tr-t" for="so1">公共</label>
+                    <label class="btn-tr-t" for="so2">歴史</label>
+                </div>
+                <div class="right">
+                    <input type="radio" name="tab-tr" id="base" checked>
+                    <label class="btn-tr" for="base"></label>
+                    <article>
+                        <div class="explain"><p></p></div>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="ma1">
+                    <label class="btn-tr" for="ma1"></label>
+                    <article>
+                        <h3>数学Ⅰ</h3>
+                        <table>
+                            <tr>
+                                <td>教科書</td>
+                                <td>p.107～p.116 , p.120～p.133</td>
+                            </tr>
+                            <tr>
+                                <td>アドバンス</td>
+                                <td>p.62 302～p.66 315 , p44 214～p.47 234</td>
+                            </tr>
+                        </table>
+                        <p>アドバンスレポート用紙提出あり</p>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="ma2">
+                    <label class="btn-tr" for="ma3"></label>
+                    <article>
+                        <h3>数学A</h3>
+                        <table>
+                            <tr>
+                                <td>授業プリント</td>
+                                <td>No.1～8</td>
+                            </tr>
+                        </table>
+                        <p>No.7,8および未提出プリントを考査当日の帰りのHRで回収</p>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="ja1">
+                    <label class="btn-tr" for="ja2"></label>
+                    <article>
+                        <h3>現代の国語</h3>
+                        <table>
+                            <tr>
+                                <td>魔術化する科学技術</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>マルジャーナの知恵</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>初見文</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>現代文単語</td>
+                                <td>p.118～p.151</td>
+                            </tr>
+                            <tr>
+                                <td>漢字</td>
+                                <td>p.51～p.71</td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="ja2">
+                    <label class="btn-tr" for="ja2"></label>
+                    <article>
+                        <h3>言語文化</h3>
+                        <table>
+                            <tr>
+                                <td>芥川</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>管鮑之交</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>初見文</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>古文単語</td>
+                                <td>p.86～p.115</td>
+                            </tr>
+                            <tr>
+                                <td>漢字必携</td>
+                                <td>再読文字(p.20～21) , 単純な否定形・禁止系(p.32～p.35) , チェックノートp.6,7,10,11</td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="en1">
+                    <label class="btn-tr" for="en1"></label>
+                    <article>
+                        <h3>論理表現</h3>
+                        <table>
+                            <tr>
+                                <td>青い問題集</td>
+                                <td>p.28～p.35(Lesson11～14) , 不規則動詞の活用</td>
+                            </tr>
+                            <tr>
+                                <td>白い問題集</td>
+                                <td>p.26～p.35(Lesson11～14,Review2)</td>
+                            </tr>
+                            <tr>
+                                <td>Vision Quest Ultimate</td>
+                                <td>第6章(p150)から第7章(p195のcrossoverまで)</td>
+                            </tr>
+                            <tr>
+                                <td>スタディサプリ</td>
+                                <td>第8講(チャプター1～6) , 第9講(チャプター1～7)</td>
+                            </tr>
+                            <tr>
+                                <td>初見問題</td>
+                                <td>30%</td>
+                            </tr>
+                        </table>
+                        <p>1学期の範囲も出題される。考査当日に青と白の問題集のノートをそれぞれ提出。</p>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="en2">
+                    <label class="btn-tr" for="en2"></label>
+                    <article>
+                        <h3>英コミュ</h3>
+                        <table>
+                            <tr>
+                                <td>データベース</td>
+                                <td>263～478</td>
+                            </tr>
+                            <tr>
+                                <td>教科書</td>
+                                <td>Unit4(p.52～p.63)</td>
+                            </tr>
+                            <tr>
+                                <td>ワークブック</td>
+                                <td>Unit 3(p. 32～33) , Unit 4(p. 34～p. 43)</td>
+                            </tr>
+                            <tr>
+                                <td>派生語（単語シート）</td>
+                                <td>Unit 4</td>
+                            </tr>
+                            <tr>
+                                <td>初見</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="sc1">
+                    <label class="btn-tr" for="sc2"></label>
+                    <article>
+                        <h3>物理</h3>
+                        <table>
+                            <tr>
+                                <td>教科書</td>
+                                <td>p.156～161,p.168～184 (これまでの関連する内容:p.143～155)</td>
+                            </tr>
+                            <tr>
+                                <td>プリント</td>
+                                <td>No.15~21</td>
+                            </tr>
+                            <tr>
+                                <td>アクセスノート</td>
+                                <td>p.58～77</td>
+                            </tr>
+                            <tr>
+                                <td>ニューグローバル</td>
+                                <td>p.190,191 , p.194,195 (除く:62(5)) , p.198, 199 , p.208～209 , p.211 102 , p.212,213 ,
+                                    p.216,217 , p.219</td>
+                            </tr>
+                        </table>
+                        <p>
+                            力学について、等加速度直線運動、運動方程式、仕事とエネルギーは出題。<br><br>
+                            復習しておいた方が良い教科書の問題<br>
+                            「等加速度直線運動P34 例題2・類題2、P 37例題3・類題3、P49問題2」<br>
+                            「落下運動P44 例題4 ・類題4」<br>
+                            「運動方程式P74～76 例題4～6、類題4～6」<br>
+                            「仕事とエネルギーP108 例題4 問12 、P114 問題1、5」<br>
+                            解答は、teams「高校1年生チーム→07物理基礎チャネル」に掲載されている※6月8日に投稿済み
+                        </p>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="sc2">
+                    <label class="btn-tr" for="sc2"></label>
+                    <article>
+                        <h3>化学</h3>
+                        <table>
+                            <tr>
+                                <td>教科書</td>
+                                <td>P.158～172</td>
+                            </tr>
+                            <tr>
+                                <td>セミナー</td>
+                                <td>P.92～100(P.951⃣～2⃣6⃣～9⃣ , P.96 18,19 , P.97～99 167～178 , P100 13)</td>
+                            </tr>
+                            <tr>
+                                <td>ネオパルノート</td>
+                                <td>P.66～71</td>
+                            </tr>
+                            <tr>
+                                <td>プリント</td>
+                                <td>配布したもの</td>
+                            </tr>
+                        </table>
+                        <p>セミナー基本問題167～178をノートに解いて考査当日に提出</p>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="sc3">
+                    <label class="btn-tr" for="sc3"></label>
+                    <article>
+                        <h3>生物</h3>
+                        <table>
+                            <tr>
+                                <td>教科書</td>
+                                <td>p.74～99</td>
+                            </tr>
+                            <tr>
+                                <td>リードライト</td>
+                                <td>p.31～49 , p.101(問題154)</td>
+                            </tr>
+                            <tr>
+                                <td>カテゴリー</td>
+                                <td>p.8～9 , p.25,p.26(問題78,79)</td>
+                            </tr>
+                            <tr>
+                                <td>WINSTEP</td>
+                                <td>p.15～20 , p.42～59</td>
+                            </tr>
+                            <tr>
+                                <td>プリント</td>
+                                <td>1～4</td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="so1">
+                    <label class="btn-tr" for="so1"></label>
+                    <article>
+                        <h3>公共</h3>
+                        <table>
+                            <tr>
+                                <td>教科書</td>
+                                <td>p.104～117</td>
+                            </tr>
+                            <tr>
+                                <td>ノート</td>
+                                <td>24～33</td>
+                            </tr>
+                            <tr>
+                                <td>資料集</td>
+                                <td>p.98～109 , p.79～82 , p.87～92 , p.113～117</td>
+                            </tr>
+                            <tr>
+                                <td>時事問題</td>
+                                <td>9月1日(木)～10月8日(土)までのニュース</td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <input type="radio" name="tab-tr" id="so2">
+                    <label class="btn-tr" for="so2"></label>
+                    <article>
+                        <h3>歴史</h3>
+                        <table>
+                            <tr>
+                                <td>教科書</td>
+                                <td>p.144,149,152～169,171</td>
+                            </tr>
+                            <tr>
+                                <td>プリント</td>
+                                <td>10～13</td>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -101,64 +417,66 @@
             <div class="back">
                 <p class="first"></p>
                 <div class="boxes">
-                    <input type="radio" name="tab-name" id="ts1" checked>
+                    <input type="radio" name="tab-name" id="ts1" checked="">
                     <label class="tab" for="ts1">1</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>生物基礎</td>
-                                <td>論理表現</td>
-                                <td>言語文化</td>
-                                <td>数学A</td>
-                                <td>現代国語</td>
-                                <td>現代国語</td>
-                            </tr>
-                            <tr>
-                                <td>体育</td>
-                                <td>生物基礎</td>
-                                <td>保健体育</td>
-                                <td>歴史総合</td>
-                                <td>物理基礎</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>数学Ⅰ</td>
-                                <td>数学A</td>
-                                <td>音美書</td>
-                                <td>数学Ⅰ</td>
-                                <td>公共</td>
-                                <td>言語文化</td>
-                            </tr>
-                            <tr>
-                                <td>家庭基礎</td>
-                                <td>数学Ⅰ</td>
-                                <td>音美書</td>
-                                <td>公共</td>
-                                <td>数学Ⅰ</td>
-                                <td>化学基礎</td>
-                            </tr>
-                            <tr>
-                                <td>英COM</td>
-                                <td>歴史総合</td>
-                                <td>保健体育</td>
-                                <td>論理表現</td>
-                                <td>化学基礎</td>
-                            </tr>
-                            <tr>
-                                <td>英COMN</td>
-                                <td>LHR</td>
-                                <td>英COM</td>
-                                <td>物理基礎</td>
-                                <td>言語文化</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>生物基礎</td>
+                                    <td>論理表現</td>
+                                    <td>言語文化</td>
+                                    <td>数学A</td>
+                                    <td>現代国語</td>
+                                    <td>現代国語</td>
+                                </tr>
+                                <tr>
+                                    <td>体育</td>
+                                    <td>生物基礎</td>
+                                    <td>保健体育</td>
+                                    <td>歴史総合</td>
+                                    <td>物理基礎</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>数学Ⅰ</td>
+                                    <td>数学A</td>
+                                    <td>音美書</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>公共</td>
+                                    <td>言語文化</td>
+                                </tr>
+                                <tr>
+                                    <td>家庭基礎</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>音美書</td>
+                                    <td>公共</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>化学基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>英COM</td>
+                                    <td>歴史総合</td>
+                                    <td>保健体育</td>
+                                    <td>論理表現</td>
+                                    <td>化学基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>英COMN</td>
+                                    <td>LHR</td>
+                                    <td>英COM</td>
+                                    <td>物理基礎</td>
+                                    <td>言語文化</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
 
@@ -166,60 +484,62 @@
                     <label class="tab" for="ts2">2</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>英COMN</td>
-                                <td>論理表現</td>
-                                <td>数学Ⅰ</td>
-                                <td>生物基礎</td>
-                                <td>現代国語</td>
-                                <td>論地表現</td>
-                            </tr>
-                            <tr>
-                                <td>体育</td>
-                                <td>英COM</td>
-                                <td>保健体育</td>
-                                <td>物理基礎</td>
-                                <td>化学基礎</td>
-                                <td>公共</td>
-                            </tr>
-                            <tr>
-                                <td>数学Ⅰ</td>
-                                <td>歴史総合</td>
-                                <td>音美書</td>
-                                <td>現代国語</td>
-                                <td>生物基礎</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>数学Ⅰ</td>
-                                <td>言語文化</td>
-                                <td>音美書</td>
-                                <td>数学A</td>
-                                <td>物理基礎</td>
-                                <td>数学Ⅰ</td>
-                            </tr>
-                            <tr>
-                                <td>家庭基礎</td>
-                                <td>化学基礎</td>
-                                <td>保健体育</td>
-                                <td>歴史総合</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>言語文化</td>
-                                <td>LHR</td>
-                                <td>公共</td>
-                                <td>言語文化</td>
-                                <td>数学A</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>英COMN</td>
+                                    <td>論理表現</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>生物基礎</td>
+                                    <td>現代国語</td>
+                                    <td>論地表現</td>
+                                </tr>
+                                <tr>
+                                    <td>体育</td>
+                                    <td>英COM</td>
+                                    <td>保健体育</td>
+                                    <td>物理基礎</td>
+                                    <td>化学基礎</td>
+                                    <td>公共</td>
+                                </tr>
+                                <tr>
+                                    <td>数学Ⅰ</td>
+                                    <td>歴史総合</td>
+                                    <td>音美書</td>
+                                    <td>現代国語</td>
+                                    <td>生物基礎</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>数学Ⅰ</td>
+                                    <td>言語文化</td>
+                                    <td>音美書</td>
+                                    <td>数学A</td>
+                                    <td>物理基礎</td>
+                                    <td>数学Ⅰ</td>
+                                </tr>
+                                <tr>
+                                    <td>家庭基礎</td>
+                                    <td>化学基礎</td>
+                                    <td>保健体育</td>
+                                    <td>歴史総合</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>言語文化</td>
+                                    <td>LHR</td>
+                                    <td>公共</td>
+                                    <td>言語文化</td>
+                                    <td>数学A</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
 
@@ -227,60 +547,62 @@
                     <label class="tab" for="ts3">3</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>英COM</td>
-                                <td>言語文化</td>
-                                <td>化学基礎</td>
-                                <td>歴史総合</td>
-                                <td>化学基礎</td>
-                                <td>言語文化</td>
-                            </tr>
-                            <tr>
-                                <td>体育</td>
-                                <td>数学A</td>
-                                <td>保健</td>
-                                <td>現代国語</td>
-                                <td>現代国語</td>
-                                <td>生物基礎</td>
-                            </tr>
-                            <tr>
-                                <td>数学A</td>
-                                <td>物理基礎</td>
-                                <td>数学Ⅰ</td>
-                                <td>音美書</td>
-                                <td>英COM</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>公共</td>
-                                <td>公共</td>
-                                <td>論理表現</td>
-                                <td>音美書</td>
-                                <td>言語文化</td>
-                                <td>論理表現</td>
-                            </tr>
-                            <tr>
-                                <td>歴史総合</td>
-                                <td>数学Ⅰ</td>
-                                <td>体育</td>
-                                <td>生物基礎</td>
-                                <td>数学Ⅰ</td>
-                            </tr>
-                            <tr>
-                                <td>家庭基礎</td>
-                                <td>LHR</td>
-                                <td>物理基礎</td>
-                                <td>数学Ⅰ</td>
-                                <td>英COMN</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>英COM</td>
+                                    <td>言語文化</td>
+                                    <td>化学基礎</td>
+                                    <td>歴史総合</td>
+                                    <td>化学基礎</td>
+                                    <td>言語文化</td>
+                                </tr>
+                                <tr>
+                                    <td>体育</td>
+                                    <td>数学A</td>
+                                    <td>保健</td>
+                                    <td>現代国語</td>
+                                    <td>現代国語</td>
+                                    <td>生物基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>数学A</td>
+                                    <td>物理基礎</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>音美書</td>
+                                    <td>英COM</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>公共</td>
+                                    <td>公共</td>
+                                    <td>論理表現</td>
+                                    <td>音美書</td>
+                                    <td>言語文化</td>
+                                    <td>論理表現</td>
+                                </tr>
+                                <tr>
+                                    <td>歴史総合</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>体育</td>
+                                    <td>生物基礎</td>
+                                    <td>数学Ⅰ</td>
+                                </tr>
+                                <tr>
+                                    <td>家庭基礎</td>
+                                    <td>LHR</td>
+                                    <td>物理基礎</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>英COMN</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
 
@@ -288,60 +610,62 @@
                     <label class="tab" for="ts4">4</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>言語文化</td>
-                                <td>言語文化</td>
-                                <td>公共</td>
-                                <td>数学Ⅰ</td>
-                                <td>論理表現</td>
-                                <td>論理表現</td>
-                            </tr>
-                            <tr>
-                                <td>物理基礎</td>
-                                <td>数学A</td>
-                                <td>数学A</td>
-                                <td>化学基礎</td>
-                                <td>公共</td>
-                                <td>数学Ⅰ</td>
-                            </tr>
-                            <tr>
-                                <td>体育</td>
-                                <td>家庭基礎</td>
-                                <td>体育</td>
-                                <td>音美書</td>
-                                <td>物理基礎</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>化学基礎</td>
-                                <td>歴史総合</td>
-                                <td>英COM</td>
-                                <td>音美書</td>
-                                <td>生物基礎</td>
-                                <td>現代国語</td>
-                            </tr>
-                            <tr>
-                                <td>英COMN</td>
-                                <td>数学Ⅰ</td>
-                                <td>言語文化</td>
-                                <td>歴史総合</td>
-                                <td>数学Ⅰ</td>
-                            </tr>
-                            <tr>
-                                <td>生物基礎</td>
-                                <td>LHR</td>
-                                <td>保健</td>
-                                <td>英COM</td>
-                                <td>現代国語</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>言語文化</td>
+                                    <td>言語文化</td>
+                                    <td>公共</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>論理表現</td>
+                                    <td>論理表現</td>
+                                </tr>
+                                <tr>
+                                    <td>物理基礎</td>
+                                    <td>数学A</td>
+                                    <td>数学A</td>
+                                    <td>化学基礎</td>
+                                    <td>公共</td>
+                                    <td>数学Ⅰ</td>
+                                </tr>
+                                <tr>
+                                    <td>体育</td>
+                                    <td>家庭基礎</td>
+                                    <td>体育</td>
+                                    <td>音美書</td>
+                                    <td>物理基礎</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>化学基礎</td>
+                                    <td>歴史総合</td>
+                                    <td>英COM</td>
+                                    <td>音美書</td>
+                                    <td>生物基礎</td>
+                                    <td>現代国語</td>
+                                </tr>
+                                <tr>
+                                    <td>英COMN</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>言語文化</td>
+                                    <td>歴史総合</td>
+                                    <td>数学Ⅰ</td>
+                                </tr>
+                                <tr>
+                                    <td>生物基礎</td>
+                                    <td>LHR</td>
+                                    <td>保健</td>
+                                    <td>英COM</td>
+                                    <td>現代国語</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
 
@@ -349,20 +673,22 @@
                     <label class="tab" for="ts5">5</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                            </tbody>
                         </table>
                         <p class="no-data"></p>
                     </article>
@@ -371,60 +697,62 @@
                     <label class="tab" for="ts6">6</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>数学A</td>
-                                <td>英COMN</td>
-                                <td>数学Ⅰ</td>
-                                <td>現代国語</td>
-                                <td>物理基礎</td>
-                                <td>化学基礎</td>
-                            </tr>
-                            <tr>
-                                <td>生物基礎</td>
-                                <td>公共</td>
-                                <td>英COM</td>
-                                <td>数学A</td>
-                                <td>数学Ⅰ</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>体育</td>
-                                <td>数学Ⅰ</td>
-                                <td>音美書</td>
-                                <td>数学Ⅰ</td>
-                                <td>言語文化</td>
-                                <td>歴史総合</td>
-                            </tr>
-                            <tr>
-                                <td>物理基礎</td>
-                                <td>言語文化</td>
-                                <td>化学基礎</td>
-                                <td>英COM</td>
-                                <td>歴史総合</td>
-                                <td>論理表現</td>
-                            </tr>
-                            <tr>
-                                <td>現代国語</td>
-                                <td>家庭基礎</td>
-                                <td>言語文化</td>
-                                <td>音美書</td>
-                                <td>生物基礎</td>
-                            </tr>
-                            <tr>
-                                <td>論理表現</td>
-                                <td>LHR</td>
-                                <td>保健体育</td>
-                                <td>音美書</td>
-                                <td>公共</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>数学A</td>
+                                    <td>英COMN</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>現代国語</td>
+                                    <td>物理基礎</td>
+                                    <td>化学基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>生物基礎</td>
+                                    <td>公共</td>
+                                    <td>英COM</td>
+                                    <td>数学A</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>体育</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>音美書</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>言語文化</td>
+                                    <td>歴史総合</td>
+                                </tr>
+                                <tr>
+                                    <td>物理基礎</td>
+                                    <td>言語文化</td>
+                                    <td>化学基礎</td>
+                                    <td>英COM</td>
+                                    <td>歴史総合</td>
+                                    <td>論理表現</td>
+                                </tr>
+                                <tr>
+                                    <td>現代国語</td>
+                                    <td>家庭基礎</td>
+                                    <td>言語文化</td>
+                                    <td>音美書</td>
+                                    <td>生物基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>論理表現</td>
+                                    <td>LHR</td>
+                                    <td>保健体育</td>
+                                    <td>音美書</td>
+                                    <td>公共</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
 
@@ -432,20 +760,22 @@
                     <label class="tab" for="ts7">7</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
-                            <tr></tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                            </tbody>
                         </table>
                         <p class="no-data"></p>
                     </article>
@@ -454,60 +784,62 @@
                     <label class="tab" for="ts8">8</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>物理基礎</td>
-                                <td>数学A</td>
-                                <td>歴史総合</td>
-                                <td>英COM</td>
-                                <td>論理表現</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>数学Ⅰ</td>
-                                <td>言語文化</td>
-                                <td>言語文化</td>
-                                <td>生物基礎</td>
-                                <td>化学基礎</td>
-                                <td>現代国語</td>
-                            </tr>
-                            <tr>
-                                <td>論理表現</td>
-                                <td>公共</td>
-                                <td>英COM</td>
-                                <td>歴史総合</td>
-                                <td>数学Ⅰ</td>
-                                <td>化学基礎</td>
-                            </tr>
-                            <tr>
-                                <td>体育</td>
-                                <td>数学Ⅰ</td>
-                                <td>家庭基礎</td>
-                                <td>体育</td>
-                                <td>公共</td>
-                                <td>数学Ⅰ</td>
-                            </tr>
-                            <tr>
-                                <td>言語文化</td>
-                                <td>英COMN</td>
-                                <td>音美書</td>
-                                <td>物理基礎</td>
-                                <td>現代国語</td>
-                            </tr>
-                            <tr>
-                                <td>保健</td>
-                                <td>LHR</td>
-                                <td>音美書</td>
-                                <td>数学A</td>
-                                <td>生物基礎</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>物理基礎</td>
+                                    <td>数学A</td>
+                                    <td>歴史総合</td>
+                                    <td>英COM</td>
+                                    <td>論理表現</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>数学Ⅰ</td>
+                                    <td>言語文化</td>
+                                    <td>言語文化</td>
+                                    <td>生物基礎</td>
+                                    <td>化学基礎</td>
+                                    <td>現代国語</td>
+                                </tr>
+                                <tr>
+                                    <td>論理表現</td>
+                                    <td>公共</td>
+                                    <td>英COM</td>
+                                    <td>歴史総合</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>化学基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>体育</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>家庭基礎</td>
+                                    <td>体育</td>
+                                    <td>公共</td>
+                                    <td>数学Ⅰ</td>
+                                </tr>
+                                <tr>
+                                    <td>言語文化</td>
+                                    <td>英COMN</td>
+                                    <td>音美書</td>
+                                    <td>物理基礎</td>
+                                    <td>現代国語</td>
+                                </tr>
+                                <tr>
+                                    <td>保健</td>
+                                    <td>LHR</td>
+                                    <td>音美書</td>
+                                    <td>数学A</td>
+                                    <td>生物基礎</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
 
@@ -515,60 +847,62 @@
                     <label class="tab" for="ts9">9</label>
                     <article class="content">
                         <table>
-                            <tr>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                            </tr>
-                            <tr>
-                                <td>言語文化</td>
-                                <td>英COM</td>
-                                <td>英COM</td>
-                                <td>美術</td>
-                                <td>論理表現</td>
-                                <td>英COM</td>
-                            </tr>
-                            <tr>
-                                <td>数学A</td>
-                                <td>歴史総合</td>
-                                <td>化学基礎</td>
-                                <td>美術</td>
-                                <td>言語文化</td>
-                                <td>言語文化</td>
-                            </tr>
-                            <tr>
-                                <td>数学Ⅰ</td>
-                                <td>数学Ⅰ</td>
-                                <td>公共</td>
-                                <td>現代国語</td>
-                                <td>化学基礎</td>
-                                <td>数学Ⅰ</td>
-                            </tr>
-                            <tr>
-                                <td>保健体育</td>
-                                <td>英COMN</td>
-                                <td>物理基礎</td>
-                                <td>体育</td>
-                                <td>数学Ⅰ</td>
-                                <td>生物基礎</td>
-                            </tr>
-                            <tr>
-                                <td>論理表現</td>
-                                <td>生物基礎</td>
-                                <td>家庭基礎</td>
-                                <td>数学A</td>
-                                <td>物理基礎</td>
-                            </tr>
-                            <tr>
-                                <td>保健体育</td>
-                                <td>LHR</td>
-                                <td>歴史総合</td>
-                                <td>公共</td>
-                                <td>英COM</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                </tr>
+                                <tr>
+                                    <td>言語文化</td>
+                                    <td>英COM</td>
+                                    <td>英COM</td>
+                                    <td>美術</td>
+                                    <td>論理表現</td>
+                                    <td>英COM</td>
+                                </tr>
+                                <tr>
+                                    <td>数学A</td>
+                                    <td>歴史総合</td>
+                                    <td>化学基礎</td>
+                                    <td>美術</td>
+                                    <td>言語文化</td>
+                                    <td>言語文化</td>
+                                </tr>
+                                <tr>
+                                    <td>数学Ⅰ</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>公共</td>
+                                    <td>現代国語</td>
+                                    <td>化学基礎</td>
+                                    <td>数学Ⅰ</td>
+                                </tr>
+                                <tr>
+                                    <td>保健体育</td>
+                                    <td>英COMN</td>
+                                    <td>物理基礎</td>
+                                    <td>体育</td>
+                                    <td>数学Ⅰ</td>
+                                    <td>生物基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>論理表現</td>
+                                    <td>生物基礎</td>
+                                    <td>家庭基礎</td>
+                                    <td>数学A</td>
+                                    <td>物理基礎</td>
+                                </tr>
+                                <tr>
+                                    <td>保健体育</td>
+                                    <td>LHR</td>
+                                    <td>歴史総合</td>
+                                    <td>公共</td>
+                                    <td>英COM</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </article>
                 </div>
@@ -610,6 +944,9 @@
         <p>
         </p>
     </footer>
+
+
+
 </body>
 
 </html>
