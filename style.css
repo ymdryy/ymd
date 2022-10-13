@@ -1,38 +1,40 @@
 :root {
     --mainback: #FFFFFF;
-    --subback: #f7f7f7;
-    --thirdback: #dfdfdf;
-    --forthback: #eeeeee;
+    --subback: #ffffff;
+    --thirdback: #ddcde8;
+    --forthback: #f7f5ff;
     --maintext: #000000;
     --subtext: #414141;
 
     --clear-btn: rgba(0, 0, 0, 0.2);
 
-    --blue1: #dbdcec;
+    --g-back: linear-gradient(to right bottom , #f3f3fd , #c6d1ef);
+    --blue1: #cccff9d2;
 
     /* スクロールバーカラー */
-    --bar-back: rgba(200, 200, 201, 0.2);
-    --bar-track: rgba(150, 150, 150, 0.2);
-    --bar-hover: rgba(140, 140, 140, 0.3);
-    --bar-active: rgba(130, 130, 130, 0.4);
+    --bar-back: rgba(255, 255, 255, 0.2);
+    --bar-track: rgba(117, 118, 210, 0.2);
+    --bar-hover: rgba(124, 121, 174, 0.3);
+    --bar-active: rgba(67, 66, 98, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --mainback: #1f1f1f;
+        --mainback: #231439;
         --subback: #000000;
         --thirdback: #363636;
         --forthback: #0f0f0f;
         --maintext: #f5f5f5;
         --subtext: #d8d8d8;
 
-        --blue1: #21277c;
+        --g-back: linear-gradient(to right bottom , #721896 , #051549);
+        --blue1: #21277c98;
 
         /* スクロールバーカラー */
-        --bar-back: rgba(0, 0, 0, 0.15);
-        --bar-track: rgba(80, 80, 80, 0.5);
-        --bar-hover: rgba(100, 100, 100, 0.6);
-        --bar-active: rgba(120, 120, 120, 0.7);
+        --bar-back: rgba(0, 0, 0, 0.2);
+        --bar-track: rgba(93, 87, 183, 0.5);
+        --bar-hover: rgba(116, 120, 222, 0.6);
+        --bar-active: rgba(175, 175, 242, 0.7);
         color-scheme: dark;
     }
 }
@@ -67,7 +69,7 @@
 /* 本体 */
 
 html {
-    background: var(--mainback);
+    background: var(--g-back);
     color: var(--maintext);
     font-family: 'Noto Sans JP', sans-serif;
     max-width: 100%;
@@ -94,7 +96,7 @@ p {
 
 #header {
     position: sticky;
-    position: -webkit-sticky;
+    top: 15px;
 }
 
 #header .back ul {
@@ -107,12 +109,14 @@ p {
 #header .back ul li {
     color: var(--maintext);
     font-weight: 500;
-    margin: 0 10px;
+    margin-right: 10px;
     padding: 3px 10px 3px 8px;
     background-color: var(--blue1);
     border-left: solid 5px var(--maintext);
     transition: 0.5s;
     transform: skewX(-10deg);
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(0 0 5px #00000046);
     
 }
 
@@ -543,6 +547,29 @@ input:checked+.tab+.content {
         padding: 0 5px;
         scroll-padding: 0 10px;
     }
+}
+
+/* footer */
+footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    cursor: default;
+    border-top: 1px solid rgba(112, 109, 135, 0.5);
+}
+
+footer .explain {
+    text-align: center;
+    font-size: 12px;
+    color: var(--subtext);
+    opacity: 0.5;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: var(--subtext);
+    opacity: .8;
 }
 
 /* Instagram */
