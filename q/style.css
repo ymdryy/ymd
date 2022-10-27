@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 質問箱 */
+.question {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #FFF;
+    color: #222;
+}
+
+.question h1 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+.question form {
+    width: 720px;
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+.question form textarea {
+    width: 90%;
+    height: 100px;
+    max-width: 90%;
+    max-height: 300px;
+    min-width: 90%;
+    min-height: 100px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #FFF;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 7px #0000002b);
+}
+
+.question form button {
+    display: block;
+    width: 150px;
+    padding: 8px 0;
+    margin: 10px auto;
+    border-radius: 50px;
+    border: 1.5px solid #000;
+    background: #FFF0;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: 1s;
+}
+
+.question form button:hover {
+    background: #000;
+    color: #FFF;
+    transition: .1s;
+}
+
+.finish {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish h1 {
+    display: block;
+    text-align: center;
+    animation: fadeup 3s;
+}
+
+@keyframes fadeup {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
