@@ -1,6 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'LSeedJP' , sans-serif;
+}
+
+@font-face {
+    font-family: LSeedJP;
+    src: url(https://cdn.ymdryy.com/fonts/LSeedJPRg.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: LSeedJP;
+    src: url(https://cdn.ymdryy.com/fonts/LSeedJPBd.woff) format('woff');
+    font-weight: 700;
 }
 
 /* 質問箱 */
@@ -8,7 +21,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: #FFF;
+    background: rgb(240, 242, 255);
     color: #222;
 }
 
@@ -32,12 +45,11 @@
     min-height: 100px;
     padding: 15px;
     font-size: 15px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'LSeedJP', sans-serif;
     background: #FFF;
     outline: none;
     border: none;
     border-radius: 10px;
-    filter: drop-shadow(0 0 7px #0000002b);
 }
 
 .question form button {
@@ -51,7 +63,7 @@
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'LSeedJP', sans-serif;
     transition: 1s;
 }
 
