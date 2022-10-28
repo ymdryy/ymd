@@ -68,12 +68,24 @@
     background: var(--bar-active);
 }
 
+@font-face {
+    font-family: LSeedJP;
+    src: url(https://cdn.ymdryy.com/fonts/LSeedJPRg.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: LSeedJP;
+    src: url(https://cdn.ymdryy.com/fonts/LSeedJPBd.woff) format('woff');
+    font-weight: 700;
+}
+
 /* 本体 */
 
 html {
     background: var(--g-back);
     color: var(--maintext);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'LSeedJP', sans-serif;
     max-width: 100%;
     scroll-behavior: smooth;
 }
