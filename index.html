@@ -41,9 +41,10 @@
     </header>
 
     <main>
+
         <section class="countdown">
             <div id="countdownArea">
-                <span>クリスマスまで</span>
+                <span>2学期期末まで</span>
                 <span id="countdown-day">8</span>日
                 <span id="countdown-hour">23</span>時間
                 <span id="countdown-min">32</span>分
@@ -51,7 +52,7 @@
                 <script>
                     let countdown = setInterval(function () {
                         const now = new Date()  //今の日時
-                        const target = new Date("2022/12/25 0:00:00") //ターゲット日時を取得
+                        const target = new Date("2022/12/3 8:45:00") //ターゲット日時を取得
                         const remainTime = target - now
 
                         //指定の日時を過ぎていたら処理をしない
@@ -911,14 +912,6 @@
             <h2>主な予定</h2>
             <div class="boxes">
                 <article>
-                    <p class="category">テスト</p>
-                    <h3>中間テスト</h3>
-                    <p class="date">10/17-10/21</p>
-                    <p class="plus">
-                        5日間10教科の2学期中間テスト
-                    </p>
-                </article>
-                <article>
                     <p class="category">面談</p>
                     <h3>三者面談</h3>
                     <p class="date">11/17-11/22</p>
@@ -939,7 +932,6 @@
     </main>
 
     <footer>
-        <p class="explain">このサイトを利用し、損害を被った場合でも責任は一切負いません。</p>
         <p class="copyright">©ymdryy</p>
     </footer>
 
