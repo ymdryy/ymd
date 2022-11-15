@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: LSeedJP;
+    src: url(https://cdn.ymdryy.com/fonts/LSeedJPRg.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: LSeedJP;
+    src: url(https://cdn.ymdryy.com/fonts/LSeedJPBd.woff) format('woff');
+    font-weight: 700;
+}
+
+html {
+    background-color: #380f78;
+    font-family: "LSeedJP" , sans-serif;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#432095, #3f0f5f);
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.btns {
+    margin: 0 auto;
+    width: 720px;
+    max-width: calc(100% - 40px);
+    padding: 20px;
+}
+
+.btns a {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+    background: #FFF2;
+    border-radius: 50px;
+    margin: 5px 0;
+    padding: 7px 15px;
+    width: calc(100% - 30px);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.btns a:hover:after {
+    content: "開く";
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    font-size: 12px;
+    color: #FFF6;
+}
+
+.btns a:hover,
+.btns a:active {
+    background: #FFF4;
+    transform: scale(1.03);
+    transition: .2s;
+}
+
+.btns a img {
+    filter: brightness(0) invert(1);
+    height: 20px;
+    margin: 0 10px 0 0;
+}
