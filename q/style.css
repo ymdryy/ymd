@@ -16,18 +16,30 @@
     font-weight: 700;
 }
 
+/* スクロールバー */
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* 質問箱 */
-.question {
-    width: 100vw;
+body {
     height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background: linear-gradient(#8218a5,#3a0851);
+    color: #FFF;
+}
+
+.question {
+    width: 100%;
     overflow: hidden;
-    background: rgb(240, 242, 255);
     color: #222;
 }
 
 .question h1 {
     text-align: center;
-    margin: 50px 0 10px 0;
+    color: #ffF;
 }
 
 .question form {
@@ -40,13 +52,14 @@
     width: 90%;
     height: 100px;
     max-width: 90%;
-    max-height: 300px;
+    max-height: 200px;
     min-width: 90%;
-    min-height: 100px;
-    padding: 15px;
+    min-height: 200px;
+    padding: 10px 15px;
     font-size: 15px;
     font-family: 'LSeedJP', sans-serif;
-    background: #FFF;
+    background: #FFF3;
+    color: #FFF;
     outline: none;
     border: none;
     border-radius: 10px;
@@ -58,7 +71,8 @@
     padding: 8px 0;
     margin: 10px auto;
     border-radius: 50px;
-    border: 1.5px solid #000;
+    border: 1.5px solid rgb(255, 255, 255);
+    color: #FFF;
     background: #FFF0;
     font-weight: bold;
     font-size: 16px;
@@ -68,8 +82,7 @@
 }
 
 .question form button:hover {
-    background: #000;
-    color: #FFF;
+    background: #fff3;
     transition: .1s;
 }
 
