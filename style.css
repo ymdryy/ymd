@@ -224,6 +224,11 @@ p {
     padding: 0;
 }
 
+.test-range article hr {
+    border: none;
+    border-top: 1px solid #86868686;
+}
+
 .test-range article .explain::after {
     content: "左で教科を選択";
 }
