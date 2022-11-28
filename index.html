@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="https://cy.ymdryy.com/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>ymdryy</title>
+    <script src="main.js" async></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -29,10 +30,13 @@
     <header id="header">
         <div class="back">
             <ul>
-                <a href="https://cy.ymdryy.com/#time-schedule">
+                <a href="#time-schedule">
                     <li>時間割</li>
                 </a>
-                <a href="https://cy.ymdryy.com/#schedule">
+                <a href="#quiz">
+                    <li>小テスト</li>
+                </a>
+                <a href="#schedule">
                     <li>予定</li>
                 </a>
             </ul>
@@ -124,7 +128,7 @@
                     <label class="btn-tr-t" for="en2">英コミュ</label>
                     <label class="btn-tr-t" for="sc1">物理</label>
                     <label class="btn-tr-t" for="sc2">化学</label>
-                    <label class="btn-tr-t" for="sc3" style="display: none;">生物</label>
+                    <label class="btn-tr-t" for="sc3">生物</label>
                     <label class="btn-tr-t" for="so1">公共</label>
                     <label class="btn-tr-t" for="so2">歴史</label>
                     <label class="btn-tr-t" for="he">家庭科</label>
@@ -356,27 +360,27 @@
                     <input type="radio" name="tab-tr" id="sc3">
                     <label class="btn-tr" for="sc3"></label>
                     <article>
-                        <h3>生物</h3>
+                        <h3>生物<span style="font-weight:lighter; font-size: 16px;"> 情報が正しくない可能性が高い</span></h3>
                         <table>
                             <tr>
                                 <td>教科書</td>
-                                <td>p.74～99</td>
+                                <td>p100～131</td>
                             </tr>
                             <tr>
                                 <td>リードライト</td>
-                                <td>p.31～49 , p.101(問題154)</td>
+                                <td>p36～37 , p47,49 , p50～56 , p60～69 , p74</td>
                             </tr>
                             <tr>
                                 <td>カテゴリー</td>
-                                <td>p.8～9 , p.25,p.26(問題78,79)</td>
+                                <td>p9～14(問題24～43) , p29～26</td>
                             </tr>
                             <tr>
                                 <td>WINSTEP</td>
-                                <td>p.15～20 , p.42～59</td>
+                                <td>p20,21 , p65～72 , p80～95 , p100～103 , p114,115</td>
                             </tr>
                             <tr>
                                 <td>プリント</td>
-                                <td>1～4</td>
+                                <td>5～12</td>
                             </tr>
                         </table>
                     </article>
@@ -941,82 +945,15 @@
             </div>
         </section>
 
-        <section class="quiz" id="quiz" style="display: none;">
-            <div class="area">
-                <form>
-                    <input type="text" placeholder="検索" id="quiz-search">
-                    <input type="reset" value="×">
-                </form>
-                <div class="content" id="quiz-output">
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="date" style="background: #ef2323;">11/25</div>
-                        <div class="right">
-                            <div class="info">
-                                <span class="subject">現代の国語</span>
-                                <span class="category">小テスト</span>
-                            </div>
-                            <h3>漢字テスト ㉑-㉔</h3>
-                        </div>
+        <section class="quiz" id="quiz">
+            <h2>小テスト</h2>
+            <div class="in">
+                <div class="area">
+                    <form>
+                        <input type="text" placeholder="検索" id="quiz-search">
+                        <input type="reset" value="×">
+                    </form>
+                    <div class="content" id="quiz-output">
                     </div>
                 </div>
             </div>
