@@ -9,7 +9,8 @@
 
     --clear-btn: rgba(0, 0, 0, 0.2);
 
-    --g-back: linear-gradient(to right bottom , #d3f6ff , #5ceec7);
+    --html-back: #d3f6ff;
+    --g-back: linear-gradient(to right bottom , #d3f6ff , #bae3e4);
     --blue1: #7a82f2ba;
 
     --quiz-fade: linear-gradient(#fff 50px,#fff0 75px,#fff0 90%,#fff 97%);
@@ -31,10 +32,11 @@
         --subtext: #d8d8d8;
         --thirdtext: #e4dbf3;
 
-        --g-back: linear-gradient(to right bottom , #721896 , #051549);
+        --html-back: #340946;
+        --g-back: linear-gradient(to right bottom , #340946 , #091129);
         --blue1: #21277c98;
 
-        --quiz-fade: linear-gradient(#000 50px,#0000 75px,#0000 90%,#000 97%);
+        --quiz-fade: linear-gradient(#000 35px,#0000 75px,#0000 90%,#000 97%);
 
         /* スクロールバーカラー */
         --bar-back: rgba(0, 0, 0, 0.2);
@@ -87,7 +89,7 @@
 /* 本体 */
 
 html {
-    background: var(--g-back);
+    background: var(--html-back);
     color: var(--maintext);
     font-family: 'LSeedJP', sans-serif;
     max-width: 100%;
@@ -96,6 +98,7 @@ html {
 
 body {
     margin: 0;
+    background: var(--g-back);
 }
 
 a {
@@ -114,7 +117,7 @@ p {
 
 #header {
     position: sticky;
-    top: 15px;
+    top: 10px;
     z-index: 100;
 }
 
@@ -129,7 +132,8 @@ p {
     color: #FFF;
     font-weight: 500;
     margin-right: 10px;
-    padding: 3px 10px 3px 8px;
+    padding: 2px 10px 2px 8px;
+    font-size: 13px;
     background-color: var(--blue1);
     border-left: solid 5px #FFF;
     transition: 0.5s;
@@ -137,14 +141,13 @@ p {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     filter: drop-shadow(0 0 5px #00000046);
-    
 }
 
 #header .back ul li:hover {
     color: #000;
     border-left: solid 11.5px #FFF;
     background: #FFF;
-    padding: 3px 11.5px 3px 0px;
+    padding: 2px 11.5px 2px 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -155,10 +158,7 @@ p {
 
 /* カウントダウン */
 .countdown {
-    margin: 50px 30px;
-    padding: 20px;
-    background: var(--subback);
-    border-radius: 10px;
+    padding: 60px 0;
 }
 
 .countdown #countdownArea {
@@ -166,9 +166,35 @@ p {
     max-width: 100%;
 }
 
+.countdown h2 {
+    line-height: 1;
+    margin: 0;
+    font-size: 24px;
+}
+
+.countdown .clock {
+    font-size: 20px;
+}
+
+.countdown span {
+    font-size: 26px;
+}
+
 @media screen and (max-width: 500px) {
     .countdown {
-        margin: 0 10px;
+        padding: 50px 0;
+    }
+
+    .countdown h2 {
+        font-size: 18px;
+    }
+
+    .countdown .clock {
+        font-size: 16px;
+    }
+
+    .countdown span {
+        font-size: 22px;
     }
 }
 
@@ -213,6 +239,10 @@ p {
 @media screen and (max-width: 500px) {
     .test-time-schedule {
         padding: 0 10px;
+    }
+
+    .test-time-schedule table {
+        padding: 10px;
     }
 }
 
@@ -414,9 +444,10 @@ input:checked +.btn-tr + article {
     display: block;
     float: left;
     order: -1;
-    border-radius: 0px;
+    border-radius: 5px;
     font-size: 14px;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 .time-schedule .boxes .tab:hover {
@@ -485,6 +516,7 @@ input:checked+.tab+.content {
 
     .time-schedule .back {
         margin: 10px 10px;
+        padding: 15px 10px;
     }
 
     .time-schedule .back .first::after {
@@ -502,7 +534,7 @@ input:checked+.tab+.content {
     }
 
     .time-schedule article table td {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .time-schedule article table td:hover,.time-schedule article table th:hover {
@@ -527,37 +559,24 @@ input:checked+.tab+.content {
     position: relative;
 }
 
-.quiz form {
+.quiz input {
     position: absolute;
     top: 20px;
-    width: calc(100% - 110px);
+    right: 50px;
+    width: 200px;
     background: var(--mainback);
-    padding: 5px;
+    padding: 10px 15px;
     border-radius: 5px;
     z-index: 5;
-    filter: drop-shadow(0 0 7px #0002);
-}
-
-.quiz input:first-child {
-    width: calc(100% - 40px);
-    background: var(--mainback);
+    filter: drop-shadow(0 0 7px #00000019);
     outline: none;
     border: none;
-}
-
-.quiz input:nth-child(2) {
-    width: 30px;
-    background: none;
-    outline: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .quiz .area {
     background: var(--subback);
     margin: 0 30px;
-    padding: 0 20px;
+    padding: 0;
     border-radius: 10px;
     max-height: 400px;
 }
@@ -577,6 +596,7 @@ input:checked+.tab+.content {
     position:absolute;
     background: var(--quiz-fade);
     border-radius: 5px;
+    z-index: 4;
 }
 
 .quiz .content::-webkit-scrollbar {
@@ -584,12 +604,13 @@ input:checked+.tab+.content {
 }
 
 .quiz .box {
-    background: var(--forthback);
+    background: var(--mainback);
     border-radius: 100px;
     padding: 10px;
-    margin: 5px 0;
+    margin: 5px 20px;
     display: flex;
     align-items: center;
+    filter: drop-shadow(0 0 10px #0001);
 }
 
 .quiz .date {
@@ -621,21 +642,26 @@ input:checked+.tab+.content {
 
     .quiz .area {
         margin: 0 15px;
-        padding: 10px;
+        padding: 10px 0;
     }
 
-    .quiz form {
-        width: calc(100% - 60px);
-        top: 10px;
+    .quiz input {
+        width: calc(100% - 80px);
+        top: 15px;
+        left: 25px;
     }
 
     .quiz .content {
-        padding: 50px 0 05px 0;
+        padding: 55px 0 5px 0;
     }
 
     .quiz .content::before {
         left: 20px;
         width: calc(100% - 40px);
+    }
+
+    .quiz .box {
+        margin: 5px 10px;
     }
 
     .quiz .info {

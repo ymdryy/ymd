@@ -27,7 +27,23 @@
 </head>
 
 <body>
-    <header id="header">
+    
+
+    <main>
+
+        <section class="countdown">
+            <div id="countdownArea">
+                <h2>2学期期末まで</h2>
+                <div class="clock">
+                    <span id="countdown-day">0</span>日
+                    <span id="countdown-hour">0</span>時間
+                    <span id="countdown-min">0</span>分
+                    <span id="countdown-sec">0</span>秒
+                </div>
+            </div>
+        </section>
+        
+        <header id="header">
         <div class="back">
             <ul>
                 <a href="#time-schedule">
@@ -43,44 +59,6 @@
         </div>
     </header>
 
-    <main>
-
-        <section class="countdown">
-            <div id="countdownArea">
-                <span>2学期期末まで</span>
-                <span id="countdown-day">0</span>日
-                <span id="countdown-hour">0</span>時間
-                <span id="countdown-min">0</span>分
-                <span id="countdown-sec">0</span>秒
-                <script>
-                    let countdown = setInterval(function () {
-                        const now = new Date()  //今の日時
-                        const target = new Date("2022/12/3 8:45:00") //ターゲット日時を取得
-                        const remainTime = target - now
-
-                        //指定の日時を過ぎていたら処理をしない
-                        if (remainTime < 0) return false
-
-                        //差分の日・時・分・秒を取得
-                        const difDay = Math.floor(remainTime / 1000 / 60 / 60 / 24)
-                        const difHour = Math.floor(remainTime / 1000 / 60 / 60) % 24
-                        const difMin = Math.floor(remainTime / 1000 / 60) % 60
-                        const difSec = Math.floor(remainTime / 1000) % 60
-
-                        //残りの日時を上書き
-                        document.getElementById("countdown-day").textContent = difDay
-                        document.getElementById("countdown-hour").textContent = difHour
-                        document.getElementById("countdown-min").textContent = difMin
-                        document.getElementById("countdown-sec").textContent = difSec
-
-                        //指定の日時になればカウントを止める
-                        if (remainTime < 0) clearInterval(countdown)
-
-                    }, 1000)    //1秒間に1度処理
-                </script>
-            </div>
-        </section>
-
         <section class="test-time-schedule" id="test">
             <h2>テスト時間割</h2>
             <div class="back">
@@ -88,7 +66,8 @@
                     <tr>
                         <th>1</th>
                         <td>数学Ⅰ</td>
-                        <td>歴史総合</td>                    </tr>
+                        <td>歴史総合</td>
+                    </tr>
                     <tr>
                         <th>2</th>
                         <td>化学基礎</td>
@@ -302,26 +281,36 @@
                             <tr>
                                 <td>力学 40%</td>
                                 <td>
-                                    等加速度直線運動 / 運動方程式 / 摩擦力 / 仕事とエネルギー<br><hr>
-                                    <b>教科書</b> : p28～44 p50～81 p88～113<br><hr>
-                                    <b>アクセスノート</b> : p8～13 p19~25 p32～53<br><hr>
-                                    <b>ニューグローバル</b> : p10～66 p80~94 / 基本例題5~9 12～25 29~34 / 問題10～25 47～77 110 111 114~117 120～125
+                                    等加速度直線運動 / 運動方程式 / 摩擦力 / 仕事とエネルギー<br>
+                                    <hr>
+                                    <b>教科書</b> : p28～44 p50～81 p88～113<br>
+                                    <hr>
+                                    <b>アクセスノート</b> : p8～13 p19~25 p32～53<br>
+                                    <hr>
+                                    <b>ニューグローバル</b> : p10～66 p80~94 / 基本例題5~9 12～25 29~34 / 問題10～25 47～77 110 111
+                                    114~117 120～125
                                 </td>
                             </tr>
                             <tr>
                                 <td>波動 50%</td>
                                 <td>
-                                    波のグラフ / 縦波・横波 / 反射 / 定常波 / 弦の固有振動 / 気柱の固有振動<br><hr>
-                                    <b>教科書</b>p.144～184<br><hr>
-                                    <b>アクセスノート</b>p62～77<br><hr>
-                                    <b>ニューグローバル</b>p190～199 p208~119 / 基本例題62 63 66 67 / 問題268～274 292 295~300 / 応用例題25 27 / 応用問題280 281
+                                    波のグラフ / 縦波・横波 / 反射 / 定常波 / 弦の固有振動 / 気柱の固有振動<br>
+                                    <hr>
+                                    <b>教科書</b>p.144～184<br>
+                                    <hr>
+                                    <b>アクセスノート</b>p62～77<br>
+                                    <hr>
+                                    <b>ニューグローバル</b>p190～199 p208~119 / 基本例題62 63 66 67 / 問題268～274 292 295~300 / 応用例題25
+                                    27 / 応用問題280 281
                                 </td>
                             </tr>
                             <tr>
                                 <td>電気 10%</td>
                                 <td>
-                                    オームの法則<br><hr>
-                                    <b>教科書</b>.190～198※抵抗率は除く<br><hr>
+                                    オームの法則<br>
+                                    <hr>
+                                    <b>教科書</b>.190～198※抵抗率は除く<br>
+                                    <hr>
                                     <b>アクセスノート</b>p78 / 例題30 p79～80 p85～86
                                 </td>
                             </tr>
@@ -343,7 +332,8 @@
                             </tr>
                             <tr>
                                 <td>セミナー</td>
-                                <td>p.95 プロセス3,4 ドリル10<br>p.96 基本問題20<br>p.99 基本問題178～182<br>p.154 プロセス1～3 基本問題30<br>p.156 基本問題270～273,275,276<br>p.160 発展例題22</td>
+                                <td>p.95 プロセス3,4 ドリル10<br>p.96 基本問題20<br>p.99 基本問題178～182<br>p.154 プロセス1～3
+                                    基本問題30<br>p.156 基本問題270～273,275,276<br>p.160 発展例題22</td>
                             </tr>
                             <tr>
                                 <td>ネオパルノート</td>
@@ -949,10 +939,7 @@
             <h2>小テスト</h2>
             <div class="in">
                 <div class="area">
-                    <form>
-                        <input type="text" placeholder="検索" id="quiz-search">
-                        <input type="reset" value="×">
-                    </form>
+                    <input type="text" placeholder="検索" id="quiz-search">
                     <div class="content" id="quiz-output">
                     </div>
                 </div>
@@ -983,7 +970,7 @@
                     <h3>GTEC</h3>
                     <p class="date">1/10</p>
                     <p class="plus">
-                        
+
                     </p>
                 </article>
                 <article>
