@@ -119,6 +119,7 @@ p {
     position: sticky;
     top: 10px;
     z-index: 100;
+    padding: 0 calc((100% - 1000px)/2);
 }
 
 #header .back ul {
@@ -201,7 +202,9 @@ p {
 /* テスト時間割 */
 .test-time-schedule {
     padding: 0 30px;
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: calc(100% - 60px);
+    width: 1000px;
 }
 
 .test-time-schedule h2 {
@@ -239,6 +242,7 @@ p {
 @media screen and (max-width: 500px) {
     .test-time-schedule {
         padding: 0 10px;
+        max-width: calc(100% - 20px);
     }
 
     .test-time-schedule table {
@@ -248,7 +252,10 @@ p {
 
 /* テスト範囲 */
 .test-range {
-    margin: 50px 30px;
+    padding: 0 30px;
+    margin: 50px auto;
+    width: 1000px;
+    max-width: calc(100% - 60px);
 }
 
 .test-range article .explain {
@@ -355,7 +362,9 @@ input:checked +.btn-tr + article {
 
 @media screen and (max-width: 500px) {
     .test-range {
-        margin: 50px 10px;
+        padding: 0 10px;
+        margin: 50px auto;
+        max-width: calc(100% - 20px);
     }
 
     .test-range .back {
@@ -393,14 +402,13 @@ input:checked +.btn-tr + article {
 
 /* 時間割 */
 .time-schedule {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 50px;
+    width: 1000px;
+    max-width: calc(100% - 60px);
+    margin: 50px auto;
 }
 
 .time-schedule h2 {
-    margin: 0;
-    margin-left: 30px;
+    margin: 0 0 10px 0;
     color: var(--thirdtext);
 }
 
@@ -422,7 +430,7 @@ input:checked +.btn-tr + article {
 .time-schedule .back {
     background: var(--subback);
     padding: 15px 20px;
-    margin: 10px 30px;
+    margin: 0;
     border-radius: 10px;
 }
 
@@ -510,12 +518,16 @@ input:checked+.tab+.content {
 }
 
 @media screen and (max-width: 500px) {
+    .time-schedule {
+    max-width: calc(100% - 20px);
+    }
+
     .time-schedule h2 {
-        margin-left: 15px;
+        margin-left: 0;
     }
 
     .time-schedule .back {
-        margin: 10px 10px;
+        margin: 0;
         padding: 15px 10px;
     }
 
@@ -545,24 +557,25 @@ input:checked+.tab+.content {
 
 /* 小テスト */
 .quiz {
-    width: 100%;
+    width: 1000px;
+    max-width: calc(100% - 60px);
     margin: 50px auto;
 }
 
 .quiz h2 {
     margin: 0 0 10px 0;
-    margin-left: 30px;
     color: var(--thirdtext);
 }
 
 .quiz .in {
     position: relative;
+    width: 100%;
 }
 
 .quiz input {
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 20px;
     width: 200px;
     background: var(--mainback);
     padding: 10px 15px;
@@ -574,8 +587,9 @@ input:checked+.tab+.content {
 }
 
 .quiz .area {
+    width: 100%;
     background: var(--subback);
-    margin: 0 30px;
+    margin: 0;
     padding: 0;
     border-radius: 10px;
     max-height: 400px;
@@ -590,7 +604,7 @@ input:checked+.tab+.content {
 .quiz .content::before {
     content: "";
     top: 0;
-    left: 50px;
+    left: 0;
     width: calc(100% - 100px);
     height: 100%;
     position:absolute;
@@ -636,19 +650,23 @@ input:checked+.tab+.content {
 }
 
 @media screen and (max-width: 500px) {
+    .quiz {
+        max-width: calc(100% - 20px);
+    }
+
     .quiz h2 {
-        margin-left: 15px;
+        margin-left: 0;
     }
 
     .quiz .area {
-        margin: 0 15px;
+        margin: 0;
         padding: 10px 0;
     }
 
     .quiz input {
-        width: calc(100% - 80px);
+        width: calc(100% - 60px);
         top: 15px;
-        left: 25px;
+        left: 15px;
     }
 
     .quiz .content {
@@ -690,16 +708,18 @@ input:checked+.tab+.content {
     font-size: 24px;
     color: var(--thirdtext);
     padding: 0 30px;
-    margin: 0;
+    width: 1000px;
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
 }
 
 .schedule .boxes {
     overflow-x: auto;
     max-width: 100%;
     display: flex;
-    padding: 0 25px;
+    padding: 0 calc((100% - 1000px)/2);
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 30px;
+    scroll-padding: 0 calc((100% - 1000px)/2);
 }
 
 .schedule article {
@@ -733,9 +753,17 @@ input:checked+.tab+.content {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1060px) {
+    .schedule .boxes {
+        padding: 0 30px;
+        scroll-padding: 0 30px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .schedule h2 {
-        padding: 0 15px;
+        padding: 0 10px;
+        max-width: calc(100% - 20px);
     }
 
     .schedule .boxes {
