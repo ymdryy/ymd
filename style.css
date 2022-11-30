@@ -285,7 +285,7 @@ p {
     background: var(--subback);
     padding: 20px;
     border-radius: 10px;
-    max-height: 425px;
+    max-height: 450px;
 }
 
 .test-range .left {
@@ -308,6 +308,7 @@ p {
     margin: 2px;
     border-radius: 5px;
     font-size: 14px;
+    transition: .2s;
 }
 
 .btn-tr-t:hover {
@@ -317,6 +318,7 @@ p {
 .btn-tr-t:active {
     background: var(--subtext);
     color: var(--mainback);
+    transition: 0s;
 }
 
 input:checked + .btn-tr-t {
@@ -335,6 +337,18 @@ input:checked +.btn-tr + article {
     display: none;
     width: calc(100% - 30px);
     padding: 5px 0 5px 30px;
+    animation: article-anime .2s ;
+}
+
+@keyframes article-anime {
+    0% {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .test-range article h3 {
