@@ -103,3 +103,10 @@ let countdown = setInterval(function () {
     if (remainTime < 0) clearInterval(countdown)
 
 }, 1000)
+
+
+var today = new Date();
+var weekdays = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"];
+var weekday = weekdays[today.getDay()];
+
+document.getElementById("day").innerHTML = weekday;

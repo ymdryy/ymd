@@ -6,18 +6,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ymdryy">
-    <meta name="twitter:title" content="ymdryy">
-    <meta name="twitter:description" content="">
-    <meta name="description" content="ymdryy">
-    <meta name="twitter:image" content="">
     <meta name="robots" content="noindex">
     <link rel="shortcut icon" href="https://cy.ymdryy.com/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>ymdryy</title>
     <script src="main.js" async></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -25,12 +19,15 @@
 
         gtag('config', 'G-GY9E7S82G7');
     </script>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            //$("#test").load("test-time-schedule.html");
-            //$("#test-range").load("test-range.html");
+            $("#test").load("test-time-schedule.html");
+            $("#test-range").load("test-range.html");
         });
     </script>
+    -->
 </head>
 
 <body>
@@ -75,7 +72,7 @@
         <section class="time-schedule" id="time-schedule">
             <h2>時間割</h2>
             <div class="back">
-                <p class="first"></p>
+                <p><spna id="day"></spna></p>
                 <div class="boxes">
                     <input type="radio" name="tab-name" id="ts1" checked="">
                     <label class="tab" for="ts1">1</label>
@@ -583,14 +580,6 @@
         <section class="schedule" id="schedule">
             <h2>主な予定</h2>
             <div class="boxes">
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>期末テスト</h3>
-                    <p class="date">12/3 , 12/5-12/8</p>
-                    <p class="plus">
-                        5日間13教科の2学期期末テスト
-                    </p>
-                </article>
                 <article>
                     <p class="category">休み</p>
                     <h3>冬休み</h3>
