@@ -139,19 +139,37 @@ p {
 #header .back ul li {
     font-size: 13px;
     font-weight: bold;
-    transition: 0.2s;
+    transition: 1s;
     padding: 8px 10px;
-    margin: 0 0 1px 0;
+    margin: 0;
+    color: var(--bar-active);
+    position: relative;
 }
 
 #header .back ul li:hover {
     background: var(--html-back);
-    border-bottom: 1px solid var(--thirdtext);
-    margin: 0;
+    transition: .2s;
+}
+
+#header .back ul li::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid var(--bar-active);
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transition: 1s;
+}
+
+#header .back ul li:hover::before {
+    left: 0;
+    width: 100%;
+    transition: .2s;
 }
 
 #header .back ul li:active {
     background: var(--bar-active);
+    color: var(--thirdtext);
     transition: 0s;
 }
 
