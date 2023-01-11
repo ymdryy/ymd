@@ -1,19 +1,19 @@
 [
     {
-        "title" : "古文単語テスト",
-        "range" : "p169 - p169",
-        "subject" : "言語文化",
-        "category" : "小テスト",
-        "date" : "1/16",
-        "color" : "#ff0077"
-    },
-    {
         "title" : "漢字テスト",
         "range" : "ランクB 読む①～④",
         "subject" : "現代の国語",
         "category" : "小テスト",
         "date" : "1/11-14",
         "color" : "#ef2323"
+    },
+    {
+        "title" : "古文単語テスト",
+        "range" : "p169 - p169",
+        "subject" : "言語文化",
+        "category" : "小テスト",
+        "date" : "1/16",
+        "color" : "#ff0077"
     },
     {
         "title" : "漢字テスト",
