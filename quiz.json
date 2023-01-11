@@ -16,6 +16,14 @@
         "color" : "#ff0077"
     },
     {
+        "title" : "助動詞テスト",
+        "range" : "助動詞",
+        "subject" : "言語文化",
+        "category" : "小テスト",
+        "date" : "1/25",
+        "color" : "#ff0077"
+    },
+    {
         "title" : "漢字テスト",
         "range" : "ランクB 読む⑤～⑧",
         "subject" : "現代の国語",
@@ -49,7 +57,7 @@
     },
     {
         "title" : "古文単語テスト",
-        "range" : "p29 - p1187",
+        "range" : "p29 - p187",
         "subject" : "言語文化",
         "category" : "小テスト",
         "date" : "2/15-17",
