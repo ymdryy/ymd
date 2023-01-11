@@ -14,7 +14,7 @@
     --g-back: linear-gradient(to right bottom , #d3f6ff , #bae3e4);
     --blue1: #7a82f2ba;
 
-    --quiz-fade: linear-gradient(#fff 50px,#fff0 75px,#fff0 90%,#fff 97%);
+    --quiz-fade: linear-gradient(#fff 55px,#fff0 80px,#fff0 92%,#fff 100%);
 
     /* スクロールバーカラー */
     --bar-back: rgba(255, 255, 255, 0.2);
@@ -38,7 +38,7 @@
         --g-back: linear-gradient(to right bottom , #340946 , #091129);
         --blue1: #21277c98;
 
-        --quiz-fade: linear-gradient(#000 35px,#0000 75px,#0000 90%,#000 97%);
+        --quiz-fade: linear-gradient(#000 55px,#0000 80px,#0000 93%,#000 100%);
 
         /* スクロールバーカラー */
         --bar-back: rgba(0, 0, 0, 0.2);
@@ -635,7 +635,7 @@ input:checked+.tab+.content {
     content: "";
     top: 0;
     left: 0;
-    width: calc(100% - 20px);
+    width: 100%;
     height: 100%;
     position:absolute;
     background: var(--quiz-fade);
@@ -655,6 +655,10 @@ input:checked+.tab+.content {
     display: flex;
     align-items: center;
     filter: drop-shadow(0 0 10px #0001);
+}
+
+.quiz .box:last-child {
+    margin: 5px 20px 15px;
 }
 
 .quiz .date {
@@ -690,7 +694,6 @@ input:checked+.tab+.content {
 
     .quiz .area {
         margin: 0;
-        padding: 10px 0;
     }
 
     .quiz input {
