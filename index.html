@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <title>ymdryy</title>
     <script src="main.js" async></script>
-    
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY9E7S82G7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -72,7 +73,9 @@
         <section class="time-schedule" id="time-schedule">
             <h2>時間割</h2>
             <div class="back">
-                <p><spna id="day"></spna></p>
+                <p>
+                    <spna id="day"></spna>
+                </p>
                 <div class="boxes">
                     <input type="radio" name="tab-name" id="ts1" checked="">
                     <label class="tab" for="ts1">1</label>
@@ -573,6 +576,51 @@
                     <input type="text" placeholder="検索" id="quiz-search">
                     <div class="content" id="quiz-output">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="translation">
+            <h2>和訳/本文</h2>
+            <div class="area">
+                <h3>COM英</h3>
+                <div class="btns">
+                    <input type="checkbox" name="tab-tl" id="translation-comen6">
+                    <label class="tab-tl" for="translation-comen6">Unit6</label>
+                    <article class="content">
+                        <div class="in">
+                            <h3>Unit6</h3>
+                            <p>近日掲載</p>
+                        </div>
+                        <label class="close-tl" for="translation-comen6">×</label>
+                    </article>
+                    <input type="checkbox" name="tab-tl" id="translation-comen7">
+                    <label class="tab-tl" for="translation-comen7">Unit7</label>
+                    <article class="content">
+                        <div class="in">
+                            <h3>Unit7</h3>
+                        </div>
+                        <label class="close-tl" for="translation-comen7">×</label>
+                    </article>
+                </div>
+                <h3>古典</h3>
+                <div class="btns">
+                    <input type="checkbox" name="tab-tl" id="translation-oj1">
+                    <label class="tab-tl" for="translation-oj1">古文</label>
+                    <article class="content">
+                        <div class="in">
+                            <h3>近日掲載</h3>
+                        </div>
+                        <label class="close-tl" for="translation-oj1">×</label>
+                    </article>
+                    <input type="checkbox" name="tab-tl" id="translation-oj2">
+                    <label class="tab-tl" for="translation-oj2">漢文</label>
+                    <article class="content">
+                        <div class="in">
+                            <h3>近日掲載</h3>
+                        </div>
+                        <label class="close-tl" for="translation-oj2">×</label>
+                    </article>
                 </div>
             </div>
         </section>

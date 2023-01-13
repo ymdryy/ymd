@@ -38,7 +38,7 @@
         --g-back: linear-gradient(to right bottom , #340946 , #091129);
         --blue1: #21277c98;
 
-        --quiz-fade: linear-gradient(#000 55px,#0000 80px,#0000 93%,#000 100%);
+        --quiz-fade: linear-gradient(#000 50px,#0000 100%);
 
         /* スクロールバーカラー */
         --bar-back: rgba(0, 0, 0, 0.2);
@@ -636,10 +636,10 @@ input:checked+.tab+.content {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 70px;
     position:absolute;
     background: var(--quiz-fade);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0 ;
     z-index: 4;
 }
 
@@ -728,6 +728,98 @@ input:checked+.tab+.content {
         font-size: 14px;
         padding: 3px 10px;
     }
+}
+
+/* 和訳 */
+.translation {
+    width: 1000px;
+    max-width: calc(100% - 60px);
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+input[name="tab-tl"] {
+    display: none;
+}
+
+.translation .content {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input:checked+.tab-tl+.content {
+    display: block;
+}
+
+.translation h3 {
+    line-height: 1;
+    margin: 20px 0 10px 0;
+}
+
+.translation .tab-tl {
+    border: 2px solid var(--maintext);
+    border-radius: 100px;
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.translation .tab-tl:hover {
+    transition: .2s;
+    background: var(--maintext);
+    color: var(--thirdback);
+}
+
+.translation .content {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--mainback);
+    z-index: 100;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    overscroll-behavior-y: contain;
+}
+
+.translation .content::-webkit-scrollbar {
+    display: none;
+}
+
+.translation .in {
+    width: 1000px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.translation .close-tl {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 4px 5px 6px 5px;
+    font-size: 15px;
+    border: 2px solid var(--maintext);
+    background: var(--mainback);
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.translation .close-tl:hover {
+    background: var(--maintext);
+    color: var(--thirdback);
+    transition: .2s;
 }
 
 /* 主な予定 */
