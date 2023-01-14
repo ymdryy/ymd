@@ -715,6 +715,10 @@ input:checked+.tab+.content {
         margin: 5px 10px;
     }
 
+    .quiz .box:last-child {
+        margin: 5px 10px 10px;
+    }
+
     .quiz .info {
         font-size: 10px;
     }
@@ -782,17 +786,35 @@ input:checked+.tab-tl+.content {
     left: 0;
     background: var(--mainback);
     z-index: 100;
-    overflow-y: auto;
+    overflow-y: scroll;
     overscroll-behavior: none;
     overscroll-behavior-y: contain;
+    animation: translation .2s;
+}
+
+@keyframes translation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.translation .content span {
+    color: var(--subtext);
+    font-size: 12px;
 }
 
 .translation .content::-webkit-scrollbar {
-    display: none;
+    width: 10px;
 }
 
 .translation .in {
     width: 1000px;
+    min-height: 100vh;
     max-width: calc(100% - 40px);
     margin: 0 auto;
     padding: 40px 20px;
