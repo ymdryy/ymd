@@ -6,6 +6,7 @@
     --maintext: #000000;
     --subtext: #414141;
     --thirdtext: #216d75;
+    --url: #7455ff;
 
     --clear-btn: rgba(0, 0, 0, 0.2);
 
@@ -32,6 +33,7 @@
         --maintext: #f5f5f5;
         --subtext: #d8d8d8;
         --thirdtext: #e4dbf3;
+        --url: #ad9aff;
 
         --html-back: #340946;
         --header-back: #34094699;
@@ -104,6 +106,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--url);
 }
 
 p {
@@ -770,6 +773,8 @@ input:checked+.tab-tl+.content {
     font-weight: bold;
     cursor: pointer;
     transition: 1s;
+    line-height: 40px;
+    white-space: nowrap;
 }
 
 .translation .tab-tl:hover {
@@ -855,6 +860,13 @@ input:checked+.tab-tl+.content {
     background: var(--maintext);
     color: var(--thirdback);
     transition: .2s;
+}
+
+@media screen and (max-width: 500px) {
+    .translation {
+        max-width: calc(100% - 20px);
+        padding: 0;
+    }
 }
 
 /* 主な予定 */
