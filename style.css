@@ -789,7 +789,7 @@ input:checked+.tab-tl+.content {
     overflow-y: scroll;
     overscroll-behavior: none;
     overscroll-behavior-y: contain;
-    animation: translation .2s;
+    animation: translation .3s;
 }
 
 @keyframes translation {
@@ -803,8 +803,21 @@ input:checked+.tab-tl+.content {
     }
 }
 
+.translation .content h3 {
+    font-size: 24px;
+}
+
 .translation .content span {
     color: var(--subtext);
+    font-size: 12px;
+}
+
+.translation .content .attention {
+    padding: 20px;
+    margin: 40px auto 0 auto;
+    width: calc(100% - 40px);
+    background: var(--bar-track);
+    border-radius: 10px;
     font-size: 12px;
 }
 
