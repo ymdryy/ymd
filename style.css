@@ -819,7 +819,7 @@ input:checked+.tab-tl+.content {
 
 .translation .content .attention {
     padding: 20px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 60px auto;
     width: calc(100% - 40px);
     background: var(--bar-track);
     border-radius: 10px;
