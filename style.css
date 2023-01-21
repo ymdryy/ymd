@@ -82,12 +82,14 @@
     font-family: LSeedJP;
     src: url(https://cdn.ymdryy.com/fonts/LSeedJPRg.woff) format('woff');
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: LSeedJP;
     src: url(https://cdn.ymdryy.com/fonts/LSeedJPBd.woff) format('woff');
     font-weight: 700;
+    font-display: swap;
 }
 
 /* 本体 */
