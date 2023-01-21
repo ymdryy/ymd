@@ -464,7 +464,7 @@ input:checked +.btn-tr + article {
     background: var(--subback);
     padding: 15px 20px;
     margin: 0;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .time-schedule .boxes {
@@ -624,7 +624,7 @@ input:checked+.tab+.content {
     background: var(--subback);
     margin: 0;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 15px;
     max-height: 400px;
 }
 
@@ -642,7 +642,7 @@ input:checked+.tab+.content {
     height: 70px;
     position:absolute;
     background: var(--quiz-fade);
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 15px 15px 0 0 ;
     z-index: 4;
 }
 
@@ -760,9 +760,19 @@ input:checked+.tab-tl+.content {
     display: block;
 }
 
+.translation h2 {
+    font-size: 24px;
+    color: var(--thirdtext);
+    margin: 10px 0;
+}
+
 .translation h3 {
     line-height: 1;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 5px 0;
+}
+
+.translation h3:first-child {
+    margin: 5px 0;
 }
 
 .translation .tab-tl {
@@ -773,7 +783,7 @@ input:checked+.tab-tl+.content {
     font-weight: bold;
     cursor: pointer;
     transition: 1s;
-    line-height: 40px;
+    line-height: 44px;
     white-space: nowrap;
 }
 
@@ -781,6 +791,12 @@ input:checked+.tab-tl+.content {
     transition: .2s;
     background: var(--maintext);
     color: var(--thirdback);
+}
+
+.translation .area {
+    background: var(--subback);
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .translation .content {
@@ -866,6 +882,10 @@ input:checked+.tab-tl+.content {
     .translation {
         max-width: calc(100% - 20px);
         padding: 0;
+    }
+
+    .translation .area {
+        padding: 20px 15px;
     }
 }
 
