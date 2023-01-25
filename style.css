@@ -1,21 +1,26 @@
 :root {
-    --mainback: #FFFFFF;
+    --mainback: #f0f0f4;
     --subback: #ffffff;
-    --thirdback: #ddcde8;
-    --forthback: #f7f5ff;
+    --thirdback: #f6f6fa;
+    --forthback: #e2e2e6;
+    --fifthback: #d4d4da;
     --maintext: #000000;
-    --subtext: #414141;
-    --thirdtext: #216d75;
-    --url: #7455ff;
+    --subtext: #8e8e90;
+    --thirdtext: #c7c7c9;
+    --url: #3378f8;
+
+    --orange: #f09a37;
+    --blue: #3378F8;
 
     --clear-btn: rgba(0, 0, 0, 0.2);
 
-    --html-back: #d3f6ff;
-    --header-back: #d3f6ff77;
+    --html-back: #f2f2f6;
+    --header-back: #f2f2f677;
+    --h2-back: #f0f0f488;
     --g-back: linear-gradient(to right bottom , #d3f6ff , #bae3e4);
     --blue1: #7a82f2ba;
 
-    --quiz-fade: linear-gradient(#fff 55px,#fff0 80px,#fff0 92%,#fff 100%);
+    --quiz-fade: linear-gradient(#fff 50px,#fff0 100%);
 
     /* スクロールバーカラー */
     --bar-back: rgba(255, 255, 255, 0.2);
@@ -26,35 +31,40 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --mainback: #231439;
-        --subback: #000000;
-        --thirdback: #363636;
-        --forthback: #161322;
-        --maintext: #f5f5f5;
-        --subtext: #d8d8d8;
-        --thirdtext: #e4dbf3;
-        --url: #ad9aff;
+        --mainback: #000000;
+        --subback: #1c1c1e;
+        --thirdback: #2c2c2e;
+        --forthback: #3a3a3c;
+        --fifthback: #47474b;
+        --maintext: #fefefe;
+        --subtext: #878787;
+        --thirdtext: #595959;
+        --url: #3987f7;
 
-        --html-back: #340946;
-        --header-back: #34094699;
+        --orange: #ffa54b;
+        --blue: #3987f7;
+
+        --html-back: #000000;
+        --header-back: #00000099;
+        --h2-back: #0008;
         --g-back: linear-gradient(to right bottom , #340946 , #091129);
         --blue1: #21277c98;
 
-        --quiz-fade: linear-gradient(#000 50px,#0000 100%);
+        --quiz-fade: linear-gradient(#1c1c1e 50px,#1c1c1e00 100%);
 
         /* スクロールバーカラー */
-        --bar-back: rgba(0, 0, 0, 0.2);
-        --bar-track: rgba(93, 87, 183, 0.5);
-        --bar-hover: rgba(116, 120, 222, 0.6);
-        --bar-active: rgba(175, 175, 242, 0.7);
+        --bar-back: #0000;
+        --bar-track: #7f7f7f;
+        --bar-hover: #6f6f6f;
+        --bar-active: #5f5f5f;
         color-scheme: dark;
     }
 }
 
 /* スクロールバー */
 ::-webkit-scrollbar {
-    width: 13px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -106,6 +116,14 @@ body {
     margin: 0;
 }
 
+#test h2,
+#test-range h2,
+#time-schedule h2,
+#quiz h2,
+#translation h2,
+#schedule h2 {
+}
+
 a {
     text-decoration: none;
     color: var(--url);
@@ -147,19 +165,20 @@ p {
     transition: 1s;
     padding: 8px 10px;
     margin: 0;
-    color: var(--bar-active);
+    color: var(--thirdtext);
     position: relative;
 }
 
 #header .back ul li:hover {
     background: var(--html-back);
+    color: var(--subtext);
     transition: .2s;
 }
 
 #header .back ul li::before {
     position: absolute;
     content: "";
-    border-bottom: 2px solid var(--bar-active);
+    border-bottom: 2px solid var(--subtext);
     bottom: 0;
     left: 50%;
     width: 0;
@@ -236,7 +255,7 @@ p {
 
 .test-time-schedule h2 {
     margin: 0;
-    color: var(--thirdtext);
+    color: var(--maintext);
 }
 
 .test-time-schedule .back {
@@ -255,11 +274,12 @@ p {
     width: calc(100% / 4);
     height: 30px;
     text-align: center;
-    background: var(--forthback);
+    background: var(--thirdback);
+    cursor: default;
 }
 
 .test-time-schedule td:hover,.test-time-schedule th:hover {
-    background: var(--mainback);
+    background: var(--forthback);
 }
 
 .test-time-schedule th::after {
@@ -295,7 +315,7 @@ p {
 
 .test-range article hr {
     border: none;
-    border-top: 1px solid #86868686;
+    border-top: 1px solid var(--fifthback);
 }
 
 .test-range article .explain::after {
@@ -304,7 +324,7 @@ p {
 
 .test-range h2 {
     margin: 0 0 10px 0;
-    color: var(--thirdtext);
+    color: var(--maintext);
 }
 
 .test-range .back {
@@ -329,22 +349,23 @@ p {
 }
 
 .btn-tr-t {
-    background: var(--forthback);
+    background: var(--thirdback);
     display: block;
     padding: 5px 10px;
     margin: 2px;
     border-radius: 5px;
     font-size: 14px;
     transition: .2s;
+    cursor: pointer;
 }
 
 .btn-tr-t:hover {
-    background: var(--thirdback);
+    background: var(--forthback);
+    color: var(--orange);
 }
 
 .btn-tr-t:active {
-    background: var(--subtext);
-    color: var(--mainback);
+    background: var(--fifthback);
     transition: 0s;
 }
 
@@ -393,7 +414,7 @@ input:checked +.btn-tr + article {
 }
 
 .test-range article td {
-    background: var(--forthback);
+    background: var(--thirdback);
     padding: 4px 8px;
 }
 
@@ -450,7 +471,7 @@ input:checked +.btn-tr + article {
 
 .time-schedule h2 {
     margin: 0 0 10px 0;
-    color: var(--thirdtext);
+    color: var(--maintext);
 }
 
 .time-schedule .back p {
@@ -480,7 +501,7 @@ input:checked +.btn-tr + article {
     width: calc((100% - 36px)/9);
     margin: 0 2px;
     height: 40px;
-    background: var(--forthback);
+    background: var(--thirdback);
     line-height: 40px;
     font-size: 15px;
     text-align: center;
@@ -494,12 +515,12 @@ input:checked +.btn-tr + article {
 }
 
 .time-schedule .boxes .tab:hover {
-    background: var(--mainback);
+    background: var(--forthback);
     font-size: 16px;
 }
 
 .time-schedule .boxes .tab:active{
-    background: var(--forthback);
+    background: var(--thirdback);
 }
 
 .time-schedule .boxes .tab::after {
@@ -511,7 +532,7 @@ input[name="tab-name"] {
 }
 
 input:checked+.tab {
-    background-color: var(--thirdback);
+    background-color: var(--forthback);
     font-weight: bold;
     border-radius: 5px;
     font-size: 16px;
@@ -533,23 +554,24 @@ input:checked+.tab+.content {
 }
 
 .time-schedule article table th {
-    background: var(--forthback);
+    background: var(--thirdback);
     height: 35px;
     font-size: 15px;
+    cursor: default;
 }
 
 .time-schedule article table td {
-    background: var(--forthback);
+    background: var(--thirdback);
     text-align: center;
     height: 30px;
     width: calc(100%/6);
     font-size: 15px;
     transition: 0.2s;
+    cursor: default;
 }
 
 .time-schedule article table td:hover,.time-schedule article table th:hover {
-    background: var(--mainback);
-    font-size: 16px;
+    background: var(--forthback);
 }
 
 @media screen and (max-width: 500px) {
@@ -599,7 +621,7 @@ input:checked+.tab+.content {
 
 .quiz h2 {
     margin: 0 0 10px 0;
-    color: var(--thirdtext);
+    color: var(--maintext);
 }
 
 .quiz .in {
@@ -612,11 +634,10 @@ input:checked+.tab+.content {
     top: 20px;
     right: 20px;
     width: 200px;
-    background: var(--mainback);
+    background: var(--thirdback);
     padding: 10px 15px;
     border-radius: 5px;
     z-index: 5;
-    filter: drop-shadow(0 0 7px #00000019);
     outline: none;
     border: none;
 }
@@ -653,13 +674,12 @@ input:checked+.tab+.content {
 }
 
 .quiz .box {
-    background: var(--mainback);
+    background: var(--thirdback);
     border-radius: 100px;
     padding: 10px;
     margin: 5px 20px;
     display: flex;
     align-items: center;
-    filter: drop-shadow(0 0 10px #0001);
 }
 
 .quiz .box:last-child {
@@ -764,7 +784,7 @@ input:checked+.tab-tl+.content {
 
 .translation h2 {
     font-size: 24px;
-    color: var(--thirdtext);
+    color: var(--maintext);
     margin: 10px 0;
 }
 
@@ -778,7 +798,8 @@ input:checked+.tab-tl+.content {
 }
 
 .translation .tab-tl {
-    border: 2px solid var(--maintext);
+    background: var(--thirdback);
+    color: var(--subtext);
     border-radius: 100px;
     padding: 4px 15px;
     font-size: 14px;
@@ -791,8 +812,8 @@ input:checked+.tab-tl+.content {
 
 .translation .tab-tl:hover {
     transition: .2s;
-    background: var(--maintext);
-    color: var(--thirdback);
+    background: var(--forthback);
+    color: var(--orange);
 }
 
 .translation .area {
@@ -807,7 +828,7 @@ input:checked+.tab-tl+.content {
     height: 100vh;
     top: 0;
     left: 0;
-    background: var(--mainback);
+    background: var(--subback);
     z-index: 100;
     overflow-y: scroll;
     overscroll-behavior: none;
@@ -839,7 +860,7 @@ input:checked+.tab-tl+.content {
     padding: 20px;
     margin: 40px auto 60px auto;
     width: calc(100% - 40px);
-    background: var(--bar-track);
+    background: var(--thirdback);
     border-radius: 10px;
     font-size: 12px;
 }
@@ -860,14 +881,14 @@ input:checked+.tab-tl+.content {
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     text-align: center;
     margin: 20px auto;
-    padding: 4px 5px 6px 5px;
-    font-size: 15px;
+    padding: 2px 3px 4px 3px;
+    font-size: 18px;
     border: 2px solid var(--maintext);
-    background: var(--mainback);
+    background: var(--subback);
     border-radius: 50%;
     font-weight: bold;
     cursor: pointer;
@@ -876,7 +897,7 @@ input:checked+.tab-tl+.content {
 
 .translation .close-tl:hover {
     background: var(--maintext);
-    color: var(--thirdback);
+    color: var(--orange);
     transition: .2s;
 }
 
@@ -900,7 +921,7 @@ input:checked+.tab-tl+.content {
 .schedule h2 {
     text-align: left;
     font-size: 24px;
-    color: var(--thirdtext);
+    color: var(--maintext);
     padding: 0 30px;
     width: 1000px;
     max-width: calc(100% - 60px);
@@ -924,6 +945,7 @@ input:checked+.tab-tl+.content {
     border-radius: 15px;
     margin: 10px 5px;
     scroll-snap-align: start;
+    cursor: default;
 }
 
 .schedule article .category {
@@ -972,7 +994,7 @@ footer {
     margin: 0 auto;
     padding: 30px 0;
     cursor: default;
-    border-top: 1px solid rgba(112, 109, 135, 0.5);
+    border-top: 1px solid var(--thirdback);
 }
 
 footer .copyright {
