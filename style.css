@@ -31,14 +31,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --mainback: #000000;
-        --subback: #1c1c1e;
-        --thirdback: #2c2c2e;
-        --forthback: #3a3a3c;
+        --mainback: #000004;
+        --subback: #18181c;
+        --thirdback: #2b2b2f;
+        --forthback: #3a3a3d;
         --fifthback: #47474b;
         --maintext: #fefefe;
-        --subtext: #878787;
-        --thirdtext: #595959;
+        --subtext: #aaaaae;
+        --thirdtext: #88888b;
         --url: #3987f7;
 
         --orange: #ffa54b;
