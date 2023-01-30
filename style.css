@@ -796,8 +796,10 @@ input:checked+.tab-tl+.content {
 }
 
 .translation h3 {
+    font-size: 18px;
     line-height: 1;
     margin: 20px 0 5px 0;
+    padding: 0 20px;
 }
 
 .translation h3:first-child {
@@ -805,28 +807,57 @@ input:checked+.tab-tl+.content {
 }
 
 .translation .tab-tl {
-    background: var(--thirdback);
+    display: block;
     color: var(--subtext);
-    border-radius: 100px;
-    padding: 4px 15px;
+    border-top: 1px solid var(--thirdback);
+    padding: 2px 020px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: 1s;
     line-height: 44px;
     white-space: nowrap;
+    position: relative;
+}
+
+.translation .tab-tl-bottom {
+    border-bottom: 1px solid var(--thirdback);
+}
+
+.translation .tab-tl-borr {
+    border-radius: 0 0 10px 10px;
+}
+
+.translation .tab-tl::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 20px;
+    top: 38%;
+    transform: rotate(45deg);
+    border-top: 2px solid var(--subtext);
+    border-right: 2px solid var(--subtext);
+    transition: 1s;
 }
 
 .translation .tab-tl:hover {
     transition: .2s;
-    background: var(--forthback);
+    background: var(--thirdback);
     color: var(--orange);
+}
+
+.translation .tab-tl:hover:before {
+    border-top: 2px solid var(--orange);
+    border-right: 2px solid var(--orange);
+    right: 15px;
+    transition: .2s;
 }
 
 .translation .area {
     background: var(--subback);
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 0 0;
 }
 
 .translation .content {
@@ -845,17 +876,18 @@ input:checked+.tab-tl+.content {
 
 @keyframes translation {
     0% {
-        transform: translateY(50px);
+        transform: translateX(100px);
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
 .translation .content h3 {
     font-size: 24px;
+    padding: 0;
 }
 
 .translation .content span {
@@ -912,10 +944,6 @@ input:checked+.tab-tl+.content {
     .translation {
         max-width: calc(100% - 20px);
         padding: 0;
-    }
-
-    .translation .area {
-        padding: 20px 15px;
     }
 }
 
