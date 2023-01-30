@@ -2,14 +2,14 @@
     --mainback: #f0f0f4;
     --subback: #ffffff;
     --thirdback: #f6f6fa;
-    --forthback: #e2e2e6;
-    --fifthback: #d4d4da;
+    --forthback: #eaeaef;
+    --fifthback: #d6d6da;
     --maintext: #000000;
     --subtext: #8e8e90;
     --thirdtext: #c7c7c9;
     --url: #3378f8;
 
-    --orange: #f09a37;
+    --orange: #ff8800;
     --blue: #3378F8;
 
     --clear-btn: rgba(0, 0, 0, 0.2);
@@ -165,20 +165,20 @@ p {
     transition: 1s;
     padding: 8px 10px;
     margin: 0;
-    color: var(--thirdtext);
+    color: var(--subtext);
     position: relative;
 }
 
 #header .back ul li:hover {
     background: var(--html-back);
-    color: var(--subtext);
+    color: var(--orange);
     transition: .2s;
 }
 
 #header .back ul li::before {
     position: absolute;
     content: "";
-    border-bottom: 2px solid var(--subtext);
+    border-bottom: 2px solid var(--orange);
     bottom: 0;
     left: 50%;
     width: 0;
@@ -270,12 +270,18 @@ p {
     padding: 20px;
 }
 
+.test-time-schedule th:hover,
+.test-time-schedule td:hover {
+    color: var(--orange);
+}
+
 .test-time-schedule td,.test-time-schedule th {
     width: calc(100% / 4);
     height: 30px;
     text-align: center;
     background: var(--thirdback);
     cursor: default;
+    transition: .2s;
 }
 
 .test-time-schedule td:hover,.test-time-schedule th:hover {
@@ -345,7 +351,7 @@ p {
 }
 
 .test-range .right::-webkit-scrollbar {
-    display: none;
+    width: 3px;
 }
 
 .btn-tr-t {
@@ -517,6 +523,7 @@ input:checked +.btn-tr + article {
 .time-schedule .boxes .tab:hover {
     background: var(--forthback);
     font-size: 16px;
+    color: var(--orange);
 }
 
 .time-schedule .boxes .tab:active{
@@ -732,8 +739,8 @@ input:checked+.tab+.content {
     }
 
     .quiz .content::before {
-        left: 5px;
-        width: calc(100% - 10px);
+        left: 0;
+        width: 100%;
     }
 
     .quiz .box {
