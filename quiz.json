@@ -1,29 +1,5 @@
 [
     {
-        "title" : "助動詞テスト",
-        "range" : "助動詞",
-        "subject" : "言語文化",
-        "category" : "小テスト",
-        "date" : "1/25",
-        "color" : "#ff0077"
-    },
-    {
-        "title" : "漢字テスト",
-        "range" : "ランクB 読む⑤～⑧",
-        "subject" : "現代の国語",
-        "category" : "小テスト",
-        "date" : "1/26-28",
-        "color" : "#ef2323"
-    },
-    {
-        "title" : "古文単語テスト",
-        "range" : "p170 - p177",
-        "subject" : "言語文化",
-        "category" : "小テスト",
-        "date" : "1/30",
-        "color" : "#ff0077"
-    },
-    {
         "title" : "古文単語テスト",
         "range" : "p178 - p187",
         "subject" : "言語文化",
@@ -46,6 +22,14 @@
         "category" : "小テスト",
         "date" : "2/15",
         "color" : "#ec8b1c"
+    },
+    {
+        "title" : "国名テスト",
+        "range" : "ヨーロッパ・アジア・アフリカ",
+        "subject" : "歴史総合",
+        "category" : "小テスト",
+        "date" : "2/16",
+        "color" : "#027500"
     },
     {
         "title" : "古文単語テスト",
