@@ -1,21 +1,5 @@
 [
     {
-        "title" : "古文単語テスト",
-        "range" : "p178 - p187",
-        "subject" : "言語文化",
-        "category" : "小テスト",
-        "date" : "2/6",
-        "color" : "#ff0077"
-    },
-    {
-        "title" : "きゅうりの半月切り",
-        "range" : "",
-        "subject" : "家庭基礎",
-        "category" : "実技テスト",
-        "date" : "2/6-8",
-        "color" : "#3a8e0d"
-    },
-    {
         "title" : "単語テスト",
         "range" : "778 - 871",
         "subject" : "コミュニケーション英語Ⅰ",
