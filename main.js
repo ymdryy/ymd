@@ -104,9 +104,10 @@ let countdown = setInterval(function () {
 
 }, 1000)
 
-
+// 今日の日付
 var today = new Date();
-var weekdays = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"];
-var weekday = weekdays[today.getDay()];
-
-document.getElementById("day").innerHTML = weekday;
+var month = today.getMonth() + 1; 
+var day = today.getDate();
+var date = today.toLocaleDateString('ja-JP', { weekday: 'short' }); 
+var dateString = month + '/' + day + '（' + date + '）';
+document.getElementById('today').textContent = dateString;
