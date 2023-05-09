@@ -1,86 +1,60 @@
-fetch("quiz.json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (quiz) {
-        let placeholder = document.querySelector("#quiz-output");
-        let out = "";
-        for (let q of quiz) {
-            out += `
-			<div class="box">
-                <div class="date" style="background: ${q.color};">${q.date}</div>
-                <div class="right">
-                    <div class="info">
-                        <span class="subject">${q.subject}</span>
-                        <span class="category">${q.category}</span>
-                    </div>
-                    <h3>${q.title} ${q.range}</h3>
-                </div>
+// JSONデータを読み込む
+fetch('quiz.json')
+    .then(response => response.json())
+    .then(data => {
+        // データを表示するためのHTML文字列を作成する
+        const dataHTML = data.map(item => `
+<div class="box data-item ${item.subject}">
+        <div class="date" style="background: ${item.color};">${item.date}</div>
+        <div class="right">
+            <div class="info">
+                <span class="subject">${item.subject}</span>
+                <span class="category">${item.category}</span>
             </div>
-		`;
-        }
+            <h3>${item.title} ${item.range}</h3>
+        </div>
+    </div>
+`).join('');
 
-        placeholder.innerHTML = out;
+        // HTMLにデータを表示する
+        const dataContainer = document.getElementById('data-container');
+        dataContainer.innerHTML = dataHTML;
+
+        // 選択されたフィルターボタンを追跡するための配列
+        let selectedFilters = [];
+
+        // ボタンを取得する
+        const filterButtons = document.querySelectorAll('.filter-button');
+
+        // ボタンがクリックされたら、データを絞り込んで表示する
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+
+                // ボタンの選択状態を更新する
+                if (selectedFilters.includes(filter)) {
+                    // 選択を解除する
+                    selectedFilters = selectedFilters.filter(f => f !== filter);
+                    button.classList.remove('selected');
+                } else {
+                    // 選択する
+                    selectedFilters.push(filter);
+                    button.classList.add('selected');
+                }
+
+                // 選択されたデータアイテムのみ表示する
+                const dataItems = document.querySelectorAll('.data-item');
+                dataItems.forEach(item => {
+                    const subjects = item.classList;
+                    if (selectedFilters.length === 0 || Array.from(subjects).some(s => selectedFilters.includes(s))) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
     });
-
-
-//
-(async () => {
-    const Data = await (await fetch("quiz.json")).json();
-    const Out = document.querySelector("#quiz-output");
-
-    const Highlight = (source, text) => source.replace(text, `<span style="background-color: #fb07; border-radius: 2px;">${text}</span>`)
-
-    function Search(text) {
-        [...Out.children].forEach(x => Out.removeChild(x));
-        const Matched = [];
-        const Others = [];
-        for (const Info of Data.map(x => JSON.parse(JSON.stringify(x)))) {
-            let matched = false;
-            if (Info.title.includes(text)) {
-                Info.title = Highlight(Info.title, text);
-                matched = true;
-            }
-            if (Info.category.includes(text)) {
-                Info.category = Highlight(Info.category, text);
-                matched = true;
-            }
-            if (Info.subject.includes(text)) {
-                Info.subject = Highlight(Info.subject, text);
-                matched = true;
-            }
-            if (Info.range.includes(text)) {
-                Info.range = Highlight(Info.range, text);
-                matched = true;
-            }
-            if (Info.date.includes(text)) {
-                Info.date = Highlight(Info.date, text);
-                matched = true;
-            }
-            if (matched) Matched.push(Info);
-            else Others.push(Info);
-        }
-        Matched.forEach(x => Out.appendChild(MakeElement(x)));
-        Others.forEach(x => Out.appendChild(MakeElement(x)));
-    }
-
-    function MakeElement(q) {
-        const result = document.createElement("div");
-        result.className = "box";
-        result.innerHTML = `\
-        <div class="date" style="background: ${q.color};">${q.date}</div>
-                <div class="right">
-                    <div class="info">
-                        <span class="subject">${q.subject}</span>
-                        <span class="category">${q.category}</span>
-                    </div>
-                    <h3>${q.title} ${q.range}</h3>
-                </div>`
-        return result;
-    }
-
-    document.getElementById("quiz-search").oninput = e => Search(e.target.value);
-})();
 
 //カウントダウン
 let countdown = setInterval(function () {
@@ -106,8 +80,8 @@ let countdown = setInterval(function () {
 
 // 今日の日付
 var today = new Date();
-var month = today.getMonth() + 1; 
+var month = today.getMonth() + 1;
 var day = today.getDate();
-var date = today.toLocaleDateString('ja-JP', { weekday: 'short' }); 
+var date = today.toLocaleDateString('ja-JP', { weekday: 'short' });
 var dateString = month + '/' + day + '（' + date + '）';
 document.getElementById('today').textContent = dateString;
