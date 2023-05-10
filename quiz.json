@@ -8,6 +8,14 @@
         "color" : "#ff5b1f"
     },
     {
+        "title" : "日本史テスト",
+        "range" : "p1-12",
+        "subject" : "歴史",
+        "category" : "小テスト",
+        "date" : "5/18",
+        "color" : "#d519ff"
+    },
+    {
         "title" : "古文単語テスト",
         "range" : "p222 - p231",
         "subject" : "古典探求",
