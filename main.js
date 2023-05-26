@@ -16,7 +16,7 @@ fetch('quiz.json')
     </div>
 `).join('');
 
-        // HTMLにデータを表示する
+        // HTMLにデータを表示するF
         const dataContainer = document.getElementById('data-container');
         dataContainer.innerHTML = dataHTML;
 
@@ -59,7 +59,7 @@ fetch('quiz.json')
 //カウントダウン
 let countdown = setInterval(function () {
     const now = new Date()
-    const target = new Date("2023/5/22 8:45:00") //ターゲット日時を取得
+    const target = new Date("2023/7/3 8:45:00") //ターゲット日時を取得
     const remainTime = target - now
 
     if (remainTime < 0) return false
