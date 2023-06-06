@@ -27,11 +27,7 @@
                 <p>
                     このページは削除されたか、URLが間違っている可能性があります。
                 </p>
-                <h3><a href="https://ymdryy.com">ホーム</a></h3>
-                <div class="back">
-                    <h3>お知らせ</h3>
-                    <p>ymdryy.com/5J6nは移転先が行方不明になりたどり着けません。</p>
-                </div>
+                <h3><a href="https://ymdryy.com">ホームに戻る</a></h3>
             </div>
         </section>
     </main>
@@ -54,8 +50,42 @@
         font-weight: 700;
     }
 
+    :root {
+        --mainback: #f0f0f4;
+        --subback: #ffffff;
+        --thirdback: #f6f6fa;
+        --forthback: #eaeaef;
+        --fifthback: #d6d6da;
+        --maintext: #000000;
+        --subtext: #8e8e90;
+        --thirdtext: #c7c7c9;
+        --url: #3378f8;
+
+        --orange: #ff8800;
+        --blue: #3378F8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --mainback: #000004;
+            --subback: #18181c;
+            --thirdback: #2b2b2f;
+            --forthback: #3a3a3d;
+            --fifthback: #47474b;
+            --maintext: #fefefe;
+            --subtext: #aaaaae;
+            --thirdtext: #88888b;
+            --url: #5ca0ff;
+
+            --orange: #ffa54b;
+            --blue: #3987f7;
+        }
+    }
+
     html {
         font-family: 'LSeedJP', sans-serif;
+        background: var(--mainback);
+        color: var(--maintext);
     }
 
     main {
@@ -80,6 +110,7 @@
 
     h1 {
         font-size: 36px;
+        margin: 0 0 10px;
     }
 
     h2 {
@@ -88,22 +119,23 @@
 
     .in p {
         font-size: 14px;
-        color: #000a;
+        color: var(--subtext);
         margin: 10px 0 20px 0;
     }
 
     h3 a {
         font-size: 14px;
-        color: #000;
+        color: ;
         text-decoration: none;
-        border: 2px solid #000;
+        background: var(--thirdback);
         border-radius: 50px;
-        padding: 3px 15px;
+        padding: 6px 18px;
         transition: .2s;
+        color: var(--orange);
     }
 
     h3 a:hover {
-        background: #000;
+        background: var(--orange);
         color: #fff;
     }
 
