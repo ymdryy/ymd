@@ -4,16 +4,28 @@ fetch('quiz.json')
     .then(data => {
         // データを表示するためのHTML文字列を作成する
         const dataHTML = data.map(item => `
-<div class="box data-item ${item.subject}">
-        <div class="date" style="background: ${item.color};">${item.date}</div>
-        <div class="right">
-            <div class="info">
-                <span class="subject">${item.subject}</span>
-                <span class="category">${item.category}</span>
-            </div>
-            <h3>${item.title} ${item.range}</h3>
-        </div>
-    </div>
+        <input type="checkbox" id="${item.date}">
+                        <label class="box data-item ${item.subject}" for="${item.date}">
+                            <div class="date" style="background: ${item.color};">${item.date}</div>
+                            <div class="right">
+                                <div class="info">
+                                    <span class="subject">${item.subject}</span>
+                                    <span class="category">${item.category}</span>
+                                </div>
+                                <h3>${item.title} ${item.range}</h3>
+                            </div>
+                        </label>
+                        <article>
+                            <div class="inarea">
+                                <p class="subj"><span style="background: ${item.color};">${item.subject}</span></p>
+                                <h4>${item.title}</h4>
+                                <h5 style="color: ${item.color};">${item.date}</h5>
+                                <p class="cate">${item.category}</p>
+                                <p class="rang">範囲：${item.range}</p>
+                                <label for="${item.date}" class="close">閉じる</label>
+                            </div>
+                            <label class="backclose" for="${item.date}"></label>
+                        </article>
 `).join('');
 
         // HTMLにデータを表示するF
