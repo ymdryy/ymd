@@ -1,37 +1,5 @@
 [
     {
-        "title" : "古文単語テスト",
-        "range" : "p222 - p231",
-        "subject" : "古典探求",
-        "category" : "小テスト",
-        "date" : "6/5",
-        "color" : "#ff0077"
-    },
-    {
-        "title" : "データベーステスト",
-        "range" : "1063 - 1160",
-        "subject" : "英語COMⅡ",
-        "category" : "小テスト",
-        "date" : "6/9",
-        "color" : "#ff5b1f"
-    },
-    {
-        "title" : "古文単語テスト",
-        "range" : "p232 - p241",
-        "subject" : "古典探求",
-        "category" : "小テスト",
-        "date" : "6/12",
-        "color" : "#ff0077"
-    },
-    {
-        "title" : "古文単語テスト",
-        "range" : "p242 - p251",
-        "subject" : "古典探求",
-        "category" : "小テスト",
-        "date" : "6/19",
-        "color" : "#ff0077"
-    },
-    {
         "title" : "データベーステスト",
         "range" : "1161 - 1262",
         "subject" : "英語COMⅡ",
