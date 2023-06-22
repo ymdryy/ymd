@@ -8,6 +8,14 @@
         "color" : "#ff5b1f"
     },
     {
+        "title" : "日本史探求小テスト",
+        "range" : "p20-28,p32-34,p40-41",
+        "subject" : "歴史",
+        "category" : "小テスト",
+        "date" : "6/29",
+        "color" : "#7c2e8"
+    },
+    {
         "title" : "データベーステスト",
         "range" : "1263 - 1370",
         "subject" : "英語COMⅡ",
