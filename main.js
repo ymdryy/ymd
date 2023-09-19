@@ -71,7 +71,7 @@ fetch('quiz.json')
 //カウントダウン
 let countdown = setInterval(function () {
     const now = new Date()
-    const target = new Date("2023/9/9 0:00:00") //ターゲット日時を取得
+    const target = new Date("2023/10/16 0:00:00") //ターゲット日時を取得
     const remainTime = target - now
 
     if (remainTime < 0) return false
