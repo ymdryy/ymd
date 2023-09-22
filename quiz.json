@@ -1,13 +1,5 @@
 [
     {
-        "title": "データベーステスト",
-        "range": "1263 - 1370",
-        "subject": "英語COMⅡ",
-        "category": "小テスト",
-        "date": "9/22",
-        "color": "#ff5b1f"
-    },
-    {
         "title": "古文単語テスト",
         "range": "p256 - p265",
         "subject": "古典探求",
@@ -24,12 +16,28 @@
         "color": "#ff0077"
     },
     {
+        "title": "漢字テスト",
+        "range": "ランクC「書く」⑲⑳",
+        "subject": "現代文特講",
+        "category": "小テスト",
+        "date": "第3回",
+        "color": "#008e02"
+    },
+    {
         "title": "データベーステスト",
         "range": "1371 - 1468",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "10/6",
         "color": "#ff5b1f"
+    },
+    {
+        "title": "漢字テスト",
+        "range": "ランクC「書く」㉑㉒",
+        "subject": "現代文特講",
+        "category": "小テスト",
+        "date": "第4回",
+        "color": "#008e02"
     },
     {
         "title": "歴史",
@@ -40,12 +48,28 @@
         "color": "#7c2e80"
     },
     {
+        "title": "漢字テスト",
+        "range": "ランクC「書く」㉓㉔",
+        "subject": "現代文特講",
+        "category": "小テスト",
+        "date": "第5回",
+        "color": "#008e02"
+    },
+    {
         "title": "データベーステスト",
         "range": "1469 - 1561",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "10/27",
         "color": "#ff5b1f"
+    },
+    {
+        "title": "漢字テスト",
+        "range": "ランクC「読む」①-④",
+        "subject": "現代文特講",
+        "category": "小テスト",
+        "date": "第6回",
+        "color": "#008e02"
     },
     {
         "title": "データベーステスト",
@@ -62,6 +86,14 @@
         "category": "小テスト",
         "date": "11/13",
         "color": "#ff0077"
+    },
+    {
+        "title": "漢字テスト",
+        "range": "ランクC「読む」⑤-⑧",
+        "subject": "現代文特講",
+        "category": "小テスト",
+        "date": "第7回",
+        "color": "#008e02"
     },
     {
         "title": "データベーステスト",
