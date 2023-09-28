@@ -1,43 +1,57 @@
 [
     {
-        "title": "古文単語テスト",
-        "range": "p256 - p265",
-        "subject": "古典探求",
+        "title": "英作文",
+        "range": "第7講 - 第12講",
+        "subject": "英語COMⅡ",
         "category": "小テスト",
-        "date": "9/25",
-        "color": "#ff0077"
+        "date": "9/29",
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
-        "title": "古文単語テスト",
+        "title": "古文単語",
         "range": "p266 - p275",
         "subject": "古典探求",
         "category": "小テスト",
         "date": "10/2",
-        "color": "#ff0077"
+        "color": "#ff0077",
+        "explain":""
     },
     {
-        "title": "漢字テスト",
+        "title": "Listening",
+        "range": "",
+        "subject": "英語COMⅡ",
+        "category": "中テスト",
+        "date": "10/2~",
+        "color": "#ff5b1f",
+        "explain":"10/2の週の最初の授業で行われます"
+    },
+    {
+        "title": "漢字",
         "range": "ランクC「書く」⑲⑳",
         "subject": "現代文特講",
         "category": "小テスト",
         "date": "第3回",
-        "color": "#008e02"
+        "color": "#008e02",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "データベース",
         "range": "1371 - 1468",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "10/6",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
-        "title": "漢字テスト",
+        "title": "漢字",
         "range": "ランクC「書く」㉑㉒",
         "subject": "現代文特講",
         "category": "小テスト",
         "date": "第4回",
-        "color": "#008e02"
+        "color": "#008e02",
+        "explain":""
     },
     {
         "title": "歴史",
@@ -45,63 +59,89 @@
         "subject": "歴史",
         "category": "小テスト",
         "date": "10/12",
-        "color": "#7c2e80"
+        "color": "#7c2e80",
+        "explain":""
     },
     {
-        "title": "漢字テスト",
+        "title": "漢字",
         "range": "ランクC「書く」㉓㉔",
         "subject": "現代文特講",
         "category": "小テスト",
         "date": "第5回",
-        "color": "#008e02"
+        "color": "#008e02",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "データベース",
         "range": "1469 - 1561",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "10/27",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
-        "title": "漢字テスト",
+        "title": "漢字",
         "range": "ランクC「読む」①-④",
         "subject": "現代文特講",
         "category": "小テスト",
         "date": "第6回",
-        "color": "#008e02"
+        "color": "#008e02",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "データベース",
         "range": "1562 - 1669",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "11/10",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
-        "title": "古文単語テスト",
+        "title": "古文単語",
         "range": "p26 - p64",
         "subject": "古典探求",
         "category": "小テスト",
         "date": "11/13",
-        "color": "#ff0077"
+        "color": "#ff0077",
+        "explain":""
     },
     {
-        "title": "漢字テスト",
+        "title": "英作文",
+        "range": "第13講 - 第18講",
+        "subject": "英語COMⅡ",
+        "category": "小テスト",
+        "date": "11/17",
+        "color": "#ff5b1f",
+        "explain":""
+    },
+    {
+        "title": "Listening",
+        "range": "",
+        "subject": "英語COMⅡ",
+        "category": "中テスト",
+        "date": "11/20~",
+        "color": "#ff5b1f",
+        "explain":"11/20の週の最初の授業で行われます"
+    },
+    {
+        "title": "漢字",
         "range": "ランクC「読む」⑤-⑧",
         "subject": "現代文特講",
         "category": "小テスト",
         "date": "第7回",
-        "color": "#008e02"
+        "color": "#008e02",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "データベース",
         "range": "1670 - 1771",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "11/24",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
         "title": "歴史",
@@ -109,63 +149,107 @@
         "subject": "歴史",
         "category": "小テスト",
         "date": "11/30",
-        "color": "#7c2e80"
+        "color": "#7c2e80",
+        "explain":""
     },
     {
-        "title": "古文単語テスト",
+        "title": "英作文",
+        "range": "第19講 - 第24講",
+        "subject": "英語COMⅡ",
+        "category": "小テスト",
+        "date": "1/12",
+        "color": "#ff5b1f",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
         "range": "p70 - p109",
         "subject": "古典探求",
         "category": "小テスト",
         "date": "1/15",
-        "color": "#ff0077"
+        "color": "#ff0077",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "データベース",
         "range": "1772 - 1869",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "1/19",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
-        "title": "古文単語テスト",
+        "title": "英作文",
+        "range": "第25講 - 第30講",
+        "subject": "英語COMⅡ",
+        "category": "小テスト",
+        "date": "1/26",
+        "color": "#ff5b1f",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
         "range": "p110 - p145",
         "subject": "古典探求",
         "category": "小テスト",
         "date": "1/29",
-        "color": "#ff0077"
+        "color": "#ff0077",
+        "explain":""
     },
     {
-        "title": "古文単語テスト",
+        "title": "古文単語",
         "range": "p256 - p275",
         "subject": "古典探求",
         "category": "小テスト",
         "date": "2/5",
-        "color": "#ff0077"
+        "color": "#ff0077",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "データベース",
         "range": "1870 - 1977",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "2/9",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
-        "title": "古文単語テスト",
+        "title": "古文単語",
         "range": "50問テスト",
         "subject": "古典探求",
         "category": "中テスト",
         "date": "2/14?",
-        "color": "#ff0077"
+        "color": "#ff0077",
+        "explain":""
     },
     {
-        "title": "データベーステスト",
+        "title": "英作文",
+        "range": "第31講 - 第36講",
+        "subject": "英語COMⅡ",
+        "category": "小テスト",
+        "date": "2/16",
+        "color": "#ff5b1f",
+        "explain":""
+    },
+    {
+        "title": "Listening",
+        "range": "",
+        "subject": "英語COMⅡ",
+        "category": "中テスト",
+        "date": "2/19~",
+        "color": "#ff5b1f",
+        "explain":"2/19の週の最初の授業で行われます"
+    },
+    {
+        "title": "データベース",
         "range": "1978 - 2073",
         "subject": "英語COMⅡ",
         "category": "小テスト",
         "date": "2/22",
-        "color": "#ff5b1f"
+        "color": "#ff5b1f",
+        "explain":""
     },
     {
         "title": "歴史",
@@ -173,6 +257,7 @@
         "subject": "歴史",
         "category": "小テスト",
         "date": "2/29?",
-        "color": "#7c2e80"
+        "color": "#7c2e80",
+        "explain":""
     }
 ]

@@ -22,6 +22,7 @@ fetch('quiz.json')
                                 <h5 style="color: ${item.color};">${item.date}</h5>
                                 <p class="cate">${item.category}</p>
                                 <p class="rang">範囲：${item.range}</p>
+                                <p class="explain">${item.explain}</p>
                                 <label for="${item.date}" class="close">閉じる</label>
                             </div>
                             <label class="backclose" for="${item.date}"></label>
