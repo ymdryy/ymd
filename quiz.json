@@ -1,50 +1,5 @@
 [
     {
-        "title": "英作文",
-        "range": "第7講 - 第12講",
-        "subject": "英語COMⅡ",
-        "category": "小テスト",
-        "date": "9/29",
-        "color": "#ff5b1f",
-        "explain":""
-    },
-    {
-        "title": "古文単語",
-        "range": "p266 - p275",
-        "subject": "古典探求",
-        "category": "小テスト",
-        "date": "10/2",
-        "color": "#ff0077",
-        "explain":""
-    },
-    {
-        "title": "Listening",
-        "range": "",
-        "subject": "英語COMⅡ",
-        "category": "中テスト",
-        "date": "10/2~",
-        "color": "#ff5b1f",
-        "explain":"10/2の週の最初の授業で行われます"
-    },
-    {
-        "title": "漢字",
-        "range": "ランクC「書く」⑲⑳",
-        "subject": "現代文特講",
-        "category": "小テスト",
-        "date": "第3回",
-        "color": "#008e02",
-        "explain":""
-    },
-    {
-        "title": "データベース",
-        "range": "1371 - 1468",
-        "subject": "英語COMⅡ",
-        "category": "小テスト",
-        "date": "10/6",
-        "color": "#ff5b1f",
-        "explain":""
-    },
-    {
         "title": "漢字",
         "range": "ランクC「書く」㉑㉒",
         "subject": "現代文特講",
@@ -55,7 +10,7 @@
     },
     {
         "title": "歴史",
-        "range": "",
+        "range": "日本史：p52-55,p57-62",
         "subject": "歴史",
         "category": "小テスト",
         "date": "10/12",
