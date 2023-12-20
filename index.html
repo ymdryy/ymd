@@ -13,8 +13,8 @@
     <scr async src="https://www.googletagmanager.com/gtag/js?id=G-GY9E7S82G7"></scr>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-GY9E7S82G7'); </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function (){$("#test").load("test-time-schedule.html");});</script>
-    <script>$(function (){$("#test-range").load("test-range.html");});</script>
+    <script>//$(function (){$("#test").load("test-time-schedule.html");});</script>
+    <script>//$(function (){$("#test-range").load("test-range.html");});</script>
     <script>$(function () { $("#lunchmenutable").load("https://ryun.ymdryy.com/lunchmenutable.html"); }); </script>
 </head>
 
@@ -22,7 +22,7 @@
     <main>
         <section class="countdown">
             <div id="countdownArea">
-                <h2>2学期期末まで</h2>
+                <h2>3学期学年末まで</h2>
                 <div class="clock">
                     <span id="countdown-day">0</span>日 <span id="countdown-hour">0</span>時間 <span id="countdown-min">0</span>分 <span id="countdown-sec">0</span>秒
                 </div>
@@ -31,8 +31,8 @@
         <header id="header">
             <div class="back">
                 <ul>
-                    <a href="#test"><li>試験時間割</li></a>
-                    <a href="#test-range"><li>試験範囲</li></a>
+                    <a href="#test" style="display: none;"><li>試験時間割</li></a>
+                    <a href="#test-range" style="display: none;"><li>試験範囲</li></a>
                     <a href="#time-schedule"><li>時間割</li></a>
                     <a href="#quiz"><li>小テスト</li></a>
                     <a href="#translation" style="display: none;"><li>和訳</li></a>
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </header>
-        <section class="download-ex">
+        <section class="download-ex" style="display: none;">
             <label class="btn" for="download-ex-close">×</label>
             <h2>ダウンロード</h2>
             <p class="explain">テストの点数をまとめる用のExcelファイル。</p>
@@ -669,12 +669,6 @@
         <section class="schedule" id="schedule">
             <h2>予定</h2>
             <div class="boxes">
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>2学期期末考査</h3>
-                    <p class="date">12/4-8</p>
-                    <p class="plus">11/27に時間割発表。12/13に答案返却</p>
-                </article>
                 <article>
                     <p class="category">休み</p>
                     <h3>冬休み</h3>
