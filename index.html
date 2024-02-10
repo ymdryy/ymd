@@ -24,20 +24,34 @@
             <div id="countdownArea">
                 <h2>3学期学年末まで</h2>
                 <div class="clock">
-                    <span id="countdown-day">0</span>日 <span id="countdown-hour">0</span>時間 <span id="countdown-min">0</span>分 <span id="countdown-sec">0</span>秒
+                    <span id="countdown-day">0</span>日 <span id="countdown-hour">0</span>時間 <span
+                        id="countdown-min">0</span>分 <span id="countdown-sec">0</span>秒
                 </div>
             </div>
         </section>
         <header id="header">
             <div class="back">
                 <ul>
-                    <a href="#test" style="display: none;"><li>試験時間割</li></a>
-                    <a href="#test-range" style="display: none;"><li>試験範囲</li></a>
-                    <a href="#time-schedule"><li>時間割</li></a>
-                    <a href="#quiz"><li>小テスト</li></a>
-                    <a href="#translation" style="display: none;"><li>和訳</li></a>
-                    <a href="#schedule"><li>予定</li></a>
-                    <a href="#lunchmenu"><li>学食</li>
+                    <a href="#test" style="display: none;">
+                        <li>試験時間割</li>
+                    </a>
+                    <a href="#test-range" style="display: none;">
+                        <li>試験範囲</li>
+                    </a>
+                    <a href="#time-schedule">
+                        <li>時間割</li>
+                    </a>
+                    <a href="#quiz">
+                        <li>小テスト</li>
+                    </a>
+                    <a href="#translation" style="display: none;">
+                        <li>和訳</li>
+                    </a>
+                    <a href="#schedule">
+                        <li>予定</li>
+                    </a>
+                    <a href="#lunchmenu">
+                        <li>学食</li>
                     </a>
                 </ul>
                 <div class="today">
@@ -45,6 +59,66 @@
                 </div>
             </div>
         </header>
+        <section class="quiz-arart">
+            <div id="quiz-arart-area"></div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Load quiz data from JSON
+                    fetch('quiz.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            // Find the next quiz
+                            const currentDate = new Date();
+                            const nextQuiz = data.find(quiz => {
+                                const quizDate = new Date(quiz.date + '/' + currentDate.getFullYear());
+                                const today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()); // 今日の日付
+                                return quizDate >= today; // 今日を含む以降のクイズを検索
+                            });
+
+
+                            // Display the next quiz information
+                            // Display the next quiz information
+                            if (nextQuiz) {
+                                const quizDate = new Date(nextQuiz.date + '/' + currentDate.getFullYear());
+                                const timeDiff = Math.ceil((quizDate - currentDate) / (1000 * 60 * 60 * 24));
+                                let timePhrase;
+
+                                if (timeDiff === 0) {
+                                    timePhrase = '今日';
+                                } else if (timeDiff === 1) {
+                                    timePhrase = '明日';
+                                } else if (timeDiff === 2) {
+                                    timePhrase = '明後日';
+                                } else if (timeDiff > 2) {
+                                    timePhrase = timeDiff + '日後';
+                                }
+
+
+                                console.log('Time Phrase:', timePhrase); // 追加
+
+                                const quizArartArea = document.getElementById('quiz-arart-area');
+                                quizArartArea.innerHTML = `
+                                <div class="in">
+                                    <div class="inarea">
+                                        <p class="sbuj"><span style="background:${nextQuiz.color};">${nextQuiz.subject}</span><span style="border:1px solid ${nextQuiz.color};padding: 2px 11px;color:${nextQuiz.color};">${nextQuiz.date}</span></p>
+                                        <p class="day">${timePhrase}</p>
+                                        <p class="title" style="color:${nextQuiz.color};">${nextQuiz.title}の${nextQuiz.category}</p>
+                                        <p class="range">範囲：${nextQuiz.range}</p>
+                                    </div>
+                                    <label for="${nextQuiz.date}">詳細</label>
+                                </div>
+                                ${nextQuiz.explain ? `<p class="explain">${nextQuiz.explain}</p>` : ''}`;
+                            } else {
+                                // No upcoming quiz
+                                const quizArartArea = document.getElementById('quiz-arart-area');
+                                quizArartArea.textContent = 'not find';
+                            }
+
+                        })
+                        .catch(error => console.error('Error:', error));
+                });
+            </script>
+        </section>
         <section class="download-ex" style="display: none;">
             <label class="btn" for="download-ex-close">×</label>
             <h2>ダウンロード</h2>
@@ -612,10 +686,13 @@
                 <div class="area">
                     <div class="btns">
                         <button class="filter-button" data-filter="古典探求">古典</button>
-                        <button class="filter-button" data-filter="英語COMⅡ">英COM</button>
-                        <button class="filter-button" data-filter="現代文特講Ⅰ">現代文</button>
+                        <button class="filter-button" data-filter="英語COMⅡ">英C</button>
+                        <button class="filter-button" data-filter="現代文特講Ⅰ">現文</button>
                         <button class="filter-button" data-filter="歴史">歴史</button>
-                        <label class="sizebtn" for="fullsc"><span class="big">拡大⤴</span><span class="small">縮小⤵</span></label>
+                        <label class="sizebtn" for="fullsc" style="display: none;">
+                            <span class="big">拡大⤴</span>
+                            <span class="small">縮小⤵</span>
+                        </label>
                         <div class="fullsc" style="display: none;">
                             <input type="checkbox" id="fullsc">
                         </div>
@@ -631,14 +708,14 @@
             <div class="area">
                 <h3>COM英</h3>
                 <div class="btns">
-                    <input type="checkbox" name="tab-tl" id="translation-comen31l">
-                    <label class="tab-tl" for="translation-comen31l">Unit3 Listening1</label>
+                    <input type="checkbox" name="tab-tl" id="translation-comen81l">
+                    <label class="tab-tl" for="translation-comen81l">Unit8 Listening1</label>
                     <article class="content">
                         <div class="inarea">
                             <div class="in">
                                 <div class="header">
-                                    <label class="close-tl" for="translation-comen31l">×</label>
-                                    <h3>Unit3 Listening1</h3>
+                                    <label class="close-tl" for="translation-comen81l">×</label>
+                                    <h3>Unit8 Listening1</h3>
                                 </div>
                                 <p>ここにテキスト</p>
                                 <div class="attention">
@@ -646,8 +723,9 @@
                                 </div>
                             </div>
                         </div>
-                        <label for="translation-comen31l" class="backclose"></label>
-                    </article> <input type="checkbox" name="tab-tl" id="translation-comen41r">
+                        <label for="translation-comen81l" class="backclose"></label>
+                    </article>
+                    <input type="checkbox" name="tab-tl" id="translation-comen41r">
                     <label class="tab-tl tab-tl-borr" for="translation-comen41r">Unit4 Reading1</label>
                     <article class="content">
                         <div class="inarea">
@@ -670,16 +748,65 @@
             <h2>予定</h2>
             <div class="boxes">
                 <article>
-                    <p class="category">休み</p>
-                    <h3>冬休み</h3>
-                    <p class="date">12/21-1/8</p>
-                    <p class="plus"></p>
-                </article>
-                <article>
                     <p class="category">テスト</p>
                     <h3>3学期学年末考査</h3>
                     <p class="date">3/2,3/4-7</p>
                     <p class="plus">2/24に時間割発表。3/12に答案返却</p>
+                </article>
+                <article>
+                    <p class="category">休み</p>
+                    <h3>春休み</h3>
+                    <p class="date">3/19-</p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">テスト</p>
+                    <h3>1学期中間テスト</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">テスト</p>
+                    <h3>1学期期末テスト</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">休み</p>
+                    <h3>夏休み</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">行事</p>
+                    <h3>体育祭</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">テスト</p>
+                    <h3>2学期中間テスト</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">テスト</p>
+                    <h3>2学期期末テスト</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                <article>
+                    <p class="category">休み</p>
+                    <h3>冬休み</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
+                </article>
+                
+                <article>
+                    <p class="category">行事</p>
+                    <h3>卒業式</h3>
+                    <p class="date"></p>
+                    <p class="plus"></p>
                 </article>
             </div>
         </section>
