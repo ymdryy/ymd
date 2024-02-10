@@ -1,15 +1,5 @@
 [
     {
-        "title": "漢字テスト",
-        "range": "ランクD 書く⑦⑧",
-        "subject": "現代文特講Ⅰ",
-        "category": "小テスト",
-        "date": "2/15",
-        "dateopen": "第5回",
-        "color": "#ff0000",
-        "explain":"日付はクラスによって異なります。"
-    },
-    {
         "title": "古文単語",
         "range": "50問テスト",
         "subject": "古典探求",
@@ -18,6 +8,16 @@
         "dateopen": "2/14?",
         "color": "#ff0077",
         "explain":""
+    },
+    {
+        "title": "漢字テスト",
+        "range": "ランクD 書く⑦⑧",
+        "subject": "現代文特講Ⅰ",
+        "category": "小テスト",
+        "date": "2/15",
+        "dateopen": "第5回",
+        "color": "#ff0000",
+        "explain":"日付はクラスによって異なります。"
     },
     {
         "title": "英作文",
