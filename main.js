@@ -6,7 +6,7 @@ fetch('quiz.json')
         const dataHTML = data.map(item => `
         <input type="checkbox" id="${item.date}">
                         <label class="box data-item ${item.subject}" for="${item.date}">
-                            <div class="date" style="background: ${item.color};">${item.date}</div>
+                            <div class="date" style="background: ${item.color};">${item.dateopen}</div>
                             <div class="right">
                                 <div class="info">
                                     <span class="subject">${item.subject}</span>
@@ -19,7 +19,7 @@ fetch('quiz.json')
                             <div class="inarea">
                                 <p class="subj"><span style="background: ${item.color};">${item.subject}</span></p>
                                 <h4>${item.title}</h4>
-                                <h5 style="color: ${item.color};">${item.date}</h5>
+                                <h5 style="color: ${item.color};">${item.dateopen}</h5>
                                 <p class="cate">${item.category}</p>
                                 <p class="rang">範囲：${item.range}</p>
                                 <p class="explain">${item.explain}</p>
