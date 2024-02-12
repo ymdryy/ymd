@@ -22,7 +22,7 @@
     <main>
         <section class="countdown">
             <div id="countdownArea">
-                <h2>3学期学年末まで</h2>
+                <h2 id="countdown-title"></h2>
                 <div class="clock">
                     <span id="countdown-day">0</span>日 <span id="countdown-hour">0</span>時間 <span
                         id="countdown-min">0</span>分 <span id="countdown-sec">0</span>秒
@@ -100,7 +100,7 @@
                                 quizArartArea.innerHTML = `
                                 <div class="in">
                                     <div class="inarea">
-                                        <p class="sbuj"><span style="background:${nextQuiz.color};">${nextQuiz.subject}</span><span style="border:1px solid ${nextQuiz.color};padding: 2px 11px;color:${nextQuiz.color};">${nextQuiz.date}</span></p>
+                                        <p class="sbuj"><span style="background:${nextQuiz.color};">${nextQuiz.subject}</span><span style="border:1px solid ${nextQuiz.color};padding: 2px 11px;color:${nextQuiz.color};">${nextQuiz.dateopen}</span></p>
                                         <p class="day">${timePhrase}</p>
                                         <p class="title" style="color:${nextQuiz.color};">${nextQuiz.title}の${nextQuiz.category}</p>
                                         <p class="range">範囲：${nextQuiz.range}</p>
@@ -746,68 +746,8 @@
         </section>
         <section class="schedule" id="schedule">
             <h2>予定</h2>
-            <div class="boxes">
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>3学期学年末考査</h3>
-                    <p class="date">3/2,3/4-7</p>
-                    <p class="plus">2/24に時間割発表。3/12に答案返却</p>
-                </article>
-                <article>
-                    <p class="category">休み</p>
-                    <h3>春休み</h3>
-                    <p class="date">3/19-</p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>1学期中間テスト</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>1学期期末テスト</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">休み</p>
-                    <h3>夏休み</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">行事</p>
-                    <h3>体育祭</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>2学期中間テスト</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">テスト</p>
-                    <h3>2学期期末テスト</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                <article>
-                    <p class="category">休み</p>
-                    <h3>冬休み</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
-                
-                <article>
-                    <p class="category">行事</p>
-                    <h3>卒業式</h3>
-                    <p class="date"></p>
-                    <p class="plus"></p>
-                </article>
+            <div class="boxes" id="scheduleboxes">
+                <p id="reloadMessage">正常に読み込まれませんでした。リロードしてください</p>
             </div>
         </section>
         <section class="lunchmenu" id="lunchmenu">
