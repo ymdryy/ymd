@@ -1629,6 +1629,7 @@ input:checked+.tab-tl+.content {
 
 .schedule article h3 {
     font-size: 20px;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -1640,6 +1641,7 @@ input:checked+.tab-tl+.content {
 
 .schedule article .plus {
     margin-top: 20px;
+    line-height: 1.2;
     color: var(--subtext);
 }
 
