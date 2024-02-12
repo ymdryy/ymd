@@ -1657,6 +1657,11 @@ input:checked+.tab-tl+.content {
     white-space: nowrap;
 }
 
+.schedule #reloadMessage {
+    color: var(--orange);
+    font-size: 14px;
+}
+
 @media screen and (max-width: 1060px) {
     .schedule .boxes {
         padding: 0 30px;
