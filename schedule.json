@@ -10,6 +10,16 @@
         "plus":"2/24に時間割発表。3/12に答案返却"
     },
     {
+        "category":"テスト",
+        "title":"3学期学年末考査返却",
+        "size":"mini",
+        "datestart":"2024/3/12",
+        "datefinish":"2024/3/13",
+        "datestarttime":"8:45:00",
+        "dateopen":"3/12",
+        "plus":""
+    },
+    {
         "category":"休み",
         "title":"春休み",
         "size":"big",
