@@ -1,67 +1,8 @@
+
 [
     {
-        "title": "古文単語",
-        "range": "50問テスト",
-        "subject": "古典探求",
-        "category": "中テスト",
-        "date": "2/14",
-        "dateopen": "2/14?",
-        "color": "#ff0077",
-        "explain":""
-    },
-    {
-        "title": "漢字テスト",
-        "range": "ランクD 書く⑦⑧",
-        "subject": "現代文特講Ⅰ",
-        "category": "小テスト",
-        "date": "2/15",
-        "dateopen": "第5回",
-        "color": "#ff0000",
-        "explain":"日付はクラスによって異なります。"
-    },
-    {
-        "title": "英作文",
-        "range": "第31講 - 第36講",
-        "subject": "英語COMⅡ",
-        "category": "小テスト",
-        "date": "2/16",
-        "dateopen": "2/16",
-        "color": "#ff5b1f",
-        "explain":""
-    },
-    {
-        "title": "Listening",
-        "range": "",
-        "subject": "英語COMⅡ",
-        "category": "中テスト",
-        "date": "2/19",
-        "dateopen": "2/19~",
-        "color": "#ff5b1f",
-        "explain":"2/19の週の最初の授業で行われます"
-    },
-    {
-        "title": "漢字テスト",
-        "range": "ランクD 書く⑨⑩",
-        "subject": "現代文特講Ⅰ",
-        "category": "小テスト",
-        "date": "2/21",
-        "dateopen": "第6回",
-        "color": "#ff0000",
-        "explain":"あるかどうか不確かです。日付はクラスによって異なります。"
-    },
-    {
-        "title": "データベース",
-        "range": "1978 - 2073",
-        "subject": "英語COMⅡ",
-        "category": "小テスト",
-        "date": "2/22",
-        "dateopen": "2/22",
-        "color": "#ff5b1f",
-        "explain":""
-    },
-    {
         "title": "歴史",
-        "range": "",
+        "range": "p91-93,p96-100,p102-111",
         "subject": "歴史",
         "category": "小テスト",
         "date": "2/29",
