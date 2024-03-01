@@ -1,13 +1,13 @@
 
 [
     {
-        "title": "歴史",
-        "range": "p91-93,p96-100,p102-111",
-        "subject": "歴史",
-        "category": "小テスト",
-        "date": "2/29",
-        "dateopen": "2/29?",
-        "color": "#7c2e80",
-        "explain":""
+        "title": "title",
+        "range": "range",
+        "subject": "subject",
+        "category": "category",
+        "date": "date",
+        "dateopen": "date",
+        "color": "#888",
+        "explain":"explain"
     }
 ]
