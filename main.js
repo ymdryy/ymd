@@ -225,3 +225,42 @@ async function populateSchedule() {
 
 // ページ読み込み後に populateSchedule 関数を実行する
 window.onload = populateSchedule;
+
+
+//json教科ごとのカラーメモ
+//古典#ff0077
+//現代文#ff0000
+//英コミュ#ff5b1f
+//歴史#7c2e80
+
+
+
+
+//シークレットメッセージ
+let keysPressed = [];
+let timeout;
+
+function checkKeys() {
+    if (keysPressed.join('') === 'WASD') {
+        document.getElementById('secretmessage').checked = true;
+    }
+    resetKeys();
+}
+
+function resetKeys() {
+    keysPressed = [];
+    clearTimeout(timeout);
+}
+
+document.addEventListener('keydown', function (event) {
+    const key = event.key.toUpperCase();
+    keysPressed.push(key);
+
+    if (keysPressed.length === 1) {
+        timeout = setTimeout(resetKeys, 3000);
+    }
+
+    if (keysPressed.length === 4) {
+        checkKeys();
+    }
+});
