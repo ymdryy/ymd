@@ -1,5 +1,5 @@
 :root {
-    --mainback: #f0f0f4;
+    --mainback: #fff;
     --subback: #ffffff;
     --thirdback: #f6f6fa;
     --forthback: #eaeaef;
@@ -12,10 +12,12 @@
     --orange: #ff8800;
     --blue: #3378F8;
 
+    --dropshadow: drop-shadow(7px 7px 10px #0002);
+
     --clear-btn: rgba(0, 0, 0, 0.2);
 
-    --html-back: #f2f2f6;
-    --header-back: #f2f2f677;
+    --html-back: #fff;
+    --header-back: linear-gradient(#fff,#fff6);
     --h2-back: #f0f0f488;
     --g-back: linear-gradient(to right bottom, #d3f6ff, #bae3e4);
     --blue1: #7a82f2ba;
@@ -44,8 +46,10 @@
         --orange: #ffa54b;
         --blue: #3987f7;
 
+        --dropshadow: none;
+
         --html-back: #000000;
-        --header-back: #00000099;
+        --header-back:  linear-gradient(#000,#0007);
         --h2-back: #0008;
         --g-back: linear-gradient(to right bottom, #340946, #091129);
         --blue1: #21277c98;
@@ -188,7 +192,7 @@ p {
     content: "";
     width: 35px;
     height: 100%;
-    background: linear-gradient(to left,var(--header-back),#0000);
+    background: linear-gradient(to left, var(--header-back), #0000);
     top: 0;
     left: -35px;
     z-index: 10;
@@ -291,9 +295,10 @@ p {
 
 /* 小テストの通知 */
 .quiz-arart {
-    width: min(1000px - 40px , 100% - 100px);
+    width: min(1000px - 40px, 100% - 100px);
     margin: 20px auto 50px;
     background: var(--subback);
+    filter: var(--dropshadow);
     padding: 15px 20px;
     border-radius: 32.5px;
     line-height: 1;
@@ -403,9 +408,10 @@ p {
 
 /* Excelダウンロード */
 .download-ex {
-    width: min(1000px - 60px , 100% - 120px);
+    width: min(1000px - 60px, 100% - 120px);
     margin: 50px auto;
     background: var(--subback);
+    filter: var(--dropshadow);
     padding: 30px;
     border-radius: 15px;
     position: relative;
@@ -518,6 +524,7 @@ p {
 
 .test-time-schedule .back {
     background: var(--subback);
+    filter: var(--dropshadow);
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
@@ -645,6 +652,7 @@ p {
 .test-range .back {
     display: flex;
     background: var(--subback);
+    filter: var(--dropshadow);
     border-radius: 10px;
     max-height: 565px;
     position: relative;
@@ -763,7 +771,7 @@ input:checked+.btn-tr+article {
 }
 
 .test-range .btn-tr-t sup {
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: .6rem;
     padding: 0 0 0 2px;
     color: var(--subtext);
@@ -852,6 +860,7 @@ input:checked+.btn-tr+article {
 
 .time-schedule .back {
     background: var(--subback);
+    filter: var(--dropshadow);
     padding: 15px 20px;
     margin: 0;
     border-radius: 15px;
@@ -989,7 +998,7 @@ input:checked+.tab+.content {
 
 .quiz .in {
     position: relative;
-    width: min(100%,1000px);
+    width: min(100%, 1000px);
 }
 
 .quiz .btns {
@@ -1045,10 +1054,15 @@ input:checked+.tab+.content {
 .quiz .area {
     width: 100%;
     background: var(--subback);
+    filter: var(--dropshadow);
     margin: 0;
     padding: 0;
     border-radius: 15px;
     max-height: 400px;
+}
+
+.quiz .area:has(.content input:checked) {
+    filter: none;
 }
 
 .quiz .area:has(#fullsc:checked) {
@@ -1088,7 +1102,7 @@ input:checked+.tab+.content {
 
 .quiz .area:has(#fullsc:checked) .content {
     max-height: calc(100% - 80px);
-    width: min(100%,1000px);
+    width: min(100%, 1000px);
     margin: 0 auto;
 }
 
@@ -1202,7 +1216,7 @@ body:has(.quiz input:checked) {
 }
 
 .quiz .inarea {
-    width: min(90% - 20px*2,720px - 20px*2);
+    width: min(90% - 20px*2, 720px - 20px*2);
     height: calc(40vh - 20px);
     margin: 30vh auto;
     padding: 20px;
@@ -1219,6 +1233,7 @@ body:has(.quiz input:checked) {
     0% {
         transform: scale(.9);
     }
+
     100% {
         transform: scale(1);
     }
@@ -1480,6 +1495,7 @@ input:checked+.tab-tl+.content {
     margin: 0 auto;
     padding: 20px;
     background: var(--subback);
+    filter: var(--dropshadow);
     border-radius: 15px;
     pointer-events: all;
 }
@@ -1604,9 +1620,10 @@ input:checked+.tab-tl+.content {
     min-width: 300px;
     min-height: 150px;
     background: var(--subback);
+    filter: var(--dropshadow);
     padding: 20px;
     border-radius: 15px;
-    margin: 10px 5px;
+    margin: 10px 5px 20px 5px;
     scroll-snap-align: start;
     cursor: default;
     transition: 1s;
@@ -1697,6 +1714,7 @@ input:checked+.tab-tl+.content {
 #lunchmenutable {
     width: 100%;
     background: var(--subback);
+    filter: var(--dropshadow);
     border-radius: 15px;
     overflow-x: auto;
 }
@@ -1747,6 +1765,7 @@ footer a {
     margin-right: 2px;
     border-radius: 99px;
     color: var(--subtext);
+    filter: var(--dropshadow);
     transition: 1s;
 }
 
@@ -1792,7 +1811,7 @@ input[name="secretmessage"] {
 }
 
 .secretarea .area {
-    width: min(1000px,100% - 60px);
+    width: min(1000px, 100% - 60px);
     height: 90vh;
     margin: 2.5vh auto;
     padding: 20px;
@@ -1803,6 +1822,7 @@ input[name="secretmessage"] {
     align-items: center;
     justify-content: center;
     background: var(--subback);
+    filter: var(--dropshadow);
 }
 
 

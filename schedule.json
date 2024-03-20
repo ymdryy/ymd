@@ -1,32 +1,12 @@
 [
     {
-        "category":"テスト",
-        "title":"3学期学年末考査",
-        "size":"big",
-        "datestart":"2024/3/2",
-        "datefinish":"2024/3/8",
-        "datestarttime":"8:45:00",
-        "dateopen":"3/2,3/4-7",
-        "plus":"2/24に時間割発表。3/12に答案返却"
-    },
-    {
-        "category":"テスト",
-        "title":"3学期学年末考査返却",
-        "size":"mini",
-        "datestart":"2024/3/12",
-        "datefinish":"2024/3/13",
-        "datestarttime":"8:45:00",
-        "dateopen":"3/12",
-        "plus":""
-    },
-    {
         "category":"休み",
         "title":"春休み",
         "size":"big",
         "datestart":"2024/3/19",
-        "datefinish":"",
+        "datefinish":"2024/4/7",
         "datestarttime":"0:00:00",
-        "dateopen":"3/19-",
+        "dateopen":"3/19-4/7",
         "plus":""
     },
     {
@@ -34,10 +14,10 @@
         "title":"1学期始業式",
         "size":"mini",
         "datestart":"2024/4/8",
-        "datefinish":"",
+        "datefinish":"2024/4/8",
         "datestarttime":"8:45:00",
-        "dateopen":"",
-        "plus":"新入生歓迎会"
+        "dateopen":"4/8",
+        "plus":""
     },
     {
         "category":"テスト",
