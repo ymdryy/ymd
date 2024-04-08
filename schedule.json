@@ -1,132 +1,162 @@
 [
     {
-        "category":"休み",
-        "title":"春休み",
-        "size":"big",
-        "datestart":"2024/3/19",
-        "datefinish":"2024/4/7",
-        "datestarttime":"0:00:00",
-        "dateopen":"3/19-4/7",
-        "plus":""
-    },
-    {
-        "category":"行事",
-        "title":"1学期始業式",
-        "size":"mini",
-        "datestart":"2024/4/8",
-        "datefinish":"2024/4/8",
-        "datestarttime":"8:45:00",
-        "dateopen":"4/8",
-        "plus":""
-    },
-    {
         "category":"テスト",
         "title":"1学期中間考査",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
-        "datestarttime":"0:00:00",
-        "dateopen":"",
-        "plus":""
+        "datestart":"2024/5/20",
+        "datefinish":"2024/5/25",
+        "datestarttime":"8:45:00",
+        "dateopen":"5/20-25",
+        "plus":"5/13に時間割発表、6/4に成績発表"
     },
     {
         "category":"テスト",
         "title":"1学期期末考査",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
-        "datestarttime":"0:00:00",
-        "dateopen":"",
-        "plus":""
+        "datestart":"2024/7/1",
+        "datefinish":"2024/7/5",
+        "datestarttime":"8:45:00",
+        "dateopen":"7/1-5",
+        "plus":"6/24に時間割発表、7/10に答案返却"
     },
     {
         "category":"テスト",
         "title":"1学期期末考査返却",
         "size":"mini",
-        "datestart":"",
-        "datefinish":"",
+        "datestart":"2024/7/10",
+        "datefinish":"2024/7/10",
         "datestarttime":"8:45:00",
-        "dateopen":"",
+        "dateopen":"7/10",
         "plus":""
     },
     {
         "category":"休み",
         "title":"夏休み",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
+        "datestart":"2024/7/20",
+        "datefinish":"2024/9/1",
         "datestarttime":"0:00:00",
-        "dateopen":"",
+        "dateopen":"7/20-9/1",
         "plus":""
+    },
+    {
+        "category":"講習",
+        "title":"夏期講習",
+        "size":"mini",
+        "datestart":"2024/7/22",
+        "datefinish":"2024/7/25",
+        "datestarttime":"8:45:00",
+        "dateopen":"7/22-25",
+        "plus":"前期"
+    },
+    {
+        "category":"講習",
+        "title":"夏期講習",
+        "size":"mini",
+        "datestart":"2024/8/26",
+        "datefinish":"2024/8/29",
+        "datestarttime":"8:45:00",
+        "dateopen":"8/26-29",
+        "plus":"後期"
     },
     {
         "category":"行事",
         "title":"2学期始業式",
         "size":"mini",
         "datestart":"2024/9/2",
-        "datefinish":"",
+        "datefinish":"2024/9/2",
         "datestarttime":"8:45:00",
-        "dateopen":"",
+        "dateopen":"9/2",
+        "plus":""
+    },
+    {
+        "category":"行事",
+        "title":"文化祭",
+        "size":"mini",
+        "datestart":"2024/9/7",
+        "datefinish":"2024/9/8",
+        "datestarttime":"0:00:00",
+        "dateopen":"9/7-8",
         "plus":""
     },
     {
         "category":"行事",
         "title":"体育祭",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
+        "datestart":"2024/9/25",
+        "datefinish":"2024/9/25",
         "datestarttime":"0:00:00",
-        "dateopen":"",
-        "plus":""
+        "dateopen":"9/25",
+        "plus":"26日は休み"
     },
     {
         "category":"テスト",
         "title":"2学期中間考査",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
+        "datestart":"2024/10/15",
+        "datefinish":"2024/10/18",
+        "datestarttime":"8:45:00",
+        "dateopen":"10/15-10/19",
+        "plus":"10/8に時間割発表、10/29に成績発表"
+    },
+    {
+        "category":"行事",
+        "title":"面談",
+        "size":"mini",
+        "datestart":"2024/11/15",
+        "datefinish":"2024/11/20",
         "datestarttime":"0:00:00",
-        "dateopen":"",
+        "dateopen":"11/15-11/20",
         "plus":""
     },
     {
         "category":"テスト",
         "title":"2学期期末考査",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
-        "datestarttime":"0:00:00",
-        "dateopen":"",
-        "plus":""
+        "datestart":"2024/12/4",
+        "datefinish":"2024/12/9",
+        "datestarttime":"8:45:00",
+        "dateopen":"12/4-7,9",
+        "plus":"11/27に時間割発表、12/13に答案返却"
     },
     {
         "category":"テスト",
         "title":"2学期期末考査返却",
         "size":"mini",
-        "datestart":"",
-        "datefinish":"",
+        "datestart":"2024/12/13",
+        "datefinish":"2024/12/13",
         "datestarttime":"8:45:00",
-        "dateopen":"",
+        "dateopen":"12/13",
         "plus":""
     },
     {
         "category":"休み",
         "title":"冬休み",
         "size":"big",
-        "datestart":"",
-        "datefinish":"",
+        "datestart":"2024/12/20",
+        "datefinish":"2025/1/7",
         "datestarttime":"0:00:00",
-        "dateopen":"",
+        "dateopen":"12/20-1/7",
+        "plus":""
+    },
+    {
+        "category":"講習",
+        "title":"冬期講習",
+        "size":"mini",
+        "datestart":"2024/12/20",
+        "datefinish":"2024/12/25",
+        "datestarttime":"8:45:00",
+        "dateopen":"12/20-21,23-25",
         "plus":""
     },
     {
         "category":"行事",
         "title":"3学期始業式",
         "size":"mini",
-        "datestart":"2025/1/6",
-        "datefinish":"",
+        "datestart":"2025/1/8",
+        "datefinish":"2025/1/8",
         "datestarttime":"8:45:00",
-        "dateopen":"",
+        "dateopen":"1/8",
         "plus":""
     },
     {
@@ -134,9 +164,9 @@
         "title":"卒業式",
         "size":"big",
         "datestart":"2025/3/1",
-        "datefinish":"",
-        "datestarttime":"8:45:00",
-        "dateopen":"",
+        "datefinish":"2025/3/1",
+        "datestarttime":"0:00:00",
+        "dateopen":"3/1",
         "plus":""
     }
 ]
