@@ -122,6 +122,7 @@
                                 subjects.forEach((subject, index) => {
                                     const subjectSpan = document.createElement('span');
                                     subjectSpan.textContent = subject;
+                                    subjectSpan.style.color = '#fff';
                                     subjectSpan.style.background = nearestQuizzes[index].color;
                                     subjectsContainer.appendChild(subjectSpan);
                                 });
