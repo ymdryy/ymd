@@ -63,24 +63,46 @@
             <div id="quiz-arart-area"></div>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
-                    // Load quiz data from JSON
                     fetch('quiz.json')
                         .then(response => response.json())
                         .then(data => {
-                            // Find the next quiz
                             const currentDate = new Date();
-                            const nextQuiz = data.find(quiz => {
+                            const currentHour = currentDate.getHours();
+                            const currentMinute = currentDate.getMinutes();
+
+                            const isPast1420 = currentHour > 14 || (currentHour === 14 && currentMinute >= 20);
+
+                            const nextQuizzes = data.filter(quiz => {
                                 const quizDate = new Date(quiz.date + '/' + currentDate.getFullYear());
-                                const today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()); // 今日の日付
-                                return quizDate >= today; // 今日を含む以降のクイズを検索
+                                const today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+                                return quizDate >= today;
                             });
 
+                            const todayIndex = nextQuizzes.findIndex(quiz => {
+                                const quizDate = new Date(quiz.date + '/' + currentDate.getFullYear());
+                                const today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+                                return quizDate.getTime() === today.getTime();
+                            });
 
-                            // Display the next quiz information
-                            // Display the next quiz information
-                            if (nextQuiz) {
-                                const quizDate = new Date(nextQuiz.date + '/' + currentDate.getFullYear());
-                                const timeDiff = Math.ceil((quizDate - currentDate) / (1000 * 60 * 60 * 24));
+                            if (isPast1420 && todayIndex !== -1) {
+                                nextQuizzes.splice(todayIndex, 1);
+                            }
+
+                            const nearestDate = nextQuizzes.reduce((nearest, quiz) => {
+                                const quizDate = new Date(quiz.date + '/' + currentDate.getFullYear());
+                                return quizDate < nearest ? quizDate : nearest;
+                            }, Infinity);
+
+                            const nearestQuizzes = nextQuizzes.filter(quiz => {
+                                const quizDate = new Date(quiz.date + '/' + currentDate.getFullYear());
+                                return quizDate.getTime() === nearestDate.getTime();
+                            });
+
+                            if (nearestQuizzes.length > 0) {
+                                const quizArartArea = document.getElementById('quiz-arart-area');
+                                quizArartArea.innerHTML = '';
+
+                                const timeDiff = Math.ceil((nearestDate - currentDate) / (1000 * 60 * 60 * 24));
                                 let timePhrase;
 
                                 if (timeDiff === 0) {
@@ -89,31 +111,60 @@
                                     timePhrase = '明日';
                                 } else if (timeDiff === 2) {
                                     timePhrase = '明後日';
-                                } else if (timeDiff > 2) {
+                                } else {
                                     timePhrase = timeDiff + '日後';
                                 }
 
+                                const subjects = nearestQuizzes.map(quiz => quiz.subject);
+                                const subjectsContainer = document.createElement('div');
+                                subjectsContainer.classList.add('sbuj');
 
-                                console.log('Time Phrase:', timePhrase); // 追加
+                                subjects.forEach((subject, index) => {
+                                    const subjectSpan = document.createElement('span');
+                                    subjectSpan.textContent = subject;
+                                    subjectSpan.style.background = nearestQuizzes[index].color;
+                                    subjectsContainer.appendChild(subjectSpan);
+                                });
 
-                                const quizArartArea = document.getElementById('quiz-arart-area');
-                                quizArartArea.innerHTML = `
-                                <div class="in">
-                                    <div class="inarea">
-                                        <p class="sbuj"><span style="background:${nextQuiz.color};">${nextQuiz.subject}</span><span style="border:1px solid ${nextQuiz.color};padding: 2px 11px;color:${nextQuiz.color};">${nextQuiz.dateopen}</span></p>
-                                        <p class="day">${timePhrase}</p>
-                                        <p class="title" style="color:${nextQuiz.color};">${nextQuiz.title}の${nextQuiz.category}</p>
-                                        <p class="range">範囲：${nextQuiz.range}</p>
-                                    </div>
-                                    <label for="${nextQuiz.date}">詳細</label>
-                                </div>
-                                ${nextQuiz.explain ? `<p class="explain">${nextQuiz.explain}</p>` : ''}`;
+                                const dateSpan = document.createElement('span');
+                                dateSpan.textContent = nearestQuizzes[0].dateopen;
+                                dateSpan.style.border = `1px solid ${nearestQuizzes.length > 1 ? 'var(--maintext)' : nearestQuizzes[0].color}`;
+                                dateSpan.style.color = `${nearestQuizzes.length > 1 ? 'var(--maintext)' : nearestQuizzes[0].color}`;
+                                subjectsContainer.appendChild(dateSpan);
+
+                                const sbujContainer = document.createElement('div');
+                                sbujContainer.classList.add('sbuj');
+                                sbujContainer.appendChild(subjectsContainer);
+                                quizArartArea.appendChild(sbujContainer);
+
+                                const dayParagraph = document.createElement('p');
+                                dayParagraph.classList.add('day');
+                                dayParagraph.textContent = timePhrase;
+                                quizArartArea.appendChild(dayParagraph);
+
+                                nearestQuizzes.forEach(quiz => {
+                                    const titleParagraph = document.createElement('p');
+                                    titleParagraph.classList.add('title');
+                                    titleParagraph.style.color = quiz.color;
+                                    titleParagraph.textContent = `${quiz.title}の${quiz.category}`;
+                                    quizArartArea.appendChild(titleParagraph);
+
+                                    const rangeParagraph = document.createElement('p');
+                                    rangeParagraph.classList.add('range');
+                                    rangeParagraph.textContent = `範囲：${quiz.range}`;
+                                    quizArartArea.appendChild(rangeParagraph);
+
+                                    if (quiz.explain) {
+                                        const explainParagraph = document.createElement('p');
+                                        explainParagraph.classList.add('explain');
+                                        explainParagraph.textContent = quiz.explain;
+                                        quizArartArea.appendChild(explainParagraph);
+                                    }
+                                });
                             } else {
-                                // No upcoming quiz
                                 const quizArartArea = document.getElementById('quiz-arart-area');
                                 quizArartArea.textContent = 'not found';
                             }
-
                         })
                         .catch(error => console.error('Error:', error));
                 });
@@ -313,8 +364,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </article> <input type="radio" name="tab-name" id="ts4"> <label class="tab"
-                        for="ts4">4</label>
+                    </article> <input type="radio" name="tab-name" id="ts4"> <label class="tab" for="ts4">4</label>
                     <article class="content">
                         <table>
                             <tbody>
@@ -434,7 +484,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </article> <input type="radio" name="tab-name" id="ts6" checked> <label class="tab" for="ts6">6</label>
+                    </article> <input type="radio" name="tab-name" id="ts6" checked> <label class="tab"
+                        for="ts6">6</label>
                     <article class="content">
                         <table>
                             <tbody>
@@ -682,15 +733,15 @@
             <div class="in">
                 <div class="area">
                     <div class="btns">
-                        <button class="filter-button" data-filter="古典探求">古典</button>
-                        <button class="filter-button" data-filter="英語COMⅡ">英C</button>
-                        <button class="filter-button" data-filter="現代文特講Ⅰ">現文</button>
-                        <button class="filter-button" data-filter="歴史">歴史</button>
-                        <label class="sizebtn" for="fullsc" style="display: none;">
+                        <button class="filter-button" data-filter="古典">古典</button>
+                        <button class="filter-button" data-filter="英語Ⅱ">英Ⅱ</button>
+                        <button class="filter-button" data-filter="現特α">現文</button>
+                        <button class="filter-button" data-filter="歴史" style="display: none;">歴史</button>
+                        <label class="sizebtn" for="fullsc">
                             <span class="big">拡大⤴</span>
                             <span class="small">縮小⤵</span>
                         </label>
-                        <div class="fullsc" style="display: none;">
+                        <div class="fullsc">
                             <input type="checkbox" id="fullsc">
                         </div>
                     </div>

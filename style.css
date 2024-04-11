@@ -300,7 +300,7 @@ p {
     background: var(--subback);
     filter: var(--dropshadow);
     padding: 15px 20px;
-    border-radius: 32.5px;
+    border-radius: calc(77px/2);
     line-height: 1;
     transition: 1s;
 }
@@ -361,6 +361,7 @@ p {
 
 .quiz-arart:hover .title {
     font-size: 16px;
+    margin: 10px 0 0;
 }
 
 .quiz-arart .range {
