@@ -1,13 +1,273 @@
 
 [
     {
-        "title": "title",
-        "range": "range",
-        "subject": "subject",
-        "category": "category",
-        "date": "date",
-        "dateopen": "date",
-        "color": "#888",
-        "explain":"explain"
+        "title": "データベース",
+        "range": "1028-1146",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "4/24",
+        "dateopen": "4/24",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
+        "range": "151-181",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "4/24",
+        "dateopen": "4/24",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "古文単語",
+        "range": "202-250",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "5/1",
+        "dateopen": "5/1",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1147-1262",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "5/8",
+        "dateopen": "5/8",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古典文法",
+        "range": "①",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "5/8",
+        "dateopen": "5/8",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢文必携",
+        "range": "p20-23",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "5/11",
+        "dateopen": "5/10-11",
+        "color": "#f0b",
+        "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1263-1382",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "5/29",
+        "dateopen": "5/29",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
+        "range": "251-300",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "6/5",
+        "dateopen": "6/5",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢文必携",
+        "range": "p32-41",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "6/8",
+        "dateopen": "6/7-8",
+        "color": "#f0b",
+        "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1383-1500",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "6/12",
+        "dateopen": "6/12",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
+        "range": "p256-275",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "6/12",
+        "dateopen": "6/12",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "古典文法",
+        "range": "②",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "6/19",
+        "dateopen": "6/19",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢文必携",
+        "range": "p44-57",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "6/22",
+        "dateopen": "6/21-22",
+        "color": "#f0b",
+        "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1501-1619",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "9/11",
+        "dateopen": "9/11",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
+        "range": "1-150",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "9/11",
+        "dateopen": "9/11",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢文必携",
+        "range": "p58-65",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "9/14",
+        "dateopen": "9/13-14",
+        "color": "#f0b",
+        "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "古文単語",
+        "range": "51-250",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "9/18",
+        "dateopen": "9/18",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1620-1733",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "10/2",
+        "dateopen": "10/2",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古典文法",
+        "range": "③",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "10/2",
+        "dateopen": "10/2",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢文必携",
+        "range": "p68-75",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "10/5",
+        "dateopen": "10/4-5",
+        "color": "#f0b",
+        "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1734-1855",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "10/23",
+        "dateopen": "10/23",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
+        "range": "151-300",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "10/30",
+        "dateopen": "10/30",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1856-1962",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "11/6",
+        "dateopen": "11/6",
+        "color": "#f70",
+        "explain":""
+    },
+    {
+        "title": "古文単語",
+        "range": "p222-275",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "11/6",
+        "dateopen": "11/6",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢文必携",
+        "range": "p78-86",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "11/9",
+        "dateopen": "11/8-9",
+        "color": "#f0b",
+        "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "古典文法",
+        "range": "④",
+        "subject": "古典",
+        "category": "小テスト",
+        "date": "11/13",
+        "dateopen": "11/13",
+        "color": "#f0b",
+        "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "データベース",
+        "range": "1963-2073",
+        "subject": "英語Ⅱ",
+        "category": "小テスト",
+        "date": "11/20",
+        "dateopen": "11/20",
+        "color": "#f70",
+        "explain":""
     }
 ]
