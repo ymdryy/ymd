@@ -305,7 +305,8 @@ p {
     transition: 1s;
 }
 
-.quiz-arart:hover {
+.quiz-arart:hover,
+.quiz-arart:active {
     background: var(--thirdback);
     transition: .3s;
     border-radius: 15px;
@@ -348,7 +349,8 @@ p {
     transition: .3s;
 }
 
-.quiz-arart:hover .day {
+.quiz-arart:hover .day,
+.quiz-arart:active .day {
     margin: 15px 0 10px;
     font-size: 28px;
 }
@@ -359,7 +361,8 @@ p {
     transition: .3s;
 }
 
-.quiz-arart:hover .title {
+.quiz-arart:hover .title,
+.quiz-arart:active .title {
     font-size: 16px;
     margin: 10px 0 0;
 }
@@ -384,7 +387,10 @@ p {
 
 .quiz-arart:hover .sbuj,
 .quiz-arart:hover .range,
-.quiz-arart:hover .explain {
+.quiz-arart:hover .explain,
+.quiz-arart:active .sbuj,
+.quiz-arart:active .range,
+.quiz-arart:active .explain {
     display: block;
     opacity: 1;
     height: auto;
@@ -393,11 +399,14 @@ p {
 }
 
 .quiz-arart:hover .explain,
-.quiz-arart:hover .range {
+.quiz-arart:hover .range,
+.quiz-arart:active .explain,
+.quiz-arart:active .range {
     margin: 4px 0 0;
 }
 
-.quiz-arart:hover .sbuj {
+.quiz-arart:hover .sbuj,
+.quiz-arart:active .sbuj {
     margin: 5px 0 0;
 }
 
