@@ -4,8 +4,8 @@ fetch('quiz.json')
     .then(data => {
         // データを表示するためのHTML文字列を作成する
         const dataHTML = data.map(item => `
-        <input type="checkbox" id="${item.date}">
-                        <label class="box data-item ${item.subject}" for="${item.date}">
+        <input type="checkbox" id="${item.date}${item.color}">
+                        <label class="box data-item ${item.subject}" for="${item.date}${item.color}">
                             <div class="date" style="background: ${item.color};">${item.dateopen}</div>
                             <div class="right">
                                 <div class="info">
@@ -25,11 +25,11 @@ fetch('quiz.json')
                                 <p class="explain">${item.explain}</p>
                                 <label for="${item.date}" class="close">閉じる</label>
                             </div>
-                            <label class="backclose" for="${item.date}"></label>
+                            <label class="backclose" for="${item.date}${item.color}"></label>
                         </article>
 `).join('');
 
-        // HTMLにデータを表示するF
+        // HTMLにデータを表示する
         const dataContainer = document.getElementById('data-container');
         dataContainer.innerHTML = dataHTML;
 
