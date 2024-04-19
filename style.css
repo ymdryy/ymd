@@ -319,20 +319,6 @@ p {
     justify-content: space-between;
 }
 
-.quiz-arart label {
-    cursor: pointer;
-    font-size: 12px;
-    border: 1px solid var(--subtext);
-    border-radius: 99px;
-    padding: 6px 10px;
-    transition: .2s;
-}
-
-.quiz-arart label:hover {
-    background: var(--maintext);
-    color: var(--fifthback);
-}
-
 .quiz-arart .sbuj span {
     font-size: 14px;
     padding: 3px 12px;
@@ -408,6 +394,10 @@ p {
 .quiz-arart:hover .sbuj,
 .quiz-arart:active .sbuj {
     margin: 5px 0 0;
+}
+
+.quiz-arart label.subj {
+    margin: none;
 }
 
 @media screen and (max-width: 500px) {
