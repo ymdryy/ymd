@@ -1,16 +1,6 @@
 
 [
     {
-        "title": "漢字テスト",
-        "range": "ランクD 書く ⑪⑫",
-        "subject": "現特α",
-        "category": "小テスト",
-        "date": "4/19",
-        "dateopen": "第1回",
-        "color": "#f22",
-        "explain":""
-    },
-    {
         "title": "Reflex",
         "range": "Unit1,2",
         "subject": "論表Ⅲ",
@@ -35,8 +25,8 @@
         "range": "151-181",
         "subject": "古典",
         "category": "小テスト",
-        "date": "4/24",
-        "dateopen": "4/24",
+        "date": "4/25",
+        "dateopen": "4/25",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -65,8 +55,8 @@
         "range": "202-250",
         "subject": "古典",
         "category": "小テスト",
-        "date": "5/1",
-        "dateopen": "5/1",
+        "date": "5/2",
+        "dateopen": "5/2",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -105,8 +95,8 @@
         "range": "①",
         "subject": "古典",
         "category": "小テスト",
-        "date": "5/8",
-        "dateopen": "5/8",
+        "date": "5/9",
+        "dateopen": "5/9",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -175,8 +165,8 @@
         "range": "251-300",
         "subject": "古典",
         "category": "小テスト",
-        "date": "6/5",
-        "dateopen": "6/5",
+        "date": "6/6",
+        "dateopen": "6/6",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -205,8 +195,8 @@
         "range": "p256-275",
         "subject": "古典",
         "category": "小テスト",
-        "date": "6/12",
-        "dateopen": "6/12",
+        "date": "6/13",
+        "dateopen": "6/13",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -215,8 +205,8 @@
         "range": "②",
         "subject": "古典",
         "category": "小テスト",
-        "date": "6/19",
-        "dateopen": "6/19",
+        "date": "6/20",
+        "dateopen": "6/20",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -245,8 +235,8 @@
         "range": "1-150",
         "subject": "古典",
         "category": "小テスト",
-        "date": "9/11",
-        "dateopen": "9/11",
+        "date": "9/12",
+        "dateopen": "9/12",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -265,8 +255,8 @@
         "range": "51-250",
         "subject": "古典",
         "category": "小テスト",
-        "date": "9/18",
-        "dateopen": "9/18",
+        "date": "9/19",
+        "dateopen": "9/19",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -285,8 +275,8 @@
         "range": "③",
         "subject": "古典",
         "category": "小テスト",
-        "date": "10/2",
-        "dateopen": "10/2",
+        "date": "10/3",
+        "dateopen": "10/3",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -315,8 +305,8 @@
         "range": "151-300",
         "subject": "古典",
         "category": "小テスト",
-        "date": "10/30",
-        "dateopen": "10/30",
+        "date": "11/1",
+        "dateopen": "11/1",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -335,8 +325,8 @@
         "range": "p222-275",
         "subject": "古典",
         "category": "小テスト",
-        "date": "11/6",
-        "dateopen": "11/6",
+        "date": "11/7",
+        "dateopen": "11/7",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
@@ -355,8 +345,8 @@
         "range": "④",
         "subject": "古典",
         "category": "小テスト",
-        "date": "11/13",
-        "dateopen": "11/13",
+        "date": "11/14",
+        "dateopen": "11/14",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
     },
