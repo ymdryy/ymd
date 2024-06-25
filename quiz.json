@@ -12,116 +12,6 @@
     },
     {
         "title": "データベース",
-        "range": "1263-1382",
-        "subject": "英語Ⅲ",
-        "category": "小テスト",
-        "date": "5/29",
-        "dateopen": "5/29",
-        "color": "#f70",
-        "explain":""
-    },
-    {
-        "title": "Reflex",
-        "range": "Unit5,6",
-        "subject": "論表Ⅲ",
-        "category": "小テスト",
-        "date": "6/4",
-        "dateopen": "6/4",
-        "color": "#b3f",
-        "explain":""
-    },
-    {
-        "title": "古文単語",
-        "range": "251-300",
-        "subject": "古典",
-        "category": "小テスト",
-        "date": "6/6",
-        "dateopen": "6/6",
-        "color": "#f0b",
-        "explain":"水曜日の授業で実施（4分）"
-    },
-    {
-        "title": "漢文必携",
-        "range": "p32-41",
-        "subject": "古典",
-        "category": "小テスト",
-        "date": "6/8",
-        "dateopen": "6/7-8",
-        "color": "#f0b",
-        "explain":"金・土曜日の授業で実施（4分）"
-    },
-    {
-        "title": "英作文",
-        "range": "5-7",
-        "subject": "論表Ⅲ",
-        "category": "小テスト",
-        "date": "6/11",
-        "dateopen": "6/11",
-        "color": "#b3f",
-        "explain":""
-    },
-    {
-        "title": "データベース",
-        "range": "1383-1500",
-        "subject": "英語Ⅲ",
-        "category": "小テスト",
-        "date": "6/12",
-        "dateopen": "6/12",
-        "color": "#f70",
-        "explain":""
-    },
-    {
-        "title": "古文単語",
-        "range": "p256-275",
-        "subject": "古典",
-        "category": "小テスト",
-        "date": "6/13",
-        "dateopen": "6/13",
-        "color": "#f0b",
-        "explain":"水曜日の授業で実施（4分）"
-    },
-    {
-        "title": "Reflex",
-        "range": "Unit7,8",
-        "subject": "論表Ⅲ",
-        "category": "小テスト",
-        "date": "6/18",
-        "dateopen": "6/18",
-        "color": "#b3f",
-        "explain":""
-    },
-    {
-        "title": "古典文法",
-        "range": "②",
-        "subject": "古典",
-        "category": "小テスト",
-        "date": "6/20",
-        "dateopen": "6/20",
-        "color": "#f0b",
-        "explain":"水曜日の授業で実施（4分）"
-    },
-    {
-        "title": "漢文必携",
-        "range": "p44-57",
-        "subject": "古典",
-        "category": "小テスト",
-        "date": "6/22",
-        "dateopen": "6/21-22",
-        "color": "#f0b",
-        "explain":"金・土曜日の授業で実施（4分）"
-    },
-    {
-        "title": "英作文",
-        "range": "8-10",
-        "subject": "論表Ⅲ",
-        "category": "小テスト",
-        "date": "6/25",
-        "dateopen": "6/25",
-        "color": "#b3f",
-        "explain":""
-    },
-    {
-        "title": "データベース",
         "range": "1501-1619",
         "subject": "英語Ⅲ",
         "category": "小テスト",
@@ -151,6 +41,16 @@
         "explain":"金・土曜日の授業で実施（4分）"
     },
     {
+        "title": "英作文",
+        "range": "11-14",
+        "subject": "論表Ⅲ",
+        "category": "小テスト",
+        "date": "9/17",
+        "dateopen": "9/17",
+        "color": "#b3f",
+        "explain":""
+    },
+    {
         "title": "古文単語",
         "range": "51-250",
         "subject": "古典",
@@ -159,6 +59,16 @@
         "dateopen": "9/19",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "英作文",
+        "range": "15-18",
+        "subject": "論表Ⅲ",
+        "category": "小テスト",
+        "date": "10/1",
+        "dateopen": "10/1",
+        "color": "#b3f",
+        "explain":""
     },
     {
         "title": "データベース",
@@ -189,6 +99,16 @@
         "dateopen": "10/4-5",
         "color": "#f0b",
         "explain":"金・土曜日の授業で実施（4分）"
+    },
+    {
+        "title": "Reflex",
+        "range": "Unit9-12",
+        "subject": "論表Ⅲ",
+        "category": "小テスト",
+        "date": "10/8",
+        "dateopen": "10/8",
+        "color": "#b3f",
+        "explain":""
     },
     {
         "title": "データベース",
