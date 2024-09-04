@@ -13,7 +13,7 @@
     <scr async src="https://www.googletagmanager.com/gtag/js?id=G-GY9E7S82G7"></scr>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-GY9E7S82G7'); </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>$(function (){$("#test").load("test-time-schedule.html");});</script>
+    <script>//$(function (){$("#test").load("test-time-schedule.html");});</script>
     <script>//$(function (){$("#test-range").load("test-range.html");});</script>
     <script>$(function () { $("#lunchmenutable").load("https://ryun.ymdryy.com/lunchmenutable.html"); }); </script>
 </head>
@@ -32,7 +32,7 @@
         <header id="header">
             <div class="back">
                 <ul>
-                    <a href="#test">
+                    <a href="#test" style="display: none;">
                         <li>試験時間割</li>
                     </a>
                     <a href="#test-range" style="display: none;">
@@ -171,7 +171,7 @@
                 });
             </script>
         </section>
-        <section class="download-ex">
+        <section class="download-ex" style="display: none;">
             <label class="btn" for="download-ex-close">×</label>
             <h2>ダウンロード</h2>
             <p class="explain">テストの点数をまとめる用のExcelファイル。</p>
