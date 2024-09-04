@@ -1,16 +1,6 @@
 
 [
     {
-        "title": "漢字テスト",
-        "range": "ランクD 読む ①②",
-        "subject": "現特α",
-        "category": "小テスト",
-        "date": "",
-        "dateopen": "第6回",
-        "color": "#f22",
-        "explain":"実施されるか不確か"
-    },
-    {
         "title": "データベース",
         "range": "1501-1619",
         "subject": "英語Ⅲ",
@@ -29,6 +19,16 @@
         "dateopen": "9/12",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢字テスト",
+        "range": "四字熟語② 1-24",
+        "subject": "現特α",
+        "category": "小テスト",
+        "date": "",
+        "dateopen": "第1回",
+        "color": "#f22",
+        "explain":""
     },
     {
         "title": "漢文必携",
@@ -51,6 +51,16 @@
         "explain":""
     },
     {
+        "title": "漢字テスト",
+        "range": "四字熟語② 25-50",
+        "subject": "現特α",
+        "category": "小テスト",
+        "date": "",
+        "dateopen": "第2回",
+        "color": "#f22",
+        "explain":""
+    },
+    {
         "title": "古文単語",
         "range": "51-250",
         "subject": "古典",
@@ -59,6 +69,16 @@
         "dateopen": "9/19",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢字テスト",
+        "range": "四字熟語② 1-24",
+        "subject": "現特α",
+        "category": "小テスト",
+        "date": "",
+        "dateopen": "第3回",
+        "color": "#f22",
+        "explain":""
     },
     {
         "title": "英作文",
@@ -89,6 +109,16 @@
         "dateopen": "10/3",
         "color": "#f0b",
         "explain":"水曜日の授業で実施（4分）"
+    },
+    {
+        "title": "漢字テスト",
+        "range": "四字熟語② 25-50",
+        "subject": "現特α",
+        "category": "小テスト",
+        "date": "",
+        "dateopen": "第4回",
+        "color": "#f22",
+        "explain":""
     },
     {
         "title": "漢文必携",
